@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target talker[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/gps_publisher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable talker[0m
+[100%] Built target talker
+-- Install configuration: ""
+-- Installing: /home/maria/ros2_coche/install/c4_gps/lib/c4_gps/talker
+-- Set runtime path of "/home/maria/ros2_coche/install/c4_gps/lib/c4_gps/talker" to ""
+-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/package_run_dependencies/c4_gps
+-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/parent_prefix_path/c4_gps
+-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/ament_prefix_path.sh
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/path.sh
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/path.dsv
+-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.bash
+-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.sh
+-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.zsh
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.dsv
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.dsv
+-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/packages/c4_gps
+-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/cmake/c4_gpsConfig.cmake
+-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/cmake/c4_gpsConfig-version.cmake
+-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.xml

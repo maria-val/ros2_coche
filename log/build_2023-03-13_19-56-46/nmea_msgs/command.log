@@ -1,0 +1,2 @@
+Invoking command in '/home/maria/ros2_coche/build/nmea_msgs': /usr/bin/cmake /home/maria/ros2_coche/src/nmea_msgs -DCMAKE_INSTALL_PREFIX=/home/maria/ros2_coche/install/nmea_msgs
+Invoked command in '/home/maria/ros2_coche/build/nmea_msgs' returned '1': /usr/bin/cmake /home/maria/ros2_coche/src/nmea_msgs -DCMAKE_INSTALL_PREFIX=/home/maria/ros2_coche/install/nmea_msgs

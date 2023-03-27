@@ -1,0 +1,22 @@
+[0.034s] Invoking command in '/home/maria/ros2_coche/build/c4_gps': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12
+[0.174s] [100%] Built target talker
+[0.209s] Invoked command in '/home/maria/ros2_coche/build/c4_gps' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12
+[0.322s] Invoking command in '/home/maria/ros2_coche/build/c4_gps': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maria/ros2_coche/build/c4_gps
+[0.347s] -- Install configuration: ""
+[0.349s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/lib/c4_gps/talker
+[0.350s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/package_run_dependencies/c4_gps
+[0.352s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/parent_prefix_path/c4_gps
+[0.352s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/ament_prefix_path.sh
+[0.353s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/ament_prefix_path.dsv
+[0.354s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/path.sh
+[0.354s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/path.dsv
+[0.355s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.bash
+[0.356s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.sh
+[0.356s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.zsh
+[0.357s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.dsv
+[0.358s] -- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.dsv
+[0.358s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/packages/c4_gps
+[0.359s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/cmake/c4_gpsConfig.cmake
+[0.359s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/cmake/c4_gpsConfig-version.cmake
+[0.360s] -- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.xml
+[0.365s] Invoked command in '/home/maria/ros2_coche/build/c4_gps' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maria/ros2_coche/build/c4_gps

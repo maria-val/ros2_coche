@@ -1,0 +1,1 @@
+[0mCMake Error: The source "/home/maria/ros2_coche/src/nmea_msgs/CMakeLists.txt" does not match the source "/home/maria/ros2_coche/src/nmea_msgs-master/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.[0m

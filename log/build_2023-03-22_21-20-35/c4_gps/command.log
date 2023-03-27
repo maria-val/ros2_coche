@@ -1,0 +1,2 @@
+Invoking command in '/home/maria/ros2_coche/build/c4_gps': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12
+Invoked command in '/home/maria/ros2_coche/build/c4_gps' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12

@@ -1,0 +1,128 @@
+[0.000000] (-) TimerEvent: {}
+[0.000167] (c4_gps) JobQueued: {'identifier': 'c4_gps', 'dependencies': OrderedDict()}
+[0.000689] (c4_gps) JobStarted: {'identifier': 'c4_gps'}
+[0.021112] (c4_gps) JobProgress: {'identifier': 'c4_gps', 'progress': 'cmake'}
+[0.022431] (c4_gps) JobProgress: {'identifier': 'c4_gps', 'progress': 'build'}
+[0.023697] (c4_gps) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maria/ros2_coche/build/c4_gps', '--', '-j12', '-l12'], 'cwd': '/home/maria/ros2_coche/build/c4_gps', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('KDE_FULL_SESSION', 'true'), ('USER', 'maria'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1420'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('XCURSOR_SIZE', '24'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maria'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/maria/ros2_coche/src'), ('TERM_PROGRAM_VERSION', '1.76.1'), ('DESKTOP_SESSION', 'plasma'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/maria/.gtkrc:/home/maria/.config/gtkrc'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('KDE_SESSION_VERSION', '5'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1267'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maria'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/maria/.gtkrc-2.0:/home/maria/.config/gtkrc-2.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kubuntu:@/tmp/.ICE-unix/1577,unix/kubuntu:/tmp/.ICE-unix/1577'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/maria/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-98fcad25c7.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXIFOrbN/agent.1284'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'KDE'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('XDG_VTNR', '1'), ('PWD', '/home/maria/ros2_coche/build/c4_gps'), ('XDG_CONFIG_DIRS', '/home/maria/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C'), ('LC_PAPER', 'es_ES.UTF-8'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.095998] (c4_gps) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.097940] (-) TimerEvent: {}
+[0.198499] (-) TimerEvent: {}
+[0.299125] (-) TimerEvent: {}
+[0.399757] (-) TimerEvent: {}
+[0.500382] (-) TimerEvent: {}
+[0.601097] (-) TimerEvent: {}
+[0.701723] (-) TimerEvent: {}
+[0.799766] (c4_gps) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.801836] (-) TimerEvent: {}
+[0.902382] (-) TimerEvent: {}
+[0.952712] (c4_gps) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.964147] (c4_gps) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.997416] (c4_gps) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.002546] (-) TimerEvent: {}
+[1.051512] (c4_gps) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.102763] (-) TimerEvent: {}
+[1.124226] (c4_gps) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.202966] (-) TimerEvent: {}
+[1.303565] (-) TimerEvent: {}
+[1.325637] (c4_gps) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.329038] (c4_gps) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.403785] (-) TimerEvent: {}
+[1.504392] (-) TimerEvent: {}
+[1.604997] (-) TimerEvent: {}
+[1.705617] (-) TimerEvent: {}
+[1.764137] (c4_gps) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.805792] (-) TimerEvent: {}
+[1.906363] (-) TimerEvent: {}
+[2.006885] (-) TimerEvent: {}
+[2.107234] (-) TimerEvent: {}
+[2.137891] (c4_gps) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.207396] (-) TimerEvent: {}
+[2.307974] (-) TimerEvent: {}
+[2.339427] (c4_gps) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.340216] (c4_gps) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.340524] (c4_gps) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.342358] (c4_gps) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.346167] (c4_gps) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.346646] (c4_gps) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.347793] (c4_gps) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.351455] (c4_gps) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.386073] (c4_gps) StdoutLine: {'line': b'-- Generating done\n'}
+[2.390927] (c4_gps) StdoutLine: {'line': b'-- Build files have been written to: /home/maria/ros2_coche/build/c4_gps\n'}
+[2.408163] (-) TimerEvent: {}
+[2.496753] (c4_gps) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/gps_publisher.cpp.o\x1b[0m\n'}
+[2.508347] (-) TimerEvent: {}
+[2.608905] (-) TimerEvent: {}
+[2.709674] (-) TimerEvent: {}
+[2.810166] (-) TimerEvent: {}
+[2.910533] (-) TimerEvent: {}
+[3.010926] (-) TimerEvent: {}
+[3.111627] (-) TimerEvent: {}
+[3.212533] (-) TimerEvent: {}
+[3.313073] (-) TimerEvent: {}
+[3.413625] (-) TimerEvent: {}
+[3.514108] (-) TimerEvent: {}
+[3.614476] (-) TimerEvent: {}
+[3.714829] (-) TimerEvent: {}
+[3.815200] (-) TimerEvent: {}
+[3.915522] (-) TimerEvent: {}
+[4.015855] (-) TimerEvent: {}
+[4.116194] (-) TimerEvent: {}
+[4.216536] (-) TimerEvent: {}
+[4.316878] (-) TimerEvent: {}
+[4.417233] (-) TimerEvent: {}
+[4.517596] (-) TimerEvent: {}
+[4.617967] (-) TimerEvent: {}
+[4.718317] (-) TimerEvent: {}
+[4.818663] (-) TimerEvent: {}
+[4.919016] (-) TimerEvent: {}
+[5.019383] (-) TimerEvent: {}
+[5.119746] (-) TimerEvent: {}
+[5.220117] (-) TimerEvent: {}
+[5.320480] (-) TimerEvent: {}
+[5.420829] (-) TimerEvent: {}
+[5.521207] (-) TimerEvent: {}
+[5.621563] (-) TimerEvent: {}
+[5.721937] (-) TimerEvent: {}
+[5.822289] (-) TimerEvent: {}
+[5.922724] (-) TimerEvent: {}
+[6.023187] (-) TimerEvent: {}
+[6.123790] (-) TimerEvent: {}
+[6.224343] (-) TimerEvent: {}
+[6.324772] (-) TimerEvent: {}
+[6.425225] (-) TimerEvent: {}
+[6.525737] (-) TimerEvent: {}
+[6.626150] (-) TimerEvent: {}
+[6.726632] (-) TimerEvent: {}
+[6.822440] (c4_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/src/c4_gps/src/gps_publisher.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMinimalPublisher::MinimalPublisher()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.822914] (c4_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/src/c4_gps/src/gps_publisher.cpp:39:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""ms\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.823183] (c4_gps) StderrLine: {'line': b'   39 |         \x1b[01;31m\x1b[K500ms\x1b[m\x1b[K, std::bind(&MinimalPublisher::timer_callback, this));\n'}
+[6.823428] (c4_gps) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.826810] (-) TimerEvent: {}
+[6.867241] (c4_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/src/c4_gps/src/gps_publisher.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalPublisher::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.867755] (c4_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/src/c4_gps/src/gps_publisher.cpp:55:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KreturnValue\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.868050] (c4_gps) StderrLine: {'line': b'   55 |     int \x1b[01;35m\x1b[KreturnValue\x1b[m\x1b[K = 0;\n'}
+[6.868299] (c4_gps) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.927025] (-) TimerEvent: {}
+[7.027625] (-) TimerEvent: {}
+[7.128136] (-) TimerEvent: {}
+[7.228497] (-) TimerEvent: {}
+[7.328839] (-) TimerEvent: {}
+[7.429189] (-) TimerEvent: {}
+[7.529605] (-) TimerEvent: {}
+[7.630197] (-) TimerEvent: {}
+[7.730740] (-) TimerEvent: {}
+[7.831094] (-) TimerEvent: {}
+[7.931466] (-) TimerEvent: {}
+[8.031827] (-) TimerEvent: {}
+[8.132259] (-) TimerEvent: {}
+[8.232866] (-) TimerEvent: {}
+[8.333485] (-) TimerEvent: {}
+[8.433897] (-) TimerEvent: {}
+[8.534460] (-) TimerEvent: {}
+[8.567803] (c4_gps) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/gps_publisher.cpp.o] Error 1\n'}
+[8.568144] (c4_gps) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/talker.dir/all] Error 2\n'}
+[8.568448] (c4_gps) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.571161] (c4_gps) CommandEnded: {'returncode': 2}
+[8.634625] (-) TimerEvent: {}
+[8.668543] (c4_gps) JobEnded: {'identifier': 'c4_gps', 'rc': 2}
+[8.680377] (-) EventReactorShutdown: {}

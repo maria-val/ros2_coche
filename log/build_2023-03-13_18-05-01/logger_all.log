@@ -1,0 +1,141 @@
+[0.529s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.529s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f5df4a47070>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f5df51cf0d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f5df51cf0d0>>)
+[0.576s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.576s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.576s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.576s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.576s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.576s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.576s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/maria/ros2_coche'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/c4_gps) by extensions ['ignore', 'ignore_ament_install']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/c4_gps) by extension 'ignore'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/c4_gps) by extension 'ignore_ament_install'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/c4_gps) by extensions ['colcon_pkg']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/c4_gps) by extension 'colcon_pkg'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/c4_gps) by extensions ['colcon_meta']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/c4_gps) by extension 'colcon_meta'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/c4_gps) by extensions ['ros']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/c4_gps) by extension 'ros'
+[0.602s] DEBUG:colcon.colcon_core.package_identification:Package 'src/c4_gps' with type 'ros.ament_cmake' and name 'c4_gps'
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.641s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 284 installed packages in /opt/ros/humble
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.746s] Level 5:colcon.colcon_core.verb:set package 'c4_gps' build argument 'cmake_args' from command line to 'None'
+[0.746s] Level 5:colcon.colcon_core.verb:set package 'c4_gps' build argument 'cmake_target' from command line to 'None'
+[0.746s] Level 5:colcon.colcon_core.verb:set package 'c4_gps' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.746s] Level 5:colcon.colcon_core.verb:set package 'c4_gps' build argument 'cmake_clean_cache' from command line to 'False'
+[0.746s] Level 5:colcon.colcon_core.verb:set package 'c4_gps' build argument 'cmake_clean_first' from command line to 'False'
+[0.746s] Level 5:colcon.colcon_core.verb:set package 'c4_gps' build argument 'cmake_force_configure' from command line to 'False'
+[0.746s] Level 5:colcon.colcon_core.verb:set package 'c4_gps' build argument 'ament_cmake_args' from command line to 'None'
+[0.746s] Level 5:colcon.colcon_core.verb:set package 'c4_gps' build argument 'catkin_cmake_args' from command line to 'None'
+[0.746s] Level 5:colcon.colcon_core.verb:set package 'c4_gps' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.746s] DEBUG:colcon.colcon_core.verb:Building package 'c4_gps' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maria/ros2_coche/build/c4_gps', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maria/ros2_coche/install/c4_gps', 'merge_install': False, 'path': '/home/maria/ros2_coche/src/c4_gps', 'symlink_install': False, 'test_result_base': None}
+[0.747s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.752s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.752s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maria/ros2_coche/src/c4_gps' with build type 'ament_cmake'
+[0.752s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maria/ros2_coche/src/c4_gps'
+[0.759s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.759s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.760s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maria/ros2_coche/build/c4_gps': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12
+[9.434s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maria/ros2_coche/build/c4_gps' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12
+[9.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maria/ros2_coche/build/c4_gps': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maria/ros2_coche/build/c4_gps
+[9.573s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(c4_gps)
+[9.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maria/ros2_coche/build/c4_gps' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maria/ros2_coche/build/c4_gps
+[9.594s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps' for CMake module files
+[9.596s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps' for CMake config files
+[9.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('c4_gps', 'cmake_prefix_path')
+[9.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/hook/cmake_prefix_path.ps1'
+[9.607s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/hook/cmake_prefix_path.dsv'
+[9.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/hook/cmake_prefix_path.sh'
+[9.613s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps/lib'
+[9.614s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps/bin'
+[9.614s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps/lib/pkgconfig/c4_gps.pc'
+[9.615s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps/lib/python3.10/site-packages'
+[9.616s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps/bin'
+[9.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.ps1'
+[9.624s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.dsv'
+[9.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.sh'
+[9.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.bash'
+[9.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.zsh'
+[9.633s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maria/ros2_coche/install/c4_gps/share/colcon-core/packages/c4_gps)
+[9.713s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(c4_gps)
+[9.722s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps' for CMake module files
+[9.723s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps' for CMake config files
+[9.724s] Level 1:colcon.colcon_core.shell:create_environment_hook('c4_gps', 'cmake_prefix_path')
+[9.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/hook/cmake_prefix_path.ps1'
+[9.730s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/hook/cmake_prefix_path.dsv'
+[9.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/hook/cmake_prefix_path.sh'
+[9.733s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps/lib'
+[9.734s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps/bin'
+[9.734s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps/lib/pkgconfig/c4_gps.pc'
+[9.735s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps/lib/python3.10/site-packages'
+[9.735s] Level 1:colcon.colcon_core.environment:checking '/home/maria/ros2_coche/install/c4_gps/bin'
+[9.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.ps1'
+[9.741s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.dsv'
+[9.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.sh'
+[9.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.bash'
+[9.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.zsh'
+[9.746s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maria/ros2_coche/install/c4_gps/share/colcon-core/packages/c4_gps)
+[9.747s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.748s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.749s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.749s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.765s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[9.765s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.766s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.766s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.849s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.857s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maria/ros2_coche/install/local_setup.ps1'
+[9.862s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/maria/ros2_coche/install/_local_setup_util_ps1.py'
+[9.869s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maria/ros2_coche/install/setup.ps1'
+[9.874s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maria/ros2_coche/install/local_setup.sh'
+[9.877s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/maria/ros2_coche/install/_local_setup_util_sh.py'
+[9.880s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maria/ros2_coche/install/setup.sh'
+[9.888s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maria/ros2_coche/install/local_setup.bash'
+[9.891s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maria/ros2_coche/install/setup.bash'
+[9.898s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maria/ros2_coche/install/local_setup.zsh'
+[9.901s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maria/ros2_coche/install/setup.zsh'

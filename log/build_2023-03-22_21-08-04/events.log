@@ -1,0 +1,318 @@
+[0.000000] (-) TimerEvent: {}
+[0.000162] (c4_gps) JobQueued: {'identifier': 'c4_gps', 'dependencies': OrderedDict()}
+[0.000248] (nmea_msgs) JobQueued: {'identifier': 'nmea_msgs', 'dependencies': OrderedDict()}
+[0.000380] (c4_gps) JobStarted: {'identifier': 'c4_gps'}
+[0.017375] (nmea_msgs) JobStarted: {'identifier': 'nmea_msgs'}
+[0.027935] (c4_gps) JobProgress: {'identifier': 'c4_gps', 'progress': 'cmake'}
+[0.029389] (c4_gps) JobProgress: {'identifier': 'c4_gps', 'progress': 'build'}
+[0.030878] (c4_gps) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maria/ros2_coche/build/c4_gps', '--', '-j12', '-l12'], 'cwd': '/home/maria/ros2_coche/build/c4_gps', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('KDE_FULL_SESSION', 'true'), ('USER', 'maria'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1403'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('XCURSOR_SIZE', '24'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maria'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/maria/ros2_coche/src'), ('TERM_PROGRAM_VERSION', '1.76.2'), ('DESKTOP_SESSION', 'plasma'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/maria/.gtkrc:/home/maria/.config/gtkrc'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('KDE_SESSION_VERSION', '5'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1250'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maria'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/maria/.gtkrc-2.0:/home/maria/.config/gtkrc-2.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kubuntu:@/tmp/.ICE-unix/1560,unix/kubuntu:/tmp/.ICE-unix/1560'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/maria/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-98fcad25c7.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXkOnwn0/agent.1267'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'KDE'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('XDG_VTNR', '1'), ('PWD', '/home/maria/ros2_coche/build/c4_gps'), ('XDG_CONFIG_DIRS', '/home/maria/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C'), ('LC_PAPER', 'es_ES.UTF-8'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.036000] (nmea_msgs) JobProgress: {'identifier': 'nmea_msgs', 'progress': 'cmake'}
+[0.036825] (nmea_msgs) JobProgress: {'identifier': 'nmea_msgs', 'progress': 'build'}
+[0.038129] (nmea_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maria/ros2_coche/build/nmea_msgs', '--', '-j12', '-l12'], 'cwd': '/home/maria/ros2_coche/build/nmea_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('KDE_FULL_SESSION', 'true'), ('USER', 'maria'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1403'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('XCURSOR_SIZE', '24'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maria'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/maria/ros2_coche/src'), ('TERM_PROGRAM_VERSION', '1.76.2'), ('DESKTOP_SESSION', 'plasma'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/maria/.gtkrc:/home/maria/.config/gtkrc'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('KDE_SESSION_VERSION', '5'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1250'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maria'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/maria/.gtkrc-2.0:/home/maria/.config/gtkrc-2.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kubuntu:@/tmp/.ICE-unix/1560,unix/kubuntu:/tmp/.ICE-unix/1560'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/maria/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-98fcad25c7.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXkOnwn0/agent.1267'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'KDE'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('XDG_VTNR', '1'), ('PWD', '/home/maria/ros2_coche/build/nmea_msgs'), ('XDG_CONFIG_DIRS', '/home/maria/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C'), ('LC_PAPER', 'es_ES.UTF-8'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.084981] (nmea_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098752] (-) TimerEvent: {}
+[0.174487] (c4_gps) StdoutLine: {'line': b'[100%] Built target talker\n'}
+[0.198886] (-) TimerEvent: {}
+[0.208423] (c4_gps) CommandEnded: {'returncode': 0}
+[0.292799] (c4_gps) JobProgress: {'identifier': 'c4_gps', 'progress': 'install'}
+[0.299058] (-) TimerEvent: {}
+[0.321896] (c4_gps) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/maria/ros2_coche/build/c4_gps'], 'cwd': '/home/maria/ros2_coche/build/c4_gps', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('KDE_FULL_SESSION', 'true'), ('USER', 'maria'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1403'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('XCURSOR_SIZE', '24'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maria'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/maria/ros2_coche/src'), ('TERM_PROGRAM_VERSION', '1.76.2'), ('DESKTOP_SESSION', 'plasma'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/maria/.gtkrc:/home/maria/.config/gtkrc'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('KDE_SESSION_VERSION', '5'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1250'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maria'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/maria/.gtkrc-2.0:/home/maria/.config/gtkrc-2.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kubuntu:@/tmp/.ICE-unix/1560,unix/kubuntu:/tmp/.ICE-unix/1560'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/maria/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-98fcad25c7.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXkOnwn0/agent.1267'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'KDE'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('XDG_VTNR', '1'), ('PWD', '/home/maria/ros2_coche/build/c4_gps'), ('XDG_CONFIG_DIRS', '/home/maria/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C'), ('LC_PAPER', 'es_ES.UTF-8'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.347135] (c4_gps) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.348577] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/lib/c4_gps/talker\n'}
+[0.349924] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/package_run_dependencies/c4_gps\n'}
+[0.351169] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/parent_prefix_path/c4_gps\n'}
+[0.352131] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/ament_prefix_path.sh\n'}
+[0.352920] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/ament_prefix_path.dsv\n'}
+[0.353551] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/path.sh\n'}
+[0.354367] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/path.dsv\n'}
+[0.355007] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.bash\n'}
+[0.355746] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.sh\n'}
+[0.356298] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.zsh\n'}
+[0.356895] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.dsv\n'}
+[0.357491] (c4_gps) StdoutLine: {'line': b'-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.dsv\n'}
+[0.358119] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/packages/c4_gps\n'}
+[0.358758] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/cmake/c4_gpsConfig.cmake\n'}
+[0.359357] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/cmake/c4_gpsConfig-version.cmake\n'}
+[0.359707] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.xml\n'}
+[0.362869] (c4_gps) CommandEnded: {'returncode': 0}
+[0.399540] (-) TimerEvent: {}
+[0.500240] (-) TimerEvent: {}
+[0.590720] (c4_gps) JobEnded: {'identifier': 'c4_gps', 'rc': 0}
+[0.600495] (-) TimerEvent: {}
+[0.667911] (nmea_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.700659] (-) TimerEvent: {}
+[0.729722] (nmea_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.739025] (nmea_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.759206] (nmea_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.793442] (nmea_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.800816] (-) TimerEvent: {}
+[0.846568] (nmea_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.900948] (-) TimerEvent: {}
+[0.958353] (nmea_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.001081] (-) TimerEvent: {}
+[1.101464] (-) TimerEvent: {}
+[1.202068] (-) TimerEvent: {}
+[1.302769] (-) TimerEvent: {}
+[1.403373] (-) TimerEvent: {}
+[1.503837] (-) TimerEvent: {}
+[1.604386] (-) TimerEvent: {}
+[1.704958] (-) TimerEvent: {}
+[1.805533] (-) TimerEvent: {}
+[1.906133] (-) TimerEvent: {}
+[1.924731] (nmea_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.006282] (-) TimerEvent: {}
+[2.106794] (-) TimerEvent: {}
+[2.207263] (-) TimerEvent: {}
+[2.307879] (-) TimerEvent: {}
+[2.408334] (-) TimerEvent: {}
+[2.508912] (-) TimerEvent: {}
+[2.609370] (-) TimerEvent: {}
+[2.709941] (-) TimerEvent: {}
+[2.810442] (-) TimerEvent: {}
+[2.911027] (-) TimerEvent: {}
+[3.011487] (-) TimerEvent: {}
+[3.025823] (nmea_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.111668] (-) TimerEvent: {}
+[3.212142] (-) TimerEvent: {}
+[3.312618] (-) TimerEvent: {}
+[3.413095] (-) TimerEvent: {}
+[3.452875] (nmea_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.513273] (-) TimerEvent: {}
+[3.517648] (nmea_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.585793] (nmea_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.586181] (nmea_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.586395] (nmea_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.613430] (-) TimerEvent: {}
+[3.684098] (nmea_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.713596] (-) TimerEvent: {}
+[3.809021] (nmea_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.813749] (-) TimerEvent: {}
+[3.817626] (nmea_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/maria/ros2_coche/build/nmea_msgs\n'}
+[3.869382] (nmea_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.887417] (nmea_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.900540] (nmea_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_nmea_msgs\n'}
+[3.913912] (-) TimerEvent: {}
+[4.014556] (-) TimerEvent: {}
+[4.115190] (-) TimerEvent: {}
+[4.215728] (-) TimerEvent: {}
+[4.316042] (-) TimerEvent: {}
+[4.411949] (nmea_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.413593] (nmea_msgs) StdoutLine: {'line': b'writing nmea_msgs.egg-info/PKG-INFO\n'}
+[4.414916] (nmea_msgs) StdoutLine: {'line': b'writing dependency_links to nmea_msgs.egg-info/dependency_links.txt\n'}
+[4.415227] (nmea_msgs) StdoutLine: {'line': b'writing top-level names to nmea_msgs.egg-info/top_level.txt\n'}
+[4.416148] (-) TimerEvent: {}
+[4.419066] (nmea_msgs) StdoutLine: {'line': b"reading manifest file 'nmea_msgs.egg-info/SOURCES.txt'\n"}
+[4.419900] (nmea_msgs) StdoutLine: {'line': b"writing manifest file 'nmea_msgs.egg-info/SOURCES.txt'\n"}
+[4.470361] (nmea_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_nmea_msgs_egg\n'}
+[4.516253] (-) TimerEvent: {}
+[4.616605] (-) TimerEvent: {}
+[4.716939] (-) TimerEvent: {}
+[4.817282] (-) TimerEvent: {}
+[4.917610] (-) TimerEvent: {}
+[5.017940] (-) TimerEvent: {}
+[5.118284] (-) TimerEvent: {}
+[5.218629] (-) TimerEvent: {}
+[5.259732] (nmea_msgs) StdoutLine: {'line': b'[  2%] Built target nmea_msgs__cpp\n'}
+[5.274163] (nmea_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.274552] (nmea_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.274798] (nmea_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.318748] (-) TimerEvent: {}
+[5.378040] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_generator_c\x1b[0m\n'}
+[5.395399] (nmea_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpgsv__functions.c.o\x1b[0m\n'}
+[5.398321] (nmea_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpgga__functions.c.o\x1b[0m\n'}
+[5.398666] (nmea_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpgsa__functions.c.o\x1b[0m\n'}
+[5.399175] (nmea_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpgsv_satellite__functions.c.o\x1b[0m\n'}
+[5.399435] (nmea_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gprmc__functions.c.o\x1b[0m\n'}
+[5.399956] (nmea_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpgst__functions.c.o\x1b[0m\n'}
+[5.400195] (nmea_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/sentence__functions.c.o\x1b[0m\n'}
+[5.418861] (-) TimerEvent: {}
+[5.422257] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/gpgsv__functions.h:19\x1b[m\x1b[K,\n'}
+[5.424092] (nmea_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/gpgsv__functions.c:4\x1b[m\x1b[K:\n'}
+[5.425477] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/gpgsv__struct.h:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.h: No such file or directory\n'}
+[5.426867] (nmea_msgs) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.h"\x1b[m\x1b[K\n'}
+[5.428135] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.429403] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[5.430991] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_generator_c.dir/build.make:261: CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpgsv__functions.c.o] Error 1\n'}
+[5.432625] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[5.434012] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/gpgst__functions.h:19\x1b[m\x1b[K,\n'}
+[5.434452] (nmea_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/gpgst__functions.c:4\x1b[m\x1b[K:\n'}
+[5.434725] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/gpgst__struct.h:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.h: No such file or directory\n'}
+[5.434918] (nmea_msgs) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.h"\x1b[m\x1b[K\n'}
+[5.435104] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.435536] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[5.435723] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_generator_c.dir/build.make:303: CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpgst__functions.c.o] Error 1\n'}
+[5.435904] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/gprmc__functions.h:19\x1b[m\x1b[K,\n'}
+[5.436080] (nmea_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/gprmc__functions.c:4\x1b[m\x1b[K:\n'}
+[5.436257] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/gprmc__struct.h:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.h: No such file or directory\n'}
+[5.436447] (nmea_msgs) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.h"\x1b[m\x1b[K\n'}
+[5.436748] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.436924] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/sentence__functions.h:19\x1b[m\x1b[K,\n'}
+[5.437088] (nmea_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/sentence__functions.c:4\x1b[m\x1b[K:\n'}
+[5.437257] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/sentence__struct.h:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.h: No such file or directory\n'}
+[5.437431] (nmea_msgs) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.h"\x1b[m\x1b[K\n'}
+[5.437595] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.437761] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[5.437918] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[5.438116] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/gpgsa__functions.h:19\x1b[m\x1b[K,\n'}
+[5.438286] (nmea_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/gpgsa__functions.c:4\x1b[m\x1b[K:\n'}
+[5.438449] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_c/nmea_msgs/msg/detail/gpgsa__struct.h:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.h: No such file or directory\n'}
+[5.438615] (nmea_msgs) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.h"\x1b[m\x1b[K\n'}
+[5.438776] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.438936] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[5.439095] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_generator_c.dir/build.make:289: CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gprmc__functions.c.o] Error 1\n'}
+[5.439257] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_generator_c.dir/build.make:317: CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/sentence__functions.c.o] Error 1\n'}
+[5.439441] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_generator_c.dir/build.make:247: CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpgsa__functions.c.o] Error 1\n'}
+[5.489844] (nmea_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/nmea_msgs__rosidl_generator_c.dir/all] Error 2\n'}
+[5.490107] (nmea_msgs) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.518986] (-) TimerEvent: {}
+[5.619305] (-) TimerEvent: {}
+[5.719627] (-) TimerEvent: {}
+[5.819933] (-) TimerEvent: {}
+[5.920251] (-) TimerEvent: {}
+[6.020557] (-) TimerEvent: {}
+[6.120871] (-) TimerEvent: {}
+[6.221237] (-) TimerEvent: {}
+[6.272085] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[6.295872] (nmea_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpgga__type_support.cpp.o\x1b[0m\n'}
+[6.296333] (nmea_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpgsa__type_support.cpp.o\x1b[0m\n'}
+[6.296702] (nmea_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpgsv_satellite__type_support.cpp.o\x1b[0m\n'}
+[6.298254] (nmea_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gprmc__type_support.cpp.o\x1b[0m\n'}
+[6.298594] (nmea_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpgst__type_support.cpp.o\x1b[0m\n'}
+[6.298905] (nmea_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpgsv__type_support.cpp.o\x1b[0m\n'}
+[6.299198] (nmea_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/sentence__type_support.cpp.o\x1b[0m\n'}
+[6.321347] (-) TimerEvent: {}
+[6.421744] (-) TimerEvent: {}
+[6.452539] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_cpp/nmea_msgs/msg/gpgsv__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[6.452902] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gpgsv__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.453077] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.453234] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.453386] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.453666] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_cpp/nmea_msgs/msg/gpgsa__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[6.453831] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gpgsa__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.454019] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.454185] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.454338] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.455275] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/build.make:170: CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpgsv__type_support.cpp.o] Error 1\n'}
+[6.455526] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[6.456682] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/build.make:156: CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpgsa__type_support.cpp.o] Error 1\n'}
+[6.459106] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_cpp/nmea_msgs/msg/sentence__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[6.459424] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/sentence__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.459609] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.459805] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.459976] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.460883] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_cpp/nmea_msgs/msg/gpgst__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[6.461118] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gpgst__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.461305] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.461470] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.461716] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.461890] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/build.make:226: CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/sentence__type_support.cpp.o] Error 1\n'}
+[6.463305] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/build.make:212: CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpgst__type_support.cpp.o] Error 1\n'}
+[6.478336] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_cpp/nmea_msgs/msg/gprmc__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[6.478682] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gprmc__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.478907] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.479105] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.479311] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.479502] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/build.make:198: CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gprmc__type_support.cpp.o] Error 1\n'}
+[6.501378] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[6.521900] (-) TimerEvent: {}
+[6.525999] (nmea_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpgsa__type_support.cpp.o\x1b[0m\n'}
+[6.527113] (nmea_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpgsv_satellite__type_support.cpp.o\x1b[0m\n'}
+[6.527515] (nmea_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gprmc__type_support.cpp.o\x1b[0m\n'}
+[6.528030] (nmea_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpgsv__type_support.cpp.o\x1b[0m\n'}
+[6.528325] (nmea_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpgst__type_support.cpp.o\x1b[0m\n'}
+[6.529065] (nmea_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/sentence__type_support.cpp.o\x1b[0m\n'}
+[6.532266] (nmea_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpgga__type_support.cpp.o\x1b[0m\n'}
+[6.622049] (-) TimerEvent: {}
+[6.700157] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpgsa__type_support.cpp:12\x1b[m\x1b[K:\n'}
+[6.700518] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gpgsa__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.700713] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.700999] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.701268] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.701440] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gprmc__type_support.cpp:12\x1b[m\x1b[K:\n'}
+[6.701607] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gprmc__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.701774] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.701944] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.702155] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.703111] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:179: CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpgsa__type_support.cpp.o] Error 1\n'}
+[6.703336] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[6.703600] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:221: CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gprmc__type_support.cpp.o] Error 1\n'}
+[6.708348] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpgsv__type_support.cpp:12\x1b[m\x1b[K:\n'}
+[6.708646] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gpgsv__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.708858] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.709058] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.709251] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpgst__type_support.cpp:12\x1b[m\x1b[K:\n'}
+[6.709443] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gpgst__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.709663] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.709855] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.710072] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.710263] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.710614] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:193: CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpgsv__type_support.cpp.o] Error 1\n'}
+[6.710933] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:235: CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpgst__type_support.cpp.o] Error 1\n'}
+[6.713427] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/sentence__type_support.cpp:12\x1b[m\x1b[K:\n'}
+[6.713689] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/sentence__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.713896] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.714120] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.714311] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.715746] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:249: CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/sentence__type_support.cpp.o] Error 1\n'}
+[6.722178] (-) TimerEvent: {}
+[6.758986] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[6.787958] (nmea_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpgst__type_support.cpp.o\x1b[0m\n'}
+[6.788914] (nmea_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpgsa__type_support.cpp.o\x1b[0m\n'}
+[6.789518] (nmea_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpgga__type_support.cpp.o\x1b[0m\n'}
+[6.789911] (nmea_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gprmc__type_support.cpp.o\x1b[0m\n'}
+[6.793680] (nmea_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpgsv__type_support.cpp.o\x1b[0m\n'}
+[6.803841] (nmea_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/sentence__type_support.cpp.o\x1b[0m\n'}
+[6.804298] (nmea_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpgsv_satellite__type_support.cpp.o\x1b[0m\n'}
+[6.822307] (-) TimerEvent: {}
+[6.921686] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/gpgsa__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[6.922052] (nmea_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpgsa__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[6.922289] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gpgsa__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.922503] (-) TimerEvent: {}
+[6.925801] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.926849] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.927051] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.927216] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:179: CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpgsa__type_support.cpp.o] Error 1\n'}
+[6.927382] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[6.947377] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/gprmc__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[6.947689] (nmea_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gprmc__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[6.948039] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gprmc__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.948308] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.948523] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.948733] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.948956] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:221: CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gprmc__type_support.cpp.o] Error 1\n'}
+[6.949206] (nmea_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/all] Error 2\n'}
+[6.949544] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/gpgst__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[6.949802] (nmea_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpgst__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[6.950071] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gpgst__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.950302] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.950534] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.950695] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.951273] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:235: CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpgst__type_support.cpp.o] Error 1\n'}
+[6.959018] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/sentence__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[6.959334] (nmea_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/sentence__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[6.959512] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/sentence__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.959679] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.959841] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.960009] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.961369] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:249: CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/sentence__type_support.cpp.o] Error 1\n'}
+[6.966475] (nmea_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/gpgsv__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[6.966774] (nmea_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpgsv__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[6.966893] (nmea_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maria/ros2_coche/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gpgsv__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knmea_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[6.966995] (nmea_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"nmea_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[6.967092] (nmea_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.967186] (nmea_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[6.968155] (nmea_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:193: CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpgsv__type_support.cpp.o] Error 1\n'}
+[7.022653] (-) TimerEvent: {}
+[7.123075] (-) TimerEvent: {}
+[7.223474] (-) TimerEvent: {}
+[7.323879] (-) TimerEvent: {}
+[7.334640] (nmea_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/all] Error 2\n'}
+[7.424013] (-) TimerEvent: {}
+[7.514878] (nmea_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2\n'}
+[7.515228] (nmea_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.518090] (nmea_msgs) CommandEnded: {'returncode': 2}
+[7.524127] (-) TimerEvent: {}
+[7.624418] (-) TimerEvent: {}
+[7.724700] (-) TimerEvent: {}
+[7.761464] (nmea_msgs) JobEnded: {'identifier': 'nmea_msgs', 'rc': 2}
+[7.772028] (-) EventReactorShutdown: {}

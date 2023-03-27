@@ -1,0 +1,3 @@
+[0.021s] Invoking command in '/home/maria/ros2_coche/build/nmea_msgs': /usr/bin/cmake /home/maria/ros2_coche/src/nmea_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/maria/ros2_coche/install/nmea_msgs
+[0.034s] [0mCMake Error: The source "/home/maria/ros2_coche/src/nmea_msgs/CMakeLists.txt" does not match the source "/home/maria/ros2_coche/src/nmea_msgs-master/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.[0m
+[0.038s] Invoked command in '/home/maria/ros2_coche/build/nmea_msgs' returned '1': /usr/bin/cmake /home/maria/ros2_coche/src/nmea_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/maria/ros2_coche/install/nmea_msgs

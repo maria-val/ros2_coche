@@ -1,0 +1,8 @@
+source;share/c4_gps/hook/cmake_prefix_path.ps1
+source;share/c4_gps/hook/cmake_prefix_path.dsv
+source;share/c4_gps/hook/cmake_prefix_path.sh
+source;share/c4_gps/local_setup.bash
+source;share/c4_gps/local_setup.dsv
+source;share/c4_gps/local_setup.ps1
+source;share/c4_gps/local_setup.sh
+source;share/c4_gps/local_setup.zsh

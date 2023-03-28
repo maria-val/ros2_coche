@@ -34,8 +34,7 @@ public:
       : Node("trimble_gps") //constructor que llama al constructor Node, es decir, el constructor crea un nodo en ROS2
   {
     publisher_ = this->create_publisher<nmea_msgs::msg::Gpgga>("gga", 10);
-    timer_ = this->create_wall_timer(
-        500ms, std::bind(&TrimbleGps::timer_callback, this));
+
   }
 
 private:
@@ -49,24 +48,19 @@ private:
     struct sockaddr_in serv_addr;
     char messagegps[100];
     int msgSize;
-    // gps->m_gpsParser = new GPS_parser(gps->m_gpsMessageType);
-    //int returnValue = 0;
-
-    /*GPS_parser::GPS_dataRMC_t gpsdataRMC;
-    GPS_parser::GPS_dataGGA_t gpsdataGGA; */
 
     if ((sockFd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
-      std::cout << " [OpenGPSDevice]: not create socket" << std::endl;
+      std::cout << " [OpenGPSDevice]: socket not create" << std::endl;
     }
     else
     {
-      memset(&serv_addr, '0', sizeof(serv_addr));
+      memset(&serv_addr, '0', sizeof(serv_addr));  //pone ceros en la variable serv_addr
 
       serv_addr.sin_family = AF_INET;
-      serv_addr.sin_port = htons(m_port);
+      serv_addr.sin_port = htons(m_port); //se guarda el valor de m_port en big-endian (en orden)
 
-      if (inet_pton(AF_INET, "192.168.254.12", &serv_addr.sin_addr) <= 0)
+      if (inet_pton(AF_INET, "192.168.254.12", &serv_addr.sin_addr) <= 0) //necesario convertir la direccion IP para almacenarla en serv_addr.sin_addr
       {
         std::cout << " [OpenGPSDevice]: inet_pton error occurred" << std::endl;
       }
@@ -74,7 +68,7 @@ private:
       {
         if (connect(sockFd, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0)
         {
-          std::cout << " [OpenGPSDevice]: Connect Failed " << std::endl;
+          std::cout << " [OpenGPSDevice]: Failed Connection" << std::endl;
         }
         else
         {
@@ -83,46 +77,22 @@ private:
         }
       }
     }
+
     while (1)
     {
       if ((msgSize = read(sockFd, messagegps, sizeof(messagegps) - 1)) > 0)
       {
         messagegps[msgSize] = '\0';
-        printf("%s\n", messagegps);
-        message.data = messagegps;
-        publisher_->publish(message);
-        // call process data
-        /* if(gps->m_gpsParser->read_GPS(message)> 0)
-         {
-             switch(gps->m_gpsMessageType)
-             {
-             case GPS_parser::RMC:
-                 gps->m_gpsParser->get_GPSstruct(&gpsdataRMC);
-                 //gps->m_gpsRMCSync.Enqueue(&gpsdataRMC);
-                 break;
-             case GPS_parser::GGA:
-                 gps->m_gpsParser->get_GPSstruct(&gpsdataGGA);
-                 pthread_mutex_lock(&(gps->m_gps_GGA_data_mutex));
-                 gps->m_gps_GGA_data = gpsdataGGA;
-                 pthread_mutex_unlock(&(gps->m_gps_GGA_data_mutex));
-                 //sem_post(gps->m_HLC_sem);
-                 if(gpsFile != NULL)
-                     fprintf(gpsFile, "%.2lf %.3lf %.3lf %.3lf %d\n",
-                             gpsdataGGA.UTC_time,
-                             gpsdataGGA.writingTimeMS,
-                             gpsdataGGA.Easting,
-                             gpsdataGGA.Northing,
-                             gpsdataGGA.Quality);
-                 break;
-             default:
-                 break;
-             }
-         }
- */
+        if(messagegps != message.data)
+        {
+          printf("%s\n", messagegps);
+          message.data = messagegps;
+          publisher_->publish(message);
+        }
       }
     }
   }
-  rclcpp::TimerBase::SharedPtr timer_;
+
   rclcpp::Publisher<nmea_msgs::msg::Gpgga>::SharedPtr publisher_;
   size_t count_;
 };

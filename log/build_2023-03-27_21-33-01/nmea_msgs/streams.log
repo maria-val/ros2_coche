@@ -1,0 +1,257 @@
+[0.027s] Invoking command in '/home/maria/ros2_coche/build/nmea_msgs': CMAKE_PREFIX_PATH=/home/maria/ros2_coche/install/c4_gps:/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs /usr/bin/cmake /home/maria/ros2_coche/src/nmea_msgs -DCMAKE_INSTALL_PREFIX=/home/maria/ros2_coche/install/nmea_msgs
+[0.056s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.577s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.590s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[0.664s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.673s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.699s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.755s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.822s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.936s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.884s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.115s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.629s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.706s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.781s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.781s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.782s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.903s] -- Configuring done
+[4.036s] -- Generating done
+[4.044s] -- Build files have been written to: /home/maria/ros2_coche/build/nmea_msgs
+[4.056s] Invoked command in '/home/maria/ros2_coche/build/nmea_msgs' returned '0': CMAKE_PREFIX_PATH=/home/maria/ros2_coche/install/c4_gps:/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs /usr/bin/cmake /home/maria/ros2_coche/src/nmea_msgs -DCMAKE_INSTALL_PREFIX=/home/maria/ros2_coche/install/nmea_msgs
+[4.059s] Invoking command in '/home/maria/ros2_coche/build/nmea_msgs': CMAKE_PREFIX_PATH=/home/maria/ros2_coche/install/c4_gps:/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs /usr/bin/cmake --build /home/maria/ros2_coche/build/nmea_msgs -- -j12 -l12
+[4.120s] [35m[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_generator_c[0m
+[4.135s] [  1%] Built target nmea_msgs__cpp
+[4.145s] [ 12%] Built target nmea_msgs__rosidl_generator_c
+[4.153s] [ 12%] Built target ament_cmake_python_symlink_nmea_msgs
+[4.156s] [35m[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[4.158s] [35m[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_cpp[0m
+[4.163s] [35m[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_c[0m
+[4.164s] [35m[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_introspection_cpp[0m
+[4.166s] [35m[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_introspection_c[0m
+[4.173s] [35m[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_fastrtps_c[0m
+[4.182s] [ 24%] Built target nmea_msgs__rosidl_typesupport_c
+[4.189s] [ 35%] Built target nmea_msgs__rosidl_typesupport_fastrtps_cpp
+[4.194s] [ 46%] Built target nmea_msgs__rosidl_typesupport_cpp
+[4.195s] [ 58%] Built target nmea_msgs__rosidl_typesupport_introspection_c
+[4.199s] [ 69%] Built target nmea_msgs__rosidl_typesupport_introspection_cpp
+[4.209s] [ 81%] Built target nmea_msgs__rosidl_typesupport_fastrtps_c
+[4.241s] [ 81%] Built target nmea_msgs
+[4.271s] [ 82%] Built target nmea_msgs__py
+[4.287s] [35m[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_generator_py[0m
+[4.322s] [ 92%] Built target nmea_msgs__rosidl_generator_py
+[4.343s] [35m[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[4.343s] [35m[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_c__pyext[0m
+[4.344s] [35m[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[4.374s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/nmea_msgs/nmea_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.375s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/nmea_msgs/nmea_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.380s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/nmea_msgs/nmea_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.459s] [ 97%] Built target nmea_msgs__rosidl_typesupport_introspection_c__pyext
+[4.467s] [ 98%] Built target nmea_msgs__rosidl_typesupport_fastrtps_c__pyext
+[4.470s] [100%] Built target nmea_msgs__rosidl_typesupport_c__pyext
+[4.632s] running egg_info
+[4.633s] writing nmea_msgs.egg-info/PKG-INFO
+[4.634s] writing dependency_links to nmea_msgs.egg-info/dependency_links.txt
+[4.634s] writing top-level names to nmea_msgs.egg-info/top_level.txt
+[4.638s] reading manifest file 'nmea_msgs.egg-info/SOURCES.txt'
+[4.640s] writing manifest file 'nmea_msgs.egg-info/SOURCES.txt'
+[4.683s] [100%] Built target ament_cmake_python_build_nmea_msgs_egg
+[4.699s] Invoked command in '/home/maria/ros2_coche/build/nmea_msgs' returned '0': CMAKE_PREFIX_PATH=/home/maria/ros2_coche/install/c4_gps:/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs /usr/bin/cmake --build /home/maria/ros2_coche/build/nmea_msgs -- -j12 -l12
+[4.959s] Invoking command in '/home/maria/ros2_coche/build/nmea_msgs': CMAKE_PREFIX_PATH=/home/maria/ros2_coche/install/c4_gps:/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs /usr/bin/cmake --install /home/maria/ros2_coche/build/nmea_msgs
+[4.968s] -- Install configuration: ""
+[4.969s] -- Execute custom install script
+[4.969s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/ament_index/resource_index/rosidl_interfaces/nmea_msgs
+[4.981s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__functions.h
+[4.993s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__struct.h
+[5.005s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__type_support.h
+[5.018s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__functions.h
+[5.032s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__struct.h
+[5.046s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__type_support.h
+[5.058s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__functions.h
+[5.072s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__struct.h
+[5.085s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__type_support.h
+[5.098s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__functions.h
+[5.111s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__struct.h
+[5.123s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__type_support.h
+[5.136s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__functions.h
+[5.149s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__struct.h
+[5.161s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__type_support.h
+[5.175s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__functions.h
+[5.187s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__struct.h
+[5.200s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__type_support.h
+[5.213s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__functions.h
+[5.226s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__struct.h
+[5.238s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__type_support.h
+[5.251s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgga.h
+[5.264s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgsa.h
+[5.277s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgst.h
+[5.289s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgsv.h
+[5.303s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgsv_satellite.h
+[5.317s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gprmc.h
+[5.331s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/rosidl_generator_c__visibility_control.h
+[5.344s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/sentence.h
+[5.356s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/library_path.sh
+[5.370s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/library_path.dsv
+[5.386s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__rosidl_typesupport_fastrtps_c.h
+[5.399s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__rosidl_typesupport_fastrtps_c.h
+[5.412s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__rosidl_typesupport_fastrtps_c.h
+[5.424s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__rosidl_typesupport_fastrtps_c.h
+[5.436s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__rosidl_typesupport_fastrtps_c.h
+[5.449s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__rosidl_typesupport_fastrtps_c.h
+[5.462s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__rosidl_typesupport_fastrtps_c.h
+[5.475s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.488s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__builder.hpp
+[5.502s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__struct.hpp
+[5.513s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__traits.hpp
+[5.528s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__builder.hpp
+[5.541s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__struct.hpp
+[5.553s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__traits.hpp
+[5.566s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__builder.hpp
+[5.579s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__struct.hpp
+[5.591s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__traits.hpp
+[5.603s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__builder.hpp
+[5.615s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__struct.hpp
+[5.631s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__traits.hpp
+[5.644s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__builder.hpp
+[5.657s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__struct.hpp
+[5.670s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__traits.hpp
+[5.683s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__builder.hpp
+[5.696s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__struct.hpp
+[5.709s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__traits.hpp
+[5.722s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__builder.hpp
+[5.736s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__struct.hpp
+[5.749s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__traits.hpp
+[5.762s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgga.hpp
+[5.775s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgsa.hpp
+[5.787s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgst.hpp
+[5.800s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgsv.hpp
+[5.812s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgsv_satellite.hpp
+[5.825s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gprmc.hpp
+[5.836s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/sentence.hpp
+[5.851s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__rosidl_typesupport_fastrtps_cpp.hpp
+[5.864s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__rosidl_typesupport_fastrtps_cpp.hpp
+[5.876s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__rosidl_typesupport_fastrtps_cpp.hpp
+[5.887s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__rosidl_typesupport_fastrtps_cpp.hpp
+[5.900s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__rosidl_typesupport_fastrtps_cpp.hpp
+[5.911s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__rosidl_typesupport_fastrtps_cpp.hpp
+[5.924s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__rosidl_typesupport_fastrtps_cpp.hpp
+[5.938s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.951s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__rosidl_typesupport_introspection_c.h
+[5.962s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__rosidl_typesupport_introspection_c.h
+[5.973s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__rosidl_typesupport_introspection_c.h
+[5.984s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__rosidl_typesupport_introspection_c.h
+[5.995s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__rosidl_typesupport_introspection_c.h
+[6.006s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__rosidl_typesupport_introspection_c.h
+[6.017s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__rosidl_typesupport_introspection_c.h
+[6.029s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.042s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__rosidl_typesupport_introspection_cpp.hpp
+[6.054s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__rosidl_typesupport_introspection_cpp.hpp
+[6.065s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__rosidl_typesupport_introspection_cpp.hpp
+[6.076s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__rosidl_typesupport_introspection_cpp.hpp
+[6.087s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__rosidl_typesupport_introspection_cpp.hpp
+[6.098s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__rosidl_typesupport_introspection_cpp.hpp
+[6.109s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__rosidl_typesupport_introspection_cpp.hpp
+[6.120s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/pythonpath.sh
+[6.133s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/pythonpath.dsv
+[6.146s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs-1.1.0-py3.10.egg-info/PKG-INFO
+[6.158s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs-1.1.0-py3.10.egg-info/SOURCES.txt
+[6.169s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs-1.1.0-py3.10.egg-info/dependency_links.txt
+[6.180s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs-1.1.0-py3.10.egg-info/top_level.txt
+[6.192s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/__init__.py
+[6.202s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_c.c
+[6.213s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.224s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[6.237s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/libnmea_msgs__rosidl_generator_py.so
+[6.250s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/__init__.py
+[6.261s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgga.py
+[6.272s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgga_s.c
+[6.283s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgsa.py
+[6.294s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgsa_s.c
+[6.305s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgst.py
+[6.315s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgst_s.c
+[6.327s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgsv.py
+[6.340s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgsv_s.c
+[6.359s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgsv_satellite.py
+[6.377s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgsv_satellite_s.c
+[6.392s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gprmc.py
+[6.404s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gprmc_s.c
+[6.416s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_sentence.py
+[6.429s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_sentence_s.c
+[6.444s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/nmea_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.458s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/nmea_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.472s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/nmea_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.493s] -- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/nmea_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.493s] -- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/nmea_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.494s] -- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/nmea_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.495s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgga.idl
+[6.516s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgsa.idl
+[6.541s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgsv.idl
+[6.568s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/GpgsvSatellite.idl
+[6.590s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gprmc.idl
+[6.611s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgst.idl
+[6.634s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Sentence.idl
+[6.657s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgga.msg
+[6.678s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgsa.msg
+[6.698s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgsv.msg
+[6.718s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/GpgsvSatellite.msg
+[6.740s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gprmc.msg
+[6.762s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgst.msg
+[6.782s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Sentence.msg
+[6.802s] -- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgga.msg
+[6.803s] -- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgsa.msg
+[6.804s] -- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgst.msg
+[6.804s] -- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgsv.msg
+[6.804s] -- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/GpgsvSatellite.msg
+[6.805s] -- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gprmc.msg
+[6.805s] -- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Sentence.msg
+[6.805s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/ament_index/resource_index/package_run_dependencies/nmea_msgs
+[6.825s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/ament_index/resource_index/parent_prefix_path/nmea_msgs
+[6.880s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/ament_prefix_path.sh
+[6.909s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/ament_prefix_path.dsv
+[6.936s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/path.sh
+[6.966s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/path.dsv
+[7.003s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/local_setup.bash
+[7.034s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/local_setup.sh
+[7.066s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/local_setup.zsh
+[7.097s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/local_setup.dsv
+[7.123s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/package.dsv
+[7.148s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/ament_index/resource_index/packages/nmea_msgs
+[7.174s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/rosidl_cmake-extras.cmake
+[7.197s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.219s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.244s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[7.270s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[7.292s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.313s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.338s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgsConfig.cmake
+[7.364s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgsConfig-version.cmake
+[7.392s] -- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/package.xml
+[7.415s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_generator_c.so
+[7.416s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_typesupport_fastrtps_c.so
+[7.417s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_typesupport_fastrtps_cpp.so
+[7.418s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_typesupport_introspection_c.so
+[7.419s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_typesupport_c.so
+[7.420s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_typesupport_introspection_cpp.so
+[7.421s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_typesupport_cpp.so
+[7.552s] Listing '/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs'...
+[7.552s] Compiling '/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/__init__.py'...
+[7.552s] Listing '/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg'...
+[7.572s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_generator_py.so
+[7.573s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_generator_cExport.cmake
+[7.574s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_generator_cExport-noconfig.cmake
+[7.575s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[7.575s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.576s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_generator_cppExport.cmake
+[7.576s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.577s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.577s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_introspection_cExport.cmake
+[7.577s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.578s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_cExport.cmake
+[7.578s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[7.578s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[7.579s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.579s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_cppExport.cmake
+[7.579s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[7.580s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_generator_pyExport.cmake
+[7.580s] -- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_generator_pyExport-noconfig.cmake
+[7.591s] Invoked command in '/home/maria/ros2_coche/build/nmea_msgs' returned '0': CMAKE_PREFIX_PATH=/home/maria/ros2_coche/install/c4_gps:/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs /usr/bin/cmake --install /home/maria/ros2_coche/build/nmea_msgs

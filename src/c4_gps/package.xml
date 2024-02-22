@@ -3,8 +3,8 @@
 <package format="3">
   <name>c4_gps</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="maria@todo.todo">maria</maintainer>
+  <description>GPS publisher package</description>
+  <maintainer email="maria.dominguezv@edu.uah.es">Maria Dominguez</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

@@ -1,1 +1,1 @@
-
+/home/maria/ros2_coche/build/nmea_msgs/ament_cmake_python/nmea_msgs/nmea_msgs.egg-info/dependency_links.txt

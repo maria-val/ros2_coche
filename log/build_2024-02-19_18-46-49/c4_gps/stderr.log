@@ -1,0 +1,19 @@
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:[m[K In member function ‘[01m[Kvoid GpsReader::gpgga_callback()[m[K’:
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:43:47:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >::_sec_type[m[K’ {aka ‘[01m[Kint[m[K’} to non-scalar type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} requested
+   43 |       std::string time = [01;31m[Kmessage.header.stamp.sec[m[K;
+      |                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:44:38:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Knmea_msgs::msg::Gpgga_<std::allocator<void> >::_lat_type[m[K’ {aka ‘[01m[Kdouble[m[K’} to non-scalar type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} requested
+   44 |       std::string latitude = [01;31m[Kmessage.lat[m[K;
+      |                              [01;31m[K~~~~~~~~^~~[m[K
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:56:33:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid rclcpp::Executor::cancel()[m[K’ without object
+   56 |         [01;31m[Krclcpp::Executor::cancel()[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:88:81:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+   88 |           snprintf(message_struct, 200, "Timestamp: %s, Latitude: %s", timestamp[01;31m[K.[m[Kc_str(), latitude.c_str());
+      |                                                                                 [01;31m[K^[m[K
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:92:24:[m[K [01;31m[Kerror: [m[Kinvalid array assignment
+   92 |             [01;31m[Kmessagegps = message_struct[m[K;
+      |             [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/t_gps.dir/build.make:76: CMakeFiles/t_gps.dir/src/gps_reader.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/t_gps.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

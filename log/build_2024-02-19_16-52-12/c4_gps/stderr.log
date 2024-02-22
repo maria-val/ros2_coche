@@ -1,0 +1,10 @@
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:[m[K In member function ‘[01m[Kvoid TrimbleGps::gpgga_callback()[m[K’:
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:87:70:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kc_str[m[K’ in ‘[01m[Kmessage.nmea_msgs::msg::Gpgga_<std::allocator<void> >::header.std_msgs::msg::Header_<std::allocator<void> >::stamp.builtin_interfaces::msg::Time_<std::allocator<void> >::sec[m[K’, which is of non-class type ‘[01m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >::_sec_type[m[K’ {aka ‘[01m[Kint[m[K’}
+   87 |           message_struct = "Timestamp: " << message.header.stamp.sec.[01;31m[Kc_str[m[K() << ", Latitude: " << message.lat;
+      |                                                                      [01;31m[K^~~~~[m[K
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:91:24:[m[K [01;31m[Kerror: [m[Kinvalid array assignment
+   91 |             [01;31m[Kmessagegps = message_struct[m[K;
+      |             [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/t_gps.dir/build.make:76: CMakeFiles/t_gps.dir/src/trimble_gps.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/t_gps.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

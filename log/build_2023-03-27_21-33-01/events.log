@@ -1,0 +1,348 @@
+[0.000000] (-) TimerEvent: {}
+[0.000840] (-) JobUnselected: {'identifier': 'c4_gps'}
+[0.000925] (nmea_msgs) JobQueued: {'identifier': 'nmea_msgs', 'dependencies': OrderedDict()}
+[0.000966] (nmea_msgs) JobStarted: {'identifier': 'nmea_msgs'}
+[0.020214] (nmea_msgs) JobProgress: {'identifier': 'nmea_msgs', 'progress': 'cmake'}
+[0.021971] (nmea_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/maria/ros2_coche/src/nmea_msgs', '-DCMAKE_INSTALL_PREFIX=/home/maria/ros2_coche/install/nmea_msgs'], 'cwd': '/home/maria/ros2_coche/build/nmea_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('KDE_FULL_SESSION', 'true'), ('USER', 'maria'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1429'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('XCURSOR_SIZE', '24'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maria/ros2_coche/install/nmea_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maria'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('TERM_PROGRAM_VERSION', '1.76.2'), ('DESKTOP_SESSION', 'plasma'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/maria/.gtkrc:/home/maria/.config/gtkrc'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('KDE_SESSION_VERSION', '5'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1273'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/maria/ros2_coche/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maria'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/maria/.gtkrc-2.0:/home/maria/.config/gtkrc-2.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kubuntu:@/tmp/.ICE-unix/1589,unix/kubuntu:/tmp/.ICE-unix/1589'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/maria/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-58122be01d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXEuDRwB/agent.1291'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/maria/ros2_coche/install/c4_gps:/home/maria/ros2_coche/install/nmea_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'KDE'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('XDG_VTNR', '1'), ('PWD', '/home/maria/ros2_coche/build/nmea_msgs'), ('XDG_CONFIG_DIRS', '/home/maria/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C'), ('LC_PAPER', 'es_ES.UTF-8'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/maria/ros2_coche/install/c4_gps:/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs')]), 'shell': False}
+[0.056898] (nmea_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099167] (-) TimerEvent: {}
+[0.199874] (-) TimerEvent: {}
+[0.300444] (-) TimerEvent: {}
+[0.401172] (-) TimerEvent: {}
+[0.501775] (-) TimerEvent: {}
+[0.578125] (nmea_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.590320] (nmea_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.601890] (-) TimerEvent: {}
+[0.664268] (nmea_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.674177] (nmea_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.699686] (nmea_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.702118] (-) TimerEvent: {}
+[0.755570] (nmea_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.802336] (-) TimerEvent: {}
+[0.822320] (nmea_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.902465] (-) TimerEvent: {}
+[0.936944] (nmea_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.002658] (-) TimerEvent: {}
+[1.103159] (-) TimerEvent: {}
+[1.203750] (-) TimerEvent: {}
+[1.304292] (-) TimerEvent: {}
+[1.404797] (-) TimerEvent: {}
+[1.505221] (-) TimerEvent: {}
+[1.605822] (-) TimerEvent: {}
+[1.706445] (-) TimerEvent: {}
+[1.807008] (-) TimerEvent: {}
+[1.884169] (nmea_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.907200] (-) TimerEvent: {}
+[2.007749] (-) TimerEvent: {}
+[2.108261] (-) TimerEvent: {}
+[2.208754] (-) TimerEvent: {}
+[2.309266] (-) TimerEvent: {}
+[2.409754] (-) TimerEvent: {}
+[2.510238] (-) TimerEvent: {}
+[2.610894] (-) TimerEvent: {}
+[2.711404] (-) TimerEvent: {}
+[2.811905] (-) TimerEvent: {}
+[2.912418] (-) TimerEvent: {}
+[3.013247] (-) TimerEvent: {}
+[3.113886] (-) TimerEvent: {}
+[3.115327] (nmea_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.214048] (-) TimerEvent: {}
+[3.314648] (-) TimerEvent: {}
+[3.415284] (-) TimerEvent: {}
+[3.516189] (-) TimerEvent: {}
+[3.616726] (-) TimerEvent: {}
+[3.629746] (nmea_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.707031] (nmea_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.716844] (-) TimerEvent: {}
+[3.781576] (nmea_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.782132] (nmea_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.782508] (nmea_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.816977] (-) TimerEvent: {}
+[3.903727] (nmea_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.917138] (-) TimerEvent: {}
+[4.017737] (-) TimerEvent: {}
+[4.036993] (nmea_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[4.044453] (nmea_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/maria/ros2_coche/build/nmea_msgs\n'}
+[4.056715] (nmea_msgs) CommandEnded: {'returncode': 0}
+[4.059262] (nmea_msgs) JobProgress: {'identifier': 'nmea_msgs', 'progress': 'build'}
+[4.059511] (nmea_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maria/ros2_coche/build/nmea_msgs', '--', '-j12', '-l12'], 'cwd': '/home/maria/ros2_coche/build/nmea_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('KDE_FULL_SESSION', 'true'), ('USER', 'maria'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1429'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('XCURSOR_SIZE', '24'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maria/ros2_coche/install/nmea_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maria'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('TERM_PROGRAM_VERSION', '1.76.2'), ('DESKTOP_SESSION', 'plasma'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/maria/.gtkrc:/home/maria/.config/gtkrc'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('KDE_SESSION_VERSION', '5'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1273'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/maria/ros2_coche/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maria'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/maria/.gtkrc-2.0:/home/maria/.config/gtkrc-2.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kubuntu:@/tmp/.ICE-unix/1589,unix/kubuntu:/tmp/.ICE-unix/1589'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/maria/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-58122be01d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXEuDRwB/agent.1291'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/maria/ros2_coche/install/c4_gps:/home/maria/ros2_coche/install/nmea_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'KDE'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('XDG_VTNR', '1'), ('PWD', '/home/maria/ros2_coche/build/nmea_msgs'), ('XDG_CONFIG_DIRS', '/home/maria/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C'), ('LC_PAPER', 'es_ES.UTF-8'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/maria/ros2_coche/install/c4_gps:/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs')]), 'shell': False}
+[4.117859] (-) TimerEvent: {}
+[4.120576] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_generator_c\x1b[0m\n'}
+[4.136026] (nmea_msgs) StdoutLine: {'line': b'[  1%] Built target nmea_msgs__cpp\n'}
+[4.145520] (nmea_msgs) StdoutLine: {'line': b'[ 12%] Built target nmea_msgs__rosidl_generator_c\n'}
+[4.153910] (nmea_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_symlink_nmea_msgs\n'}
+[4.156804] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[4.158467] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[4.164161] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[4.164617] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[4.166833] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[4.173226] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.182348] (nmea_msgs) StdoutLine: {'line': b'[ 24%] Built target nmea_msgs__rosidl_typesupport_c\n'}
+[4.189462] (nmea_msgs) StdoutLine: {'line': b'[ 35%] Built target nmea_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.194804] (nmea_msgs) StdoutLine: {'line': b'[ 46%] Built target nmea_msgs__rosidl_typesupport_cpp\n'}
+[4.195982] (nmea_msgs) StdoutLine: {'line': b'[ 58%] Built target nmea_msgs__rosidl_typesupport_introspection_c\n'}
+[4.199774] (nmea_msgs) StdoutLine: {'line': b'[ 69%] Built target nmea_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.209966] (nmea_msgs) StdoutLine: {'line': b'[ 81%] Built target nmea_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.217969] (-) TimerEvent: {}
+[4.241743] (nmea_msgs) StdoutLine: {'line': b'[ 81%] Built target nmea_msgs\n'}
+[4.271780] (nmea_msgs) StdoutLine: {'line': b'[ 82%] Built target nmea_msgs__py\n'}
+[4.287931] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_generator_py\x1b[0m\n'}
+[4.318081] (-) TimerEvent: {}
+[4.322477] (nmea_msgs) StdoutLine: {'line': b'[ 92%] Built target nmea_msgs__rosidl_generator_py\n'}
+[4.343569] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.343887] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.344308] (nmea_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmea_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[4.374717] (nmea_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/nmea_msgs/nmea_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.376045] (nmea_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/nmea_msgs/nmea_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.380012] (nmea_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/nmea_msgs/nmea_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.418230] (-) TimerEvent: {}
+[4.460095] (nmea_msgs) StdoutLine: {'line': b'[ 97%] Built target nmea_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[4.467517] (nmea_msgs) StdoutLine: {'line': b'[ 98%] Built target nmea_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.470997] (nmea_msgs) StdoutLine: {'line': b'[100%] Built target nmea_msgs__rosidl_typesupport_c__pyext\n'}
+[4.518337] (-) TimerEvent: {}
+[4.618715] (-) TimerEvent: {}
+[4.632858] (nmea_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.634050] (nmea_msgs) StdoutLine: {'line': b'writing nmea_msgs.egg-info/PKG-INFO\n'}
+[4.634824] (nmea_msgs) StdoutLine: {'line': b'writing dependency_links to nmea_msgs.egg-info/dependency_links.txt\n'}
+[4.635160] (nmea_msgs) StdoutLine: {'line': b'writing top-level names to nmea_msgs.egg-info/top_level.txt\n'}
+[4.638653] (nmea_msgs) StdoutLine: {'line': b"reading manifest file 'nmea_msgs.egg-info/SOURCES.txt'\n"}
+[4.640260] (nmea_msgs) StdoutLine: {'line': b"writing manifest file 'nmea_msgs.egg-info/SOURCES.txt'\n"}
+[4.683420] (nmea_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_nmea_msgs_egg\n'}
+[4.699243] (nmea_msgs) CommandEnded: {'returncode': 0}
+[4.718815] (-) TimerEvent: {}
+[4.819122] (-) TimerEvent: {}
+[4.919432] (-) TimerEvent: {}
+[4.946727] (nmea_msgs) JobProgress: {'identifier': 'nmea_msgs', 'progress': 'install'}
+[4.959623] (nmea_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/maria/ros2_coche/build/nmea_msgs'], 'cwd': '/home/maria/ros2_coche/build/nmea_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('KDE_FULL_SESSION', 'true'), ('USER', 'maria'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1429'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('XCURSOR_SIZE', '24'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maria/ros2_coche/install/nmea_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maria'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('TERM_PROGRAM_VERSION', '1.76.2'), ('DESKTOP_SESSION', 'plasma'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/maria/.gtkrc:/home/maria/.config/gtkrc'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('KDE_SESSION_VERSION', '5'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1273'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/maria/ros2_coche/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maria'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/maria/.gtkrc-2.0:/home/maria/.config/gtkrc-2.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kubuntu:@/tmp/.ICE-unix/1589,unix/kubuntu:/tmp/.ICE-unix/1589'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/maria/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-58122be01d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXEuDRwB/agent.1291'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/maria/ros2_coche/install/c4_gps:/home/maria/ros2_coche/install/nmea_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'KDE'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('XDG_VTNR', '1'), ('PWD', '/home/maria/ros2_coche/build/nmea_msgs'), ('XDG_CONFIG_DIRS', '/home/maria/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C'), ('LC_PAPER', 'es_ES.UTF-8'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/maria/ros2_coche/install/c4_gps:/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs')]), 'shell': False}
+[4.969236] (nmea_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.970112] (nmea_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.970371] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/ament_index/resource_index/rosidl_interfaces/nmea_msgs\n'}
+[4.982305] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__functions.h\n'}
+[4.993514] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__struct.h\n'}
+[5.006114] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__type_support.h\n'}
+[5.019060] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__functions.h\n'}
+[5.019533] (-) TimerEvent: {}
+[5.032875] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__struct.h\n'}
+[5.046608] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__type_support.h\n'}
+[5.059220] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__functions.h\n'}
+[5.072597] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__struct.h\n'}
+[5.085589] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__type_support.h\n'}
+[5.099026] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__functions.h\n'}
+[5.112210] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__struct.h\n'}
+[5.119655] (-) TimerEvent: {}
+[5.124265] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__type_support.h\n'}
+[5.136773] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__functions.h\n'}
+[5.150317] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__struct.h\n'}
+[5.161975] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__type_support.h\n'}
+[5.175739] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__functions.h\n'}
+[5.187910] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__struct.h\n'}
+[5.201290] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__type_support.h\n'}
+[5.213982] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__functions.h\n'}
+[5.219784] (-) TimerEvent: {}
+[5.226423] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__struct.h\n'}
+[5.238815] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__type_support.h\n'}
+[5.252169] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgga.h\n'}
+[5.265185] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgsa.h\n'}
+[5.277967] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgst.h\n'}
+[5.289722] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgsv.h\n'}
+[5.303324] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgsv_satellite.h\n'}
+[5.317369] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gprmc.h\n'}
+[5.319916] (-) TimerEvent: {}
+[5.331594] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.344371] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/sentence.h\n'}
+[5.356679] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/library_path.sh\n'}
+[5.371138] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/library_path.dsv\n'}
+[5.386796] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__rosidl_typesupport_fastrtps_c.h\n'}
+[5.400153] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__rosidl_typesupport_fastrtps_c.h\n'}
+[5.412799] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__rosidl_typesupport_fastrtps_c.h\n'}
+[5.420021] (-) TimerEvent: {}
+[5.424606] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__rosidl_typesupport_fastrtps_c.h\n'}
+[5.436643] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__rosidl_typesupport_fastrtps_c.h\n'}
+[5.450124] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__rosidl_typesupport_fastrtps_c.h\n'}
+[5.462411] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__rosidl_typesupport_fastrtps_c.h\n'}
+[5.475242] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.488674] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__builder.hpp\n'}
+[5.502544] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__struct.hpp\n'}
+[5.514264] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__traits.hpp\n'}
+[5.520163] (-) TimerEvent: {}
+[5.528610] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__builder.hpp\n'}
+[5.541790] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__struct.hpp\n'}
+[5.554010] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__traits.hpp\n'}
+[5.566863] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__builder.hpp\n'}
+[5.579707] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__struct.hpp\n'}
+[5.591768] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__traits.hpp\n'}
+[5.604098] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__builder.hpp\n'}
+[5.616010] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__struct.hpp\n'}
+[5.620533] (-) TimerEvent: {}
+[5.631624] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__traits.hpp\n'}
+[5.644600] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__builder.hpp\n'}
+[5.657644] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__struct.hpp\n'}
+[5.671102] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__traits.hpp\n'}
+[5.684117] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__builder.hpp\n'}
+[5.697072] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__struct.hpp\n'}
+[5.709574] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__traits.hpp\n'}
+[5.720640] (-) TimerEvent: {}
+[5.723184] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__builder.hpp\n'}
+[5.736420] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__struct.hpp\n'}
+[5.749937] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__traits.hpp\n'}
+[5.762861] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgga.hpp\n'}
+[5.775400] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgsa.hpp\n'}
+[5.787944] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgst.hpp\n'}
+[5.800921] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgsv.hpp\n'}
+[5.813192] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gpgsv_satellite.hpp\n'}
+[5.820758] (-) TimerEvent: {}
+[5.826146] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/gprmc.hpp\n'}
+[5.837194] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/sentence.hpp\n'}
+[5.851352] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.864405] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.877150] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.888318] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.900388] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.912094] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.920890] (-) TimerEvent: {}
+[5.925105] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.938751] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.951774] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__rosidl_typesupport_introspection_c.h\n'}
+[5.962918] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__rosidl_typesupport_introspection_c.h\n'}
+[5.973929] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__rosidl_typesupport_introspection_c.h\n'}
+[5.985130] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__rosidl_typesupport_introspection_c.h\n'}
+[5.996155] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__rosidl_typesupport_introspection_c.h\n'}
+[6.007086] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__rosidl_typesupport_introspection_c.h\n'}
+[6.017934] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__rosidl_typesupport_introspection_c.h\n'}
+[6.020993] (-) TimerEvent: {}
+[6.029911] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.042748] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgga__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.055027] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsa__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.066318] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgst__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.077191] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.088107] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gpgsv_satellite__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.098882] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/gprmc__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.109749] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/include/nmea_msgs/nmea_msgs/msg/detail/sentence__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.120985] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/pythonpath.sh\n'}
+[6.121183] (-) TimerEvent: {}
+[6.134076] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/pythonpath.dsv\n'}
+[6.146941] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs-1.1.0-py3.10.egg-info/PKG-INFO\n'}
+[6.158512] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs-1.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.169559] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs-1.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.180660] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs-1.1.0-py3.10.egg-info/top_level.txt\n'}
+[6.192583] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/__init__.py\n'}
+[6.203287] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[6.214248] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.221310] (-) TimerEvent: {}
+[6.225309] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.237903] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/libnmea_msgs__rosidl_generator_py.so\n'}
+[6.250607] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/__init__.py\n'}
+[6.261794] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgga.py\n'}
+[6.272722] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgga_s.c\n'}
+[6.283694] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgsa.py\n'}
+[6.294567] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgsa_s.c\n'}
+[6.305394] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgst.py\n'}
+[6.316058] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgst_s.c\n'}
+[6.321423] (-) TimerEvent: {}
+[6.327370] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgsv.py\n'}
+[6.340586] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgsv_s.c\n'}
+[6.359950] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgsv_satellite.py\n'}
+[6.377862] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gpgsv_satellite_s.c\n'}
+[6.392904] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gprmc.py\n'}
+[6.404792] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_gprmc_s.c\n'}
+[6.416351] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_sentence.py\n'}
+[6.421558] (-) TimerEvent: {}
+[6.430004] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg/_sentence_s.c\n'}
+[6.444673] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/nmea_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.458477] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/nmea_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.472580] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/nmea_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.493277] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/nmea_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.494076] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/nmea_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.494864] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/nmea_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.495392] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgga.idl\n'}
+[6.517182] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgsa.idl\n'}
+[6.521726] (-) TimerEvent: {}
+[6.541862] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgsv.idl\n'}
+[6.568206] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/GpgsvSatellite.idl\n'}
+[6.590243] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gprmc.idl\n'}
+[6.611670] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgst.idl\n'}
+[6.621890] (-) TimerEvent: {}
+[6.634916] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Sentence.idl\n'}
+[6.658248] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgga.msg\n'}
+[6.678390] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgsa.msg\n'}
+[6.698325] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgsv.msg\n'}
+[6.718290] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/GpgsvSatellite.msg\n'}
+[6.721996] (-) TimerEvent: {}
+[6.740368] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gprmc.msg\n'}
+[6.762355] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgst.msg\n'}
+[6.782329] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Sentence.msg\n'}
+[6.803131] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgga.msg\n'}
+[6.803703] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgsa.msg\n'}
+[6.804180] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgst.msg\n'}
+[6.804695] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gpgsv.msg\n'}
+[6.805115] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/GpgsvSatellite.msg\n'}
+[6.805529] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Gprmc.msg\n'}
+[6.805764] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/msg/Sentence.msg\n'}
+[6.806076] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/ament_index/resource_index/package_run_dependencies/nmea_msgs\n'}
+[6.822155] (-) TimerEvent: {}
+[6.825786] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/ament_index/resource_index/parent_prefix_path/nmea_msgs\n'}
+[6.853757] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/ament_prefix_path.sh\n'}
+[6.909414] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/ament_prefix_path.dsv\n'}
+[6.922375] (-) TimerEvent: {}
+[6.936732] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/path.sh\n'}
+[6.966351] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/environment/path.dsv\n'}
+[7.003328] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/local_setup.bash\n'}
+[7.022588] (-) TimerEvent: {}
+[7.034858] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/local_setup.sh\n'}
+[7.066758] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/local_setup.zsh\n'}
+[7.097826] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/local_setup.dsv\n'}
+[7.122772] (-) TimerEvent: {}
+[7.123948] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/package.dsv\n'}
+[7.148823] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/ament_index/resource_index/packages/nmea_msgs\n'}
+[7.174538] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[7.197944] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.219615] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.222924] (-) TimerEvent: {}
+[7.244354] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.270116] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.292251] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.313921] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.323102] (-) TimerEvent: {}
+[7.338763] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgsConfig.cmake\n'}
+[7.364999] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgsConfig-version.cmake\n'}
+[7.392800] (nmea_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/package.xml\n'}
+[7.415440] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_generator_c.so\n'}
+[7.416601] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[7.417767] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.418876] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_typesupport_introspection_c.so\n'}
+[7.419858] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_typesupport_c.so\n'}
+[7.420954] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[7.422026] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_typesupport_cpp.so\n'}
+[7.423255] (-) TimerEvent: {}
+[7.523725] (-) TimerEvent: {}
+[7.552049] (nmea_msgs) StdoutLine: {'line': b"Listing '/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs'...\n"}
+[7.552858] (nmea_msgs) StdoutLine: {'line': b"Compiling '/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/__init__.py'...\n"}
+[7.553238] (nmea_msgs) StdoutLine: {'line': b"Listing '/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages/nmea_msgs/msg'...\n"}
+[7.572255] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/lib/libnmea_msgs__rosidl_generator_py.so\n'}
+[7.573848] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_generator_cExport.cmake\n'}
+[7.574488] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.575261] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[7.575897] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[7.576466] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_generator_cppExport.cmake\n'}
+[7.577068] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[7.577361] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[7.577810] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.578093] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.578498] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_cExport.cmake\n'}
+[7.578781] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.579162] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.579520] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.579899] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[7.580231] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/nmea_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.580489] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_generator_pyExport.cmake\n'}
+[7.580834] (nmea_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake/export_nmea_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[7.588480] (nmea_msgs) CommandEnded: {'returncode': 0}
+[7.624790] (-) TimerEvent: {}
+[7.727248] (-) TimerEvent: {}
+[7.827875] (-) TimerEvent: {}
+[7.928522] (-) TimerEvent: {}
+[8.029302] (-) TimerEvent: {}
+[8.130068] (-) TimerEvent: {}
+[8.230766] (-) TimerEvent: {}
+[8.298538] (nmea_msgs) JobEnded: {'identifier': 'nmea_msgs', 'rc': 0}
+[8.300884] (-) EventReactorShutdown: {}

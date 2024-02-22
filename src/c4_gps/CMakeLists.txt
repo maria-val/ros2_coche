@@ -10,11 +10,11 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(nmea_msgs REQUIRED)
 
-add_executable(talker src/trimble_gps.cpp)
-ament_target_dependencies(talker rclcpp nmea_msgs)
+add_executable(t_gps src/gps_reader.cpp)
+ament_target_dependencies(t_gps rclcpp nmea_msgs)
 
 install(TARGETS
-  talker
+  t_gps
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

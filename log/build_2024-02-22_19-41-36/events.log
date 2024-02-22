@@ -1,0 +1,114 @@
+[0.000000] (-) TimerEvent: {}
+[0.000277] (-) JobUnselected: {'identifier': 'nmea_msgs'}
+[0.000334] (c4_gps) JobQueued: {'identifier': 'c4_gps', 'dependencies': OrderedDict([('nmea_msgs', '/home/maria/ros2_coche/install/nmea_msgs')])}
+[0.000382] (c4_gps) JobStarted: {'identifier': 'c4_gps'}
+[0.091283] (c4_gps) JobProgress: {'identifier': 'c4_gps', 'progress': 'cmake'}
+[0.092253] (c4_gps) JobProgress: {'identifier': 'c4_gps', 'progress': 'build'}
+[0.093493] (c4_gps) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maria/ros2_coche/build/c4_gps', '--', '-j12', '-l12'], 'cwd': '/home/maria/ros2_coche/build/c4_gps', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('KDE_FULL_SESSION', 'true'), ('USER', 'maria'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1374'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('XCURSOR_SIZE', '24'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maria/ros2_coche/install/nmea_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maria'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'plasma'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/maria/.gtkrc:/home/maria/.config/gtkrc'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('KDE_SESSION_VERSION', '5'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1220'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maria'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/maria/.gtkrc-2.0:/home/maria/.config/gtkrc-2.0'), ('PATH', '/home/maria/.local/bin:/opt/ros/humble/bin:/home/maria/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kubuntu:@/tmp/.ICE-unix/1533,unix/kubuntu:/tmp/.ICE-unix/1533'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/maria/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-78b3883144.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXnexWiK/agent.1238'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/maria/ros2_coche/install/nmea_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'KDE'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('XDG_VTNR', '1'), ('PWD', '/home/maria/ros2_coche/build/c4_gps'), ('XDG_CONFIG_DIRS', '/home/maria/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C'), ('LC_PAPER', 'es_ES.UTF-8'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs')]), 'shell': False}
+[0.098890] (-) TimerEvent: {}
+[0.166899] (c4_gps) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target t_gps\x1b[0m\n'}
+[0.199131] (-) TimerEvent: {}
+[0.235926] (c4_gps) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/t_gps.dir/src/gps_reader.cpp.o\x1b[0m\n'}
+[0.299344] (-) TimerEvent: {}
+[0.400000] (-) TimerEvent: {}
+[0.500528] (-) TimerEvent: {}
+[0.600894] (-) TimerEvent: {}
+[0.701233] (-) TimerEvent: {}
+[0.801570] (-) TimerEvent: {}
+[0.901921] (-) TimerEvent: {}
+[1.002264] (-) TimerEvent: {}
+[1.102630] (-) TimerEvent: {}
+[1.202961] (-) TimerEvent: {}
+[1.303368] (-) TimerEvent: {}
+[1.403862] (-) TimerEvent: {}
+[1.504438] (-) TimerEvent: {}
+[1.604903] (-) TimerEvent: {}
+[1.705236] (-) TimerEvent: {}
+[1.805553] (-) TimerEvent: {}
+[1.905959] (-) TimerEvent: {}
+[2.006295] (-) TimerEvent: {}
+[2.106653] (-) TimerEvent: {}
+[2.206964] (-) TimerEvent: {}
+[2.307310] (-) TimerEvent: {}
+[2.407639] (-) TimerEvent: {}
+[2.507973] (-) TimerEvent: {}
+[2.608326] (-) TimerEvent: {}
+[2.708656] (-) TimerEvent: {}
+[2.809001] (-) TimerEvent: {}
+[2.909313] (-) TimerEvent: {}
+[3.009631] (-) TimerEvent: {}
+[3.110080] (-) TimerEvent: {}
+[3.210553] (-) TimerEvent: {}
+[3.310953] (-) TimerEvent: {}
+[3.411424] (-) TimerEvent: {}
+[3.511843] (-) TimerEvent: {}
+[3.612304] (-) TimerEvent: {}
+[3.713003] (-) TimerEvent: {}
+[3.813716] (-) TimerEvent: {}
+[3.914177] (-) TimerEvent: {}
+[4.014577] (-) TimerEvent: {}
+[4.115148] (-) TimerEvent: {}
+[4.216408] (-) TimerEvent: {}
+[4.316808] (-) TimerEvent: {}
+[4.417215] (-) TimerEvent: {}
+[4.517673] (-) TimerEvent: {}
+[4.618220] (-) TimerEvent: {}
+[4.718623] (-) TimerEvent: {}
+[4.819034] (-) TimerEvent: {}
+[4.919422] (-) TimerEvent: {}
+[5.019836] (-) TimerEvent: {}
+[5.120218] (-) TimerEvent: {}
+[5.220681] (-) TimerEvent: {}
+[5.321066] (-) TimerEvent: {}
+[5.421483] (-) TimerEvent: {}
+[5.521879] (-) TimerEvent: {}
+[5.622307] (-) TimerEvent: {}
+[5.722691] (-) TimerEvent: {}
+[5.823090] (-) TimerEvent: {}
+[5.923465] (-) TimerEvent: {}
+[6.023889] (-) TimerEvent: {}
+[6.124219] (-) TimerEvent: {}
+[6.224546] (-) TimerEvent: {}
+[6.324894] (-) TimerEvent: {}
+[6.425217] (-) TimerEvent: {}
+[6.525650] (-) TimerEvent: {}
+[6.625967] (-) TimerEvent: {}
+[6.726451] (-) TimerEvent: {}
+[6.827186] (-) TimerEvent: {}
+[6.927982] (-) TimerEvent: {}
+[7.028323] (-) TimerEvent: {}
+[7.077943] (c4_gps) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable t_gps\x1b[0m\n'}
+[7.128469] (-) TimerEvent: {}
+[7.228816] (-) TimerEvent: {}
+[7.329158] (-) TimerEvent: {}
+[7.367313] (c4_gps) StdoutLine: {'line': b'[100%] Built target t_gps\n'}
+[7.400964] (c4_gps) CommandEnded: {'returncode': 0}
+[7.429302] (-) TimerEvent: {}
+[7.478294] (c4_gps) JobProgress: {'identifier': 'c4_gps', 'progress': 'install'}
+[7.505213] (c4_gps) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/maria/ros2_coche/build/c4_gps'], 'cwd': '/home/maria/ros2_coche/build/c4_gps', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('KDE_FULL_SESSION', 'true'), ('USER', 'maria'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1374'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('XCURSOR_SIZE', '24'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maria/ros2_coche/install/nmea_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maria'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'plasma'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/maria/.gtkrc:/home/maria/.config/gtkrc'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('KDE_SESSION_VERSION', '5'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1220'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maria'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/maria/.gtkrc-2.0:/home/maria/.config/gtkrc-2.0'), ('PATH', '/home/maria/.local/bin:/opt/ros/humble/bin:/home/maria/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kubuntu:@/tmp/.ICE-unix/1533,unix/kubuntu:/tmp/.ICE-unix/1533'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/maria/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-78b3883144.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXnexWiK/agent.1238'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/maria/ros2_coche/install/nmea_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'KDE'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('XDG_VTNR', '1'), ('PWD', '/home/maria/ros2_coche/build/c4_gps'), ('XDG_CONFIG_DIRS', '/home/maria/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C'), ('LC_PAPER', 'es_ES.UTF-8'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs')]), 'shell': False}
+[7.526742] (c4_gps) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.527606] (c4_gps) StdoutLine: {'line': b'-- Installing: /home/maria/ros2_coche/install/c4_gps/lib/c4_gps/t_gps\n'}
+[7.529584] (-) TimerEvent: {}
+[7.532856] (c4_gps) StdoutLine: {'line': b'-- Set runtime path of "/home/maria/ros2_coche/install/c4_gps/lib/c4_gps/t_gps" to ""\n'}
+[7.533832] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/package_run_dependencies/c4_gps\n'}
+[7.534657] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/parent_prefix_path/c4_gps\n'}
+[7.535042] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/ament_prefix_path.sh\n'}
+[7.535364] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/ament_prefix_path.dsv\n'}
+[7.535741] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/path.sh\n'}
+[7.536016] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/path.dsv\n'}
+[7.536287] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.bash\n'}
+[7.536802] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.sh\n'}
+[7.537498] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.zsh\n'}
+[7.538068] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.dsv\n'}
+[7.538623] (c4_gps) StdoutLine: {'line': b'-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.dsv\n'}
+[7.539205] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/packages/c4_gps\n'}
+[7.539718] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/cmake/c4_gpsConfig.cmake\n'}
+[7.540016] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/cmake/c4_gpsConfig-version.cmake\n'}
+[7.541345] (c4_gps) StdoutLine: {'line': b'-- Up-to-date: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.xml\n'}
+[7.544071] (c4_gps) CommandEnded: {'returncode': 0}
+[7.630133] (-) TimerEvent: {}
+[7.731013] (-) TimerEvent: {}
+[7.832466] (-) TimerEvent: {}
+[7.933788] (-) TimerEvent: {}
+[7.966858] (c4_gps) JobEnded: {'identifier': 'c4_gps', 'rc': 0}
+[7.967788] (-) EventReactorShutdown: {}

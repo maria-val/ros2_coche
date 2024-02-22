@@ -1,0 +1,411 @@
+[0.095s] Invoking command in '/home/maria/ros2_coche/build/c4_gps': AMENT_PREFIX_PATH=/home/maria/ros2_coche/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs LD_LIBRARY_PATH=/home/maria/ros2_coche/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/maria/ros2_coche/src/c4_gps -DCMAKE_INSTALL_PREFIX=/home/maria/ros2_coche/install/c4_gps
+[0.322s] -- The C compiler identification is GNU 11.4.0
+[0.547s] -- The CXX compiler identification is GNU 11.4.0
+[0.577s] -- Detecting C compiler ABI info
+[0.826s] -- Detecting C compiler ABI info - done
+[0.860s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.861s] -- Detecting C compile features
+[0.864s] -- Detecting C compile features - done
+[0.876s] -- Detecting CXX compiler ABI info
+[1.162s] -- Detecting CXX compiler ABI info - done
+[1.195s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.196s] -- Detecting CXX compile features
+[1.198s] -- Detecting CXX compile features - done
+[1.206s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.808s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.106s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[2.250s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.266s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.293s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.325s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.359s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.486s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.489s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.667s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.772s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.922s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.954s] -- Looking for pthread.h
+[3.176s] -- Looking for pthread.h - found
+[3.178s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.419s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.424s] -- Found Threads: TRUE  
+[3.843s] -- Found nmea_msgs: 1.1.0 (/home/maria/ros2_coche/install/nmea_msgs/share/nmea_msgs/cmake)
+[3.923s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.049s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.049s] -- Configured cppcheck include dirs: 
+[4.049s] -- Configured cppcheck exclude dirs and/or files: 
+[4.050s] -- Added test 'lint_cmake' to check CMake code style
+[4.051s] -- Added test 'uncrustify' to check C / C++ code style
+[4.051s] -- Configured uncrustify additional arguments: 
+[4.052s] -- Added test 'xmllint' to check XML markup files
+[4.054s] -- Configuring done
+[4.070s] -- Generating done
+[4.072s] -- Build files have been written to: /home/maria/ros2_coche/build/c4_gps
+[4.087s] Invoked command in '/home/maria/ros2_coche/build/c4_gps' returned '0': AMENT_PREFIX_PATH=/home/maria/ros2_coche/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs LD_LIBRARY_PATH=/home/maria/ros2_coche/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/maria/ros2_coche/src/c4_gps -DCMAKE_INSTALL_PREFIX=/home/maria/ros2_coche/install/c4_gps
+[4.090s] Invoking command in '/home/maria/ros2_coche/build/c4_gps': AMENT_PREFIX_PATH=/home/maria/ros2_coche/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs LD_LIBRARY_PATH=/home/maria/ros2_coche/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12
+[4.160s] [ 50%] [32mBuilding CXX object CMakeFiles/t_gps.dir/src/gps_reader.cpp.o[0m
+[7.805s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:[m[K In member function ‘[01m[Kvoid GpsReader::gpgga_callback()[m[K’:
+[7.805s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:54:33:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid rclcpp::Executor::cancel()[m[K’ without object
+[7.805s]    54 |         [01;31m[Krclcpp::Executor::cancel()[m[K
+[7.805s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.806s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:26:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} and ‘[01m[Kconst char [12][m[K’)
+[7.806s]    87 |           [32m[Kmessage_struct[m[K [01;31m[K<<[m[K [34m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.807s]       |           [32m[K~~~~~~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~~~[m[K
+[7.807s]       |           [32m[K|[m[K                 [34m[K|[m[K
+[7.807s]       |           [32m[K|[m[K                 [34m[Kconst char [12][m[K
+[7.807s]       |           [32m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[7.808s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[7.809s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:2[m[K:
+[7.809s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:70:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[7.809s]    70 |     [01;36m[Koperator[m[K<<(std::basic_ostream<_Ch, _Tr>& __os,
+[7.809s]       |     [01;36m[K^~~~~~~~[m[K
+[7.810s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:70:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.810s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.810s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.810s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.810s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[7.810s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[7.810s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:3[m[K:
+[7.810s] [01m[K/usr/include/c++/11/string_view:667:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::basic_string_view<_CharT, _Traits>)[m[K’
+[7.810s]   667 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[7.810s]       |     [01;36m[K^~~~~~~~[m[K
+[7.811s] [01m[K/usr/include/c++/11/string_view:667:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.811s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.811s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.811s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.811s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[7.811s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:3[m[K:
+[7.811s] [01m[K/usr/include/c++/11/bits/basic_string.h:6531:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[7.811s]  6531 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[7.811s]       |     [01;36m[K^~~~~~~~[m[K
+[7.812s] [01m[K/usr/include/c++/11/bits/basic_string.h:6531:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.812s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.812s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.812s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.812s] In file included from [01m[K/usr/include/c++/11/bits/ios_base.h:46[m[K,
+[7.812s]                  from [01m[K/usr/include/c++/11/ios:42[m[K,
+[7.812s]                  from [01m[K/usr/include/c++/11/ostream:38[m[K,
+[7.812s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[7.812s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:4[m[K:
+[7.812s] [01m[K/usr/include/c++/11/system_error:279:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::error_code&)[m[K’
+[7.813s]   279 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+[7.813s]       |     [01;36m[K^~~~~~~~[m[K
+[7.813s] [01m[K/usr/include/c++/11/system_error:279:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.813s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.813s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.813s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.813s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[7.813s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:4[m[K:
+[7.813s] [01m[K/usr/include/c++/11/ostream:513:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, _CharT)[m[K’
+[7.814s]   513 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[7.814s]       |     [01;36m[K^~~~~~~~[m[K
+[7.814s] [01m[K/usr/include/c++/11/ostream:513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.814s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.814s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.814s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.814s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[7.814s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:4[m[K:
+[7.814s] [01m[K/usr/include/c++/11/ostream:518:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, char)[m[K’
+[7.814s]   518 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[7.815s]       |     [01;36m[K^~~~~~~~[m[K
+[7.815s] [01m[K/usr/include/c++/11/ostream:518:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.815s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.815s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.815s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.815s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[7.815s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:4[m[K:
+[7.815s] [01m[K/usr/include/c++/11/ostream:524:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)[m[K’
+[7.815s]   524 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, char __c)
+[7.815s]       |     [01;36m[K^~~~~~~~[m[K
+[7.816s] [01m[K/usr/include/c++/11/ostream:524:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.816s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+[7.816s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.816s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.816s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[7.816s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:4[m[K:
+[7.816s] [01m[K/usr/include/c++/11/ostream:530:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)[m[K’
+[7.816s]   530 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[7.816s]       |     [01;36m[K^~~~~~~~[m[K
+[7.816s] [01m[K/usr/include/c++/11/ostream:530:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.817s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+[7.817s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.817s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.817s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[7.817s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:4[m[K:
+[7.817s] [01m[K/usr/include/c++/11/ostream:535:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)[m[K’
+[7.817s]   535 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[7.817s]       |     [01;36m[K^~~~~~~~[m[K
+[7.817s] [01m[K/usr/include/c++/11/ostream:535:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.817s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+[7.818s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.818s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.818s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[7.818s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:4[m[K:
+[7.818s] [01m[K/usr/include/c++/11/ostream:594:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const _CharT*)[m[K’
+[7.818s]   594 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[7.818s]       |     [01;36m[K^~~~~~~~[m[K
+[7.818s] [01m[K/usr/include/c++/11/ostream:594:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.818s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.818s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.819s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.819s] In file included from [01m[K/usr/include/c++/11/ostream:829[m[K,
+[7.819s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[7.819s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:4[m[K:
+[7.819s] [01m[K/usr/include/c++/11/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const char*)[m[K’
+[7.819s]   321 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[7.819s]       |     [01;36m[K^~~~~~~~[m[K
+[7.819s] [01m[K/usr/include/c++/11/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.819s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.819s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.820s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.820s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[7.820s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:4[m[K:
+[7.820s] [01m[K/usr/include/c++/11/ostream:611:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)[m[K’
+[7.820s]   611 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[7.820s]       |     [01;36m[K^~~~~~~~[m[K
+[7.820s] [01m[K/usr/include/c++/11/ostream:611:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.820s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+[7.820s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.820s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.821s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[7.821s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:4[m[K:
+[7.821s] [01m[K/usr/include/c++/11/ostream:624:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)[m[K’
+[7.821s]   624 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[7.821s]       |     [01;36m[K^~~~~~~~[m[K
+[7.821s] [01m[K/usr/include/c++/11/ostream:624:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.821s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+[7.821s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.821s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.821s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[7.822s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:4[m[K:
+[7.822s] [01m[K/usr/include/c++/11/ostream:629:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)[m[K’
+[7.822s]   629 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[7.822s]       |     [01;36m[K^~~~~~~~[m[K
+[7.822s] [01m[K/usr/include/c++/11/ostream:629:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.822s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+[7.822s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.822s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.822s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[7.822s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:4[m[K:
+[7.823s] [01m[K/usr/include/c++/11/ostream:750:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)[m[K’
+[7.823s]   750 |     [01;36m[Koperator[m[K<<(_Ostream&& __os, const _Tp& __x)
+[7.823s]       |     [01;36m[K^~~~~~~~[m[K
+[7.823s] [01m[K/usr/include/c++/11/ostream:750:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.823s] /usr/include/c++/11/ostream: In substitution of ‘[01m[Ktemplate<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::__cxx11::basic_string<char>&; _Tp = char [12]][m[K’:
+[7.823s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K   required from here
+[7.823s] [01m[K/usr/include/c++/11/ostream:750:5:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[7.823s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22[m[K,
+[7.823s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.824s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.824s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:20[m[K:
+[7.824s] [01m[K/usr/include/c++/11/thread:92:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::thread::id)[m[K’
+[7.824s]    92 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)
+[7.824s]       |     [01;36m[K^~~~~~~~[m[K
+[7.824s] [01m[K/usr/include/c++/11/thread:92:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.824s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.824s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.825s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.825s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[7.825s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[7.825s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[7.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[7.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[7.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[7.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[7.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.826s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:20[m[K:
+[7.826s] [01m[K/usr/include/c++/11/iomanip:79:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Resetiosflags)[m[K’
+[7.827s]    79 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+[7.827s]       |     [01;36m[K^~~~~~~~[m[K
+[7.827s] [01m[K/usr/include/c++/11/iomanip:79:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.827s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.827s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.827s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.827s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[7.827s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[7.827s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[7.827s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[7.828s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[7.828s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[7.828s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[7.828s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.828s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.828s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.828s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.828s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.829s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.829s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.829s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.829s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.829s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:20[m[K:
+[7.829s] [01m[K/usr/include/c++/11/iomanip:109:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setiosflags)[m[K’
+[7.829s]   109 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+[7.829s]       |     [01;36m[K^~~~~~~~[m[K
+[7.829s] [01m[K/usr/include/c++/11/iomanip:109:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.830s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.830s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.830s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.830s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[7.830s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[7.830s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[7.830s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[7.830s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[7.830s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[7.830s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[7.831s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.831s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.831s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.831s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.831s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.831s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.831s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.831s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.831s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.832s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:20[m[K:
+[7.832s] [01m[K/usr/include/c++/11/iomanip:143:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setbase)[m[K’
+[7.832s]   143 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+[7.832s]       |     [01;36m[K^~~~~~~~[m[K
+[7.832s] [01m[K/usr/include/c++/11/iomanip:143:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.832s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.832s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.832s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.832s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[7.832s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[7.833s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[7.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[7.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[7.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[7.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[7.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.834s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:20[m[K:
+[7.834s] [01m[K/usr/include/c++/11/iomanip:178:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setfill<_CharT>)[m[K’
+[7.834s]   178 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+[7.834s]       |     [01;36m[K^~~~~~~~[m[K
+[7.834s] [01m[K/usr/include/c++/11/iomanip:178:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.835s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.835s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.835s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.835s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[7.835s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[7.835s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[7.835s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[7.835s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[7.835s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[7.836s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[7.836s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.836s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.836s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.836s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.836s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.836s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.836s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.836s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.836s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.837s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:20[m[K:
+[7.837s] [01m[K/usr/include/c++/11/iomanip:208:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setprecision)[m[K’
+[7.837s]   208 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+[7.837s]       |     [01;36m[K^~~~~~~~[m[K
+[7.837s] [01m[K/usr/include/c++/11/iomanip:208:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.837s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.837s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.837s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.837s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[7.838s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[7.838s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[7.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[7.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[7.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[7.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[7.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.839s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:20[m[K:
+[7.839s] [01m[K/usr/include/c++/11/iomanip:238:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setw)[m[K’
+[7.839s]   238 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+[7.839s]       |     [01;36m[K^~~~~~~~[m[K
+[7.839s] [01m[K/usr/include/c++/11/iomanip:238:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.840s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.840s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.840s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.840s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[7.840s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[7.840s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[7.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[7.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[7.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[7.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[7.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.842s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.842s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:20[m[K:
+[7.842s] [01m[K/usr/include/c++/11/iomanip:311:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Put_money<_MoneyT>)[m[K’
+[7.842s]   311 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+[7.842s]       |     [01;36m[K^~~~~~~~[m[K
+[7.842s] [01m[K/usr/include/c++/11/iomanip:311:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.842s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.842s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.842s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.843s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[7.843s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[7.843s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[7.843s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[7.843s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[7.843s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[7.844s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[7.844s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.844s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.844s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.844s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.844s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.844s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.845s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.845s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.845s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.845s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:20[m[K:
+[7.845s] [01m[K/usr/include/c++/11/iomanip:363:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Put_time<_CharT>)[m[K’
+[7.845s]   363 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+[7.845s]       |     [01;36m[K^~~~~~~~[m[K
+[7.845s] [01m[K/usr/include/c++/11/iomanip:363:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.845s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:87:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’
+[7.846s]    87 |           message_struct << [01;36m[K"Timestamp: "[m[K << message.header.stamp.sec << ", Latitude: " << message.lat;
+[7.846s]       |                             [01;36m[K^~~~~~~~~~~~~[m[K
+[7.846s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:90:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 2 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[7.846s]    90 |             printf("[01;35m[K%s[m[K\n", message_struct);
+[7.846s]       |                     [01;35m[K~^[m[K
+[7.846s]       |                      [01;35m[K|[m[K
+[7.846s]       |                      [01;35m[Kchar*[m[K
+[7.846s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:91:24:[m[K [01;31m[Kerror: [m[Kincompatible types in assignment of ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kchar [100][m[K’
+[7.846s]    91 |             [01;31m[Kmessagegps = message_struct[m[K;
+[7.846s]       |             [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[9.015s] gmake[2]: *** [CMakeFiles/t_gps.dir/build.make:76: CMakeFiles/t_gps.dir/src/gps_reader.cpp.o] Error 1
+[9.016s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/t_gps.dir/all] Error 2
+[9.016s] gmake: *** [Makefile:146: all] Error 2
+[9.019s] Invoked command in '/home/maria/ros2_coche/build/c4_gps' returned '2': AMENT_PREFIX_PATH=/home/maria/ros2_coche/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs LD_LIBRARY_PATH=/home/maria/ros2_coche/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12

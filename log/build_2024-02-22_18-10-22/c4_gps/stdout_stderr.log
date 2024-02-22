@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target t_gps[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/t_gps.dir/src/gps_reader.cpp.o[0m
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:[m[K In member function ‘[01m[Kvoid GpsReader::gpgga_callback()[m[K’:
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:45:12:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KisGPSOpen[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   45 |       bool [01;35m[KisGPSOpen[m[K = false;
+      |            [01;35m[K^~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable t_gps[0m
+[100%] Built target t_gps
+-- Install configuration: ""
+-- Installing: /home/maria/ros2_coche/install/c4_gps/lib/c4_gps/t_gps
+-- Set runtime path of "/home/maria/ros2_coche/install/c4_gps/lib/c4_gps/t_gps" to ""
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/package_run_dependencies/c4_gps
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/parent_prefix_path/c4_gps
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/ament_prefix_path.sh
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/ament_prefix_path.dsv
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/path.sh
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/path.dsv
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.bash
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.sh
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.zsh
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/local_setup.dsv
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.dsv
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/packages/c4_gps
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/cmake/c4_gpsConfig.cmake
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/cmake/c4_gpsConfig-version.cmake
+-- Installing: /home/maria/ros2_coche/install/c4_gps/share/c4_gps/package.xml

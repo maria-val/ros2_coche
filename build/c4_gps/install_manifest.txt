@@ -1,4 +1,4 @@
-/home/maria/ros2_coche/install/c4_gps/lib/c4_gps/talker
+/home/maria/ros2_coche/install/c4_gps/lib/c4_gps/t_gps
 /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/package_run_dependencies/c4_gps
 /home/maria/ros2_coche/install/c4_gps/share/ament_index/resource_index/parent_prefix_path/c4_gps
 /home/maria/ros2_coche/install/c4_gps/share/c4_gps/environment/ament_prefix_path.sh

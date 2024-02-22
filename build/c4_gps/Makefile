@@ -198,41 +198,41 @@ c4_gps_uninstall/fast:
 .PHONY : c4_gps_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named talker
+# Target rules for targets named t_gps
 
 # Build rule for target.
-talker: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker
-.PHONY : talker
+t_gps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 t_gps
+.PHONY : t_gps
 
 # fast build rule for target.
-talker/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
-.PHONY : talker/fast
+t_gps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_gps.dir/build.make CMakeFiles/t_gps.dir/build
+.PHONY : t_gps/fast
 
-src/trimble_gps.o: src/trimble_gps.cpp.o
-.PHONY : src/trimble_gps.o
+src/gps_reader.o: src/gps_reader.cpp.o
+.PHONY : src/gps_reader.o
 
 # target to build an object file
-src/trimble_gps.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/trimble_gps.cpp.o
-.PHONY : src/trimble_gps.cpp.o
+src/gps_reader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_gps.dir/build.make CMakeFiles/t_gps.dir/src/gps_reader.cpp.o
+.PHONY : src/gps_reader.cpp.o
 
-src/trimble_gps.i: src/trimble_gps.cpp.i
-.PHONY : src/trimble_gps.i
+src/gps_reader.i: src/gps_reader.cpp.i
+.PHONY : src/gps_reader.i
 
 # target to preprocess a source file
-src/trimble_gps.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/trimble_gps.cpp.i
-.PHONY : src/trimble_gps.cpp.i
+src/gps_reader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_gps.dir/build.make CMakeFiles/t_gps.dir/src/gps_reader.cpp.i
+.PHONY : src/gps_reader.cpp.i
 
-src/trimble_gps.s: src/trimble_gps.cpp.s
-.PHONY : src/trimble_gps.s
+src/gps_reader.s: src/gps_reader.cpp.s
+.PHONY : src/gps_reader.s
 
 # target to generate assembly for a file
-src/trimble_gps.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/trimble_gps.cpp.s
-.PHONY : src/trimble_gps.cpp.s
+src/gps_reader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/t_gps.dir/build.make CMakeFiles/t_gps.dir/src/gps_reader.cpp.s
+.PHONY : src/gps_reader.cpp.s
 
 # Help Target
 help:
@@ -249,10 +249,10 @@ help:
 	@echo "... test"
 	@echo "... c4_gps_uninstall"
 	@echo "... uninstall"
-	@echo "... talker"
-	@echo "... src/trimble_gps.o"
-	@echo "... src/trimble_gps.i"
-	@echo "... src/trimble_gps.s"
+	@echo "... t_gps"
+	@echo "... src/gps_reader.o"
+	@echo "... src/gps_reader.i"
+	@echo "... src/gps_reader.s"
 .PHONY : help
 
 

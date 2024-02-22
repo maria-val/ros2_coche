@@ -1,0 +1,13 @@
+[0.116s] Invoking command in '/home/maria/ros2_coche/build/c4_gps': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs:/home/maria/ros2_coche/install/c4_gps /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12
+[0.232s] [ 50%] [32mBuilding CXX object CMakeFiles/t_gps.dir/src/trimble_gps.cpp.o[0m
+[4.681s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:[m[K In member function ‘[01m[Kvoid TrimbleGps::timer_callback()[m[K’:
+[4.681s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct nmea_msgs::msg::Gpgga_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kdata[m[K’
+[4.681s]    86 |         if(messagegps != message.[01;31m[Kdata[m[K)
+[4.681s]       |                                  [01;31m[K^~~~[m[K
+[4.681s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:89:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct nmea_msgs::msg::Gpgga_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kdata[m[K’
+[4.681s]    89 |           message.[01;31m[Kdata[m[K = messagegps;
+[4.681s]       |                   [01;31m[K^~~~[m[K
+[6.146s] gmake[2]: *** [CMakeFiles/t_gps.dir/build.make:76: CMakeFiles/t_gps.dir/src/trimble_gps.cpp.o] Error 1
+[6.147s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/t_gps.dir/all] Error 2
+[6.147s] gmake: *** [Makefile:146: all] Error 2
+[6.150s] Invoked command in '/home/maria/ros2_coche/build/c4_gps' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs:/home/maria/ros2_coche/install/c4_gps /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12

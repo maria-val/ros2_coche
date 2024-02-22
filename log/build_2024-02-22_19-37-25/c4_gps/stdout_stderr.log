@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target t_gps[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/t_gps.dir/src/gps_reader.cpp.o[0m
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:[m[K In member function ‘[01m[Kvoid GpsReader::gpgga_callback()[m[K’:
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:84:90:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%x[m[K’ expects argument of type ‘[01m[Kunsigned int*[m[K’, but argument 17 has type ‘[01m[Kint*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   84 |             sscanf(messagegps, "$GPGGA,%lf,%lf,%c,%lf,%c,%d,%d,%lf,%lf,%c,%lf,%c,%lf,%d*[01;35m[K%x[m[K", &d1,&d2,&c1,&d3,&c2,&i1,&i2,&d4,&d5,&c3,&d6,&c4,&d7,&i3,[32m[K&i4[m[K)
+      |                                                                                         [01;35m[K~^[m[K                                                           [32m[K~~~[m[K
+      |                                                                                          [01;35m[K|[m[K                                                           [32m[K|[m[K
+      |                                                                                          [01;35m[Kunsigned int*[m[K                                               [32m[Kint*[m[K
+      |                                                                                         [32m[K%x[m[K
+[01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:85:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstrcpy[m[K’
+   85 |             [01;31m[Kstrcpy[m[K(message_struct, messagegps);
+      |             [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/t_gps.dir/build.make:76: CMakeFiles/t_gps.dir/src/gps_reader.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/t_gps.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

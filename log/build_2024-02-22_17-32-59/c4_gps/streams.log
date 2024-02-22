@@ -1,0 +1,14 @@
+[0.096s] Invoking command in '/home/maria/ros2_coche/build/c4_gps': AMENT_PREFIX_PATH=/home/maria/ros2_coche/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs LD_LIBRARY_PATH=/home/maria/ros2_coche/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12
+[0.237s] [35m[1mConsolidate compiler generated dependencies of target t_gps[0m
+[0.323s] [ 50%] [32mBuilding CXX object CMakeFiles/t_gps.dir/src/gps_reader.cpp.o[0m
+[5.241s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:[m[K In member function ‘[01m[Kvoid GpsReader::gpgga_callback()[m[K’:
+[5.241s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:54:33:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid rclcpp::Executor::cancel()[m[K’ without object
+[5.241s]    54 |         [01;31m[Krclcpp::Executor::cancel()[m[K
+[5.241s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[5.242s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/gps_reader.cpp:90:24:[m[K [01;31m[Kerror: [m[Kinvalid array assignment
+[5.242s]    90 |             [01;31m[Kmessagegps = message_struct[m[K;
+[5.242s]       |             [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[7.232s] gmake[2]: *** [CMakeFiles/t_gps.dir/build.make:76: CMakeFiles/t_gps.dir/src/gps_reader.cpp.o] Error 1
+[7.233s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/t_gps.dir/all] Error 2
+[7.233s] gmake: *** [Makefile:146: all] Error 2
+[7.238s] Invoked command in '/home/maria/ros2_coche/build/c4_gps' returned '2': AMENT_PREFIX_PATH=/home/maria/ros2_coche/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs LD_LIBRARY_PATH=/home/maria/ros2_coche/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12

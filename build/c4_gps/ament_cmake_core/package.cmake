@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "c4_gps")
 set(c4_gps_VERSION "0.0.0")
-set(c4_gps_MAINTAINER "maria <maria@todo.todo>")
+set(c4_gps_MAINTAINER "Maria Dominguez <maria.dominguezv@edu.uah.es>")
 set(c4_gps_BUILD_DEPENDS "rclcpp" "nmea_msgs")
 set(c4_gps_BUILDTOOL_DEPENDS "ament_cmake")
 set(c4_gps_BUILD_EXPORT_DEPENDS "rclcpp" "nmea_msgs")

@@ -1,0 +1,148 @@
+[0.120s] Invoking command in '/home/maria/ros2_coche/build/c4_gps': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs:/home/maria/ros2_coche/install/c4_gps /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12
+[0.207s] [35m[1mConsolidate compiler generated dependencies of target t_gps[0m
+[0.279s] [ 50%] [32mBuilding CXX object CMakeFiles/t_gps.dir/src/trimble_gps.cpp.o[0m
+[4.262s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:[m[K In member function ‘[01m[Kvoid TrimbleGps::timer_callback()[m[K’:
+[4.263s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage_struct[m[K’ was not declared in this scope
+[4.263s]    86 |           [01;31m[Kmessage_struct[m[K = "Timestamp: " + message.header + ", Latitude: " + message.lat
+[4.263s]       |           [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.263s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:42:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+[m[K’ (operand types are ‘[01m[Kconst char [12][m[K’ and ‘[01m[Knmea_msgs::msg::Gpgga_<std::allocator<void> >::_header_type[m[K’ {aka ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >[m[K’})
+[4.263s]    86 |           message_struct = [32m[K"Timestamp: "[m[K [01;31m[K+[m[K [34m[Kmessage.header[m[K + ", Latitude: " + message.lat
+[4.263s]       |                            [32m[K~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~~~~~~[m[K
+[4.263s]       |                            [32m[K|[m[K                       [34m[K|[m[K
+[4.263s]       |                            [32m[Kconst char [12][m[K         [34m[Knmea_msgs::msg::Gpgga_<std::allocator<void> >::_header_type {aka std_msgs::msg::Header_<std::allocator<void> >}[m[K
+[4.289s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[4.290s]                  from [01m[K/usr/include/c++/11/array:40[m[K,
+[4.290s]                  from [01m[K/usr/include/c++/11/tuple:39[m[K,
+[4.291s]                  from [01m[K/usr/include/c++/11/functional:54[m[K,
+[4.291s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:2[m[K:
+[4.292s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:585:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)[m[K’
+[4.292s]   585 |     [01;36m[Koperator[m[K+(typename reverse_iterator<_Iterator>::difference_type __n,
+[4.292s]       |     [01;36m[K^~~~~~~~[m[K
+[4.292s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:585:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.293s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  ‘[01m[Knmea_msgs::msg::Gpgga_<std::allocator<void> >::_header_type[m[K’ {aka ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[4.293s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.293s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.293s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[4.294s]                  from [01m[K/usr/include/c++/11/array:40[m[K,
+[4.294s]                  from [01m[K/usr/include/c++/11/tuple:39[m[K,
+[4.294s]                  from [01m[K/usr/include/c++/11/functional:54[m[K,
+[4.294s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:2[m[K:
+[4.295s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1700:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)[m[K’
+[4.295s]  1700 |     [01;36m[Koperator[m[K+(typename move_iterator<_Iterator>::difference_type __n,
+[4.295s]       |     [01;36m[K^~~~~~~~[m[K
+[4.295s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1700:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.296s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  ‘[01m[Knmea_msgs::msg::Gpgga_<std::allocator<void> >::_header_type[m[K’ {aka ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[4.296s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.296s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.296s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[4.297s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:4[m[K:
+[4.297s] [01m[K/usr/include/c++/11/bits/basic_string.h:6095:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[4.297s]  6095 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[4.298s]       |     [01;36m[K^~~~~~~~[m[K
+[4.298s] [01m[K/usr/include/c++/11/bits/basic_string.h:6095:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.298s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kconst char [12][m[K’
+[4.298s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.299s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.299s] In file included from [01m[K/usr/include/c++/11/string:56[m[K,
+[4.299s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:4[m[K:
+[4.300s] [01m[K/usr/include/c++/11/bits/basic_string.tcc:1169:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[4.300s]  1169 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+[4.300s]       |     [01;36m[K^~~~~~~~[m[K
+[4.300s] [01m[K/usr/include/c++/11/bits/basic_string.tcc:1169:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.301s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  ‘[01m[Knmea_msgs::msg::Gpgga_<std::allocator<void> >::_header_type[m[K’ {aka ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[4.301s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.301s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.302s] In file included from [01m[K/usr/include/c++/11/string:56[m[K,
+[4.302s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:4[m[K:
+[4.302s] [01m[K/usr/include/c++/11/bits/basic_string.tcc:1189:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[4.302s]  1189 |     [01;36m[Koperator[m[K+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+[4.303s]       |     [01;36m[K^~~~~~~~[m[K
+[4.303s] [01m[K/usr/include/c++/11/bits/basic_string.tcc:1189:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.303s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  ‘[01m[Knmea_msgs::msg::Gpgga_<std::allocator<void> >::_header_type[m[K’ {aka ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[4.304s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.304s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.304s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[4.305s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:4[m[K:
+[4.305s] [01m[K/usr/include/c++/11/bits/basic_string.h:6132:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K’
+[4.305s]  6132 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[4.306s]       |     [01;36m[K^~~~~~~~[m[K
+[4.306s] [01m[K/usr/include/c++/11/bits/basic_string.h:6132:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.307s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kconst char [12][m[K’
+[4.307s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.307s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.308s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[4.308s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:4[m[K:
+[4.308s] [01m[K/usr/include/c++/11/bits/basic_string.h:6148:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)[m[K’
+[4.309s]  6148 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+[4.309s]       |     [01;36m[K^~~~~~~~[m[K
+[4.310s] [01m[K/usr/include/c++/11/bits/basic_string.h:6148:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.310s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kconst char [12][m[K’
+[4.310s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.311s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.311s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[4.311s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:4[m[K:
+[4.312s] [01m[K/usr/include/c++/11/bits/basic_string.h:6160:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[4.312s]  6160 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[4.313s]       |     [01;36m[K^~~~~~~~[m[K
+[4.313s] [01m[K/usr/include/c++/11/bits/basic_string.h:6160:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.313s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kconst char [12][m[K’
+[4.314s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.314s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.315s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[4.315s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:4[m[K:
+[4.316s] [01m[K/usr/include/c++/11/bits/basic_string.h:6166:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+[4.316s]  6166 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[4.317s]       |     [01;36m[K^~~~~~~~[m[K
+[4.317s] [01m[K/usr/include/c++/11/bits/basic_string.h:6166:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.318s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kconst char [12][m[K’
+[4.318s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.318s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.319s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[4.319s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:4[m[K:
+[4.320s] [01m[K/usr/include/c++/11/bits/basic_string.h:6172:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+[4.320s]  6172 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[4.320s]       |     [01;36m[K^~~~~~~~[m[K
+[4.321s] [01m[K/usr/include/c++/11/bits/basic_string.h:6172:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.321s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kconst char [12][m[K’
+[4.322s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.322s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.323s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[4.323s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:4[m[K:
+[4.324s] [01m[K/usr/include/c++/11/bits/basic_string.h:6194:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+[4.324s]  6194 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+[4.324s]       |     [01;36m[K^~~~~~~~[m[K
+[4.325s] [01m[K/usr/include/c++/11/bits/basic_string.h:6194:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.325s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  ‘[01m[Knmea_msgs::msg::Gpgga_<std::allocator<void> >::_header_type[m[K’ {aka ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[4.326s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.326s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.326s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[4.327s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:4[m[K:
+[4.327s] [01m[K/usr/include/c++/11/bits/basic_string.h:6200:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+[4.328s]  6200 |     [01;36m[Koperator[m[K+(_CharT __lhs,
+[4.328s]       |     [01;36m[K^~~~~~~~[m[K
+[4.328s] [01m[K/usr/include/c++/11/bits/basic_string.h:6200:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.329s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  ‘[01m[Knmea_msgs::msg::Gpgga_<std::allocator<void> >::_header_type[m[K’ {aka ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[4.329s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.330s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.330s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[4.331s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:4[m[K:
+[4.331s] [01m[K/usr/include/c++/11/bits/basic_string.h:6206:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const _CharT*)[m[K’
+[4.331s]  6206 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[4.332s]       |     [01;36m[K^~~~~~~~[m[K
+[4.332s] [01m[K/usr/include/c++/11/bits/basic_string.h:6206:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.333s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kconst char [12][m[K’
+[4.333s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.333s]       |                                                    [01;36m[K^~~~~~[m[K
+[4.334s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[4.334s]                  from [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:4[m[K:
+[4.335s] [01m[K/usr/include/c++/11/bits/basic_string.h:6212:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, _CharT)[m[K’
+[4.335s]  6212 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[4.335s]       |     [01;36m[K^~~~~~~~[m[K
+[4.336s] [01m[K/usr/include/c++/11/bits/basic_string.h:6212:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.337s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:86:52:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kconst char [12][m[K’
+[4.337s]    86 |           message_struct = "Timestamp: " + message.[01;36m[Kheader[m[K + ", Latitude: " + message.lat
+[4.337s]       |                                                    [01;36m[K^~~~~~[m[K
+[5.571s] gmake[2]: *** [CMakeFiles/t_gps.dir/build.make:76: CMakeFiles/t_gps.dir/src/trimble_gps.cpp.o] Error 1
+[5.571s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/t_gps.dir/all] Error 2
+[5.572s] gmake: *** [Makefile:146: all] Error 2
+[5.575s] Invoked command in '/home/maria/ros2_coche/build/c4_gps' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs:/home/maria/ros2_coche/install/c4_gps /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12

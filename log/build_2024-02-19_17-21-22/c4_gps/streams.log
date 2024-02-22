@@ -1,0 +1,17 @@
+[0.143s] Invoking command in '/home/maria/ros2_coche/build/c4_gps': AMENT_PREFIX_PATH=/home/maria/ros2_coche/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs LD_LIBRARY_PATH=/home/maria/ros2_coche/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12
+[0.397s] [35m[1mConsolidate compiler generated dependencies of target t_gps[0m
+[0.444s] [ 50%] [32mBuilding CXX object CMakeFiles/t_gps.dir/src/trimble_gps.cpp.o[0m
+[4.775s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:[m[K In member function ‘[01m[Kvoid TrimbleGps::gpgga_callback()[m[K’:
+[4.775s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:87:26:[m[K [01;31m[Kerror: [m[Kincompatible types in assignment of ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’ to ‘[01m[Kchar [100][m[K’
+[4.776s]    87 |           [01;31m[Kmessage_struct = "Timestamp: " + std::to_string(message.header.stamp.sec) + ", Latitude: " + std::to_string(message.lat)[m[K;
+[4.776s]       |           [01;31m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.776s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:91:24:[m[K [01;31m[Kerror: [m[Kinvalid array assignment
+[4.776s]    91 |             [01;31m[Kmessagegps = message_struct[m[K;
+[4.776s]       |             [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[4.780s] [01m[K/home/maria/ros2_coche/src/c4_gps/src/trimble_gps.cpp:95:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[4.780s]    95 |       [01;31m[K}[m[K
+[4.780s]       |       [01;31m[K^[m[K
+[6.257s] gmake[2]: *** [CMakeFiles/t_gps.dir/build.make:76: CMakeFiles/t_gps.dir/src/trimble_gps.cpp.o] Error 1
+[6.257s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/t_gps.dir/all] Error 2
+[6.257s] gmake: *** [Makefile:146: all] Error 2
+[6.261s] Invoked command in '/home/maria/ros2_coche/build/c4_gps' returned '2': AMENT_PREFIX_PATH=/home/maria/ros2_coche/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble:/home/maria/ros2_coche/install/nmea_msgs LD_LIBRARY_PATH=/home/maria/ros2_coche/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maria/ros2_coche/install/nmea_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12

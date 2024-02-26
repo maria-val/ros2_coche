@@ -18,6 +18,12 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/nmea_msgs/msg/detail/gprmc__builder.hpp"
   "rosidl_generator_cpp/nmea_msgs/msg/detail/gprmc__struct.hpp"
   "rosidl_generator_cpp/nmea_msgs/msg/detail/gprmc__traits.hpp"
+  "rosidl_generator_cpp/nmea_msgs/msg/detail/gpvtg__builder.hpp"
+  "rosidl_generator_cpp/nmea_msgs/msg/detail/gpvtg__struct.hpp"
+  "rosidl_generator_cpp/nmea_msgs/msg/detail/gpvtg__traits.hpp"
+  "rosidl_generator_cpp/nmea_msgs/msg/detail/gpzda__builder.hpp"
+  "rosidl_generator_cpp/nmea_msgs/msg/detail/gpzda__struct.hpp"
+  "rosidl_generator_cpp/nmea_msgs/msg/detail/gpzda__traits.hpp"
   "rosidl_generator_cpp/nmea_msgs/msg/detail/sentence__builder.hpp"
   "rosidl_generator_cpp/nmea_msgs/msg/detail/sentence__struct.hpp"
   "rosidl_generator_cpp/nmea_msgs/msg/detail/sentence__traits.hpp"
@@ -27,6 +33,8 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/nmea_msgs/msg/gpgsv.hpp"
   "rosidl_generator_cpp/nmea_msgs/msg/gpgsv_satellite.hpp"
   "rosidl_generator_cpp/nmea_msgs/msg/gprmc.hpp"
+  "rosidl_generator_cpp/nmea_msgs/msg/gpvtg.hpp"
+  "rosidl_generator_cpp/nmea_msgs/msg/gpzda.hpp"
   "rosidl_generator_cpp/nmea_msgs/msg/sentence.hpp"
 )
 

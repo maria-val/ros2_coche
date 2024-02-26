@@ -11,6 +11,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpgsv_satellite__type_support.cpp.o.d"
   "CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gprmc__type_support.cpp.o"
   "CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gprmc__type_support.cpp.o.d"
+  "CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.o"
+  "CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.o.d"
+  "CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.o"
+  "CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.o.d"
   "CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/sentence__type_support.cpp.o"
   "CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/sentence__type_support.cpp.o.d"
   "libnmea_msgs__rosidl_typesupport_cpp.pdb"
@@ -21,6 +25,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_cpp/nmea_msgs/msg/gpgsv__type_support.cpp"
   "rosidl_typesupport_cpp/nmea_msgs/msg/gpgsv_satellite__type_support.cpp"
   "rosidl_typesupport_cpp/nmea_msgs/msg/gprmc__type_support.cpp"
+  "rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp"
+  "rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp"
   "rosidl_typesupport_cpp/nmea_msgs/msg/sentence__type_support.cpp"
 )
 

@@ -1,12 +1,14 @@
 {
   "package_name": "nmea_msgs",
   "non_idl_tuples": [
+    "/home/maria/ros2_coche/src/nmea_msgs:msg/Sentence.msg",
     "/home/maria/ros2_coche/src/nmea_msgs:msg/Gpgga.msg",
     "/home/maria/ros2_coche/src/nmea_msgs:msg/Gpgsa.msg",
+    "/home/maria/ros2_coche/src/nmea_msgs:msg/Gpgst.msg",
     "/home/maria/ros2_coche/src/nmea_msgs:msg/Gpgsv.msg",
     "/home/maria/ros2_coche/src/nmea_msgs:msg/GpgsvSatellite.msg",
     "/home/maria/ros2_coche/src/nmea_msgs:msg/Gprmc.msg",
-    "/home/maria/ros2_coche/src/nmea_msgs:msg/Gpgst.msg",
-    "/home/maria/ros2_coche/src/nmea_msgs:msg/Sentence.msg"
+    "/home/maria/ros2_coche/src/nmea_msgs:msg/Gpvtg.msg",
+    "/home/maria/ros2_coche/src/nmea_msgs:msg/Gpzda.msg"
   ]
 }

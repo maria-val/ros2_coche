@@ -1,1 +1,0 @@
-Invoking command in '/home/maria/ros2_coche/src/build/c4_gps': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/maria/ros2_coche/src/c4_gps -DCMAKE_INSTALL_PREFIX=/home/maria/ros2_coche/src/install/c4_gps

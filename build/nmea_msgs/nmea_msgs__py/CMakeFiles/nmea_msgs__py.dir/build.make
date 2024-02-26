@@ -69,21 +69,25 @@ include nmea_msgs__py/CMakeFiles/nmea_msgs__py.dir/progress.make
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_introspection_c.c
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_c.c
+nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_sentence.py
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgga.py
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgsa.py
+nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgst.py
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgsv.py
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgsv_satellite.py
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gprmc.py
-nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgst.py
-nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_sentence.py
+nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpvtg.py
+nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpzda.py
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/__init__.py
+nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_sentence_s.c
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgga_s.c
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgsa_s.c
+nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgst_s.c
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgsv_s.c
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgsv_satellite_s.c
 nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gprmc_s.c
-nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgst_s.c
-nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_sentence_s.c
+nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c
+nmea_msgs__py/CMakeFiles/nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c
 
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -98,13 +102,15 @@ rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_msg.py.em
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
+rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/nmea_msgs/msg/Sentence.idl
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/nmea_msgs/msg/Gpgga.idl
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/nmea_msgs/msg/Gpgsa.idl
+rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/nmea_msgs/msg/Gpgst.idl
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/nmea_msgs/msg/Gpgsv.idl
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/nmea_msgs/msg/GpgsvSatellite.idl
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/nmea_msgs/msg/Gprmc.idl
-rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/nmea_msgs/msg/Gpgst.idl
-rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/nmea_msgs/msg/Sentence.idl
+rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/nmea_msgs/msg/Gpvtg.idl
+rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/nmea_msgs/msg/Gpzda.idl
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -146,11 +152,17 @@ rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_introspection_c
 rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_c.c
 
+rosidl_generator_py/nmea_msgs/msg/_sentence.py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_sentence.py
+
 rosidl_generator_py/nmea_msgs/msg/_gpgga.py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpgga.py
 
 rosidl_generator_py/nmea_msgs/msg/_gpgsa.py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpgsa.py
+
+rosidl_generator_py/nmea_msgs/msg/_gpgst.py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpgst.py
 
 rosidl_generator_py/nmea_msgs/msg/_gpgsv.py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpgsv.py
@@ -161,20 +173,26 @@ rosidl_generator_py/nmea_msgs/msg/_gpgsv_satellite.py: rosidl_generator_py/nmea_
 rosidl_generator_py/nmea_msgs/msg/_gprmc.py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gprmc.py
 
-rosidl_generator_py/nmea_msgs/msg/_gpgst.py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpgst.py
+rosidl_generator_py/nmea_msgs/msg/_gpvtg.py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpvtg.py
 
-rosidl_generator_py/nmea_msgs/msg/_sentence.py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_sentence.py
+rosidl_generator_py/nmea_msgs/msg/_gpzda.py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpzda.py
 
 rosidl_generator_py/nmea_msgs/msg/__init__.py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/__init__.py
+
+rosidl_generator_py/nmea_msgs/msg/_sentence_s.c: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_sentence_s.c
 
 rosidl_generator_py/nmea_msgs/msg/_gpgga_s.c: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpgga_s.c
 
 rosidl_generator_py/nmea_msgs/msg/_gpgsa_s.c: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpgsa_s.c
+
+rosidl_generator_py/nmea_msgs/msg/_gpgst_s.c: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpgst_s.c
 
 rosidl_generator_py/nmea_msgs/msg/_gpgsv_s.c: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpgsv_s.c
@@ -185,11 +203,11 @@ rosidl_generator_py/nmea_msgs/msg/_gpgsv_satellite_s.c: rosidl_generator_py/nmea
 rosidl_generator_py/nmea_msgs/msg/_gprmc_s.c: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gprmc_s.c
 
-rosidl_generator_py/nmea_msgs/msg/_gpgst_s.c: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpgst_s.c
+rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c
 
-rosidl_generator_py/nmea_msgs/msg/_sentence_s.c: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_sentence_s.c
+rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c
 
 nmea_msgs__py: nmea_msgs__py/CMakeFiles/nmea_msgs__py
 nmea_msgs__py: rosidl_generator_py/nmea_msgs/_nmea_msgs_s.ep.rosidl_typesupport_c.c
@@ -208,6 +226,10 @@ nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgsv_satellite.py
 nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpgsv_satellite_s.c
 nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gprmc.py
 nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gprmc_s.c
+nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpvtg.py
+nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c
+nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpzda.py
+nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c
 nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_sentence.py
 nmea_msgs__py: rosidl_generator_py/nmea_msgs/msg/_sentence_s.c
 nmea_msgs__py: nmea_msgs__py/CMakeFiles/nmea_msgs__py.dir/build.make

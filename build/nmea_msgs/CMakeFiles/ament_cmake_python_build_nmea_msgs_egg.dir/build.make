@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_nmea_msgs_egg.dir/compiler_depend.ma
 include CMakeFiles/ament_cmake_python_build_nmea_msgs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_nmea_msgs_egg:
-	cd /home/maria/ros2_coche/build/nmea_msgs/ament_cmake_python/nmea_msgs && /usr/bin/python3.10 setup.py egg_info
+	cd /home/maria/ros2_coche/build/nmea_msgs/ament_cmake_python/nmea_msgs && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_nmea_msgs_egg: CMakeFiles/ament_cmake_python_build_nmea_msgs_egg
 ament_cmake_python_build_nmea_msgs_egg: CMakeFiles/ament_cmake_python_build_nmea_msgs_egg.dir/build.make

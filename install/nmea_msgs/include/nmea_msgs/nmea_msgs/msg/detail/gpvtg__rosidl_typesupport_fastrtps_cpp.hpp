@@ -1,0 +1,1 @@
+/home/maria/ros2_coche/build/nmea_msgs/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/gpvtg__rosidl_typesupport_fastrtps_cpp.hpp

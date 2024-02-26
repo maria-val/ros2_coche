@@ -66,13 +66,15 @@ include CMakeFiles/nmea_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/nmea_msgs.dir/progress.make
 
+CMakeFiles/nmea_msgs: /home/maria/ros2_coche/src/nmea_msgs/msg/Sentence.msg
 CMakeFiles/nmea_msgs: /home/maria/ros2_coche/src/nmea_msgs/msg/Gpgga.msg
 CMakeFiles/nmea_msgs: /home/maria/ros2_coche/src/nmea_msgs/msg/Gpgsa.msg
+CMakeFiles/nmea_msgs: /home/maria/ros2_coche/src/nmea_msgs/msg/Gpgst.msg
 CMakeFiles/nmea_msgs: /home/maria/ros2_coche/src/nmea_msgs/msg/Gpgsv.msg
 CMakeFiles/nmea_msgs: /home/maria/ros2_coche/src/nmea_msgs/msg/GpgsvSatellite.msg
 CMakeFiles/nmea_msgs: /home/maria/ros2_coche/src/nmea_msgs/msg/Gprmc.msg
-CMakeFiles/nmea_msgs: /home/maria/ros2_coche/src/nmea_msgs/msg/Gpgst.msg
-CMakeFiles/nmea_msgs: /home/maria/ros2_coche/src/nmea_msgs/msg/Sentence.msg
+CMakeFiles/nmea_msgs: /home/maria/ros2_coche/src/nmea_msgs/msg/Gpvtg.msg
+CMakeFiles/nmea_msgs: /home/maria/ros2_coche/src/nmea_msgs/msg/Gpzda.msg
 CMakeFiles/nmea_msgs: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/nmea_msgs: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/nmea_msgs: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl

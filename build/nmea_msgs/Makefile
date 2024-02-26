@@ -237,32 +237,6 @@ nmea_msgs__rosidl_typesupport_fastrtps_c/fast:
 .PHONY : nmea_msgs__rosidl_typesupport_fastrtps_c/fast
 
 #=============================================================================
-# Target rules for targets named nmea_msgs__cpp
-
-# Build rule for target.
-nmea_msgs__cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nmea_msgs__cpp
-.PHONY : nmea_msgs__cpp
-
-# fast build rule for target.
-nmea_msgs__cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__cpp.dir/build.make CMakeFiles/nmea_msgs__cpp.dir/build
-.PHONY : nmea_msgs__cpp/fast
-
-#=============================================================================
-# Target rules for targets named nmea_msgs__rosidl_typesupport_fastrtps_cpp
-
-# Build rule for target.
-nmea_msgs__rosidl_typesupport_fastrtps_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nmea_msgs__rosidl_typesupport_fastrtps_cpp
-.PHONY : nmea_msgs__rosidl_typesupport_fastrtps_cpp
-
-# fast build rule for target.
-nmea_msgs__rosidl_typesupport_fastrtps_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build
-.PHONY : nmea_msgs__rosidl_typesupport_fastrtps_cpp/fast
-
-#=============================================================================
 # Target rules for targets named nmea_msgs__rosidl_typesupport_introspection_c
 
 # Build rule for target.
@@ -287,6 +261,32 @@ nmea_msgs__rosidl_typesupport_c: cmake_check_build_system
 nmea_msgs__rosidl_typesupport_c/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/build
 .PHONY : nmea_msgs__rosidl_typesupport_c/fast
+
+#=============================================================================
+# Target rules for targets named nmea_msgs__cpp
+
+# Build rule for target.
+nmea_msgs__cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nmea_msgs__cpp
+.PHONY : nmea_msgs__cpp
+
+# fast build rule for target.
+nmea_msgs__cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__cpp.dir/build.make CMakeFiles/nmea_msgs__cpp.dir/build
+.PHONY : nmea_msgs__cpp/fast
+
+#=============================================================================
+# Target rules for targets named nmea_msgs__rosidl_typesupport_fastrtps_cpp
+
+# Build rule for target.
+nmea_msgs__rosidl_typesupport_fastrtps_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nmea_msgs__rosidl_typesupport_fastrtps_cpp
+.PHONY : nmea_msgs__rosidl_typesupport_fastrtps_cpp
+
+# fast build rule for target.
+nmea_msgs__rosidl_typesupport_fastrtps_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build
+.PHONY : nmea_msgs__rosidl_typesupport_fastrtps_cpp/fast
 
 #=============================================================================
 # Target rules for targets named nmea_msgs__rosidl_typesupport_introspection_cpp
@@ -549,6 +549,54 @@ rosidl_generator_c/nmea_msgs/msg/detail/gprmc__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gprmc__functions.c.s
 .PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gprmc__functions.c.s
 
+rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.o: rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.c.o
+.PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.o
+
+# target to build an object file
+rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.c.o
+.PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.c.o
+
+rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.i: rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.c.i
+.PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.c.i
+.PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.c.i
+
+rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.s: rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.c.s
+.PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.c.s
+.PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.c.s
+
+rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.o: rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.c.o
+.PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.o
+
+# target to build an object file
+rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.c.o
+.PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.c.o
+
+rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.i: rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.c.i
+.PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.c.i
+.PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.c.i
+
+rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.s: rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.c.s
+.PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_c.dir/rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.c.s
+.PHONY : rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.c.s
+
 rosidl_generator_c/nmea_msgs/msg/detail/sentence__functions.o: rosidl_generator_c/nmea_msgs/msg/detail/sentence__functions.c.o
 .PHONY : rosidl_generator_c/nmea_msgs/msg/detail/sentence__functions.o
 
@@ -789,6 +837,54 @@ rosidl_generator_py/nmea_msgs/msg/_gprmc_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_py.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_py.dir/rosidl_generator_py/nmea_msgs/msg/_gprmc_s.c.s
 .PHONY : rosidl_generator_py/nmea_msgs/msg/_gprmc_s.c.s
 
+rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.o: rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c.o
+.PHONY : rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.o
+
+# target to build an object file
+rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_py.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_py.dir/rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c.o
+.PHONY : rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c.o
+
+rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.i: rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c.i
+.PHONY : rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_py.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_py.dir/rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c.i
+.PHONY : rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c.i
+
+rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.s: rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c.s
+.PHONY : rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_py.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_py.dir/rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c.s
+.PHONY : rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.c.s
+
+rosidl_generator_py/nmea_msgs/msg/_gpzda_s.o: rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c.o
+.PHONY : rosidl_generator_py/nmea_msgs/msg/_gpzda_s.o
+
+# target to build an object file
+rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_py.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_py.dir/rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c.o
+.PHONY : rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c.o
+
+rosidl_generator_py/nmea_msgs/msg/_gpzda_s.i: rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c.i
+.PHONY : rosidl_generator_py/nmea_msgs/msg/_gpzda_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_py.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_py.dir/rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c.i
+.PHONY : rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c.i
+
+rosidl_generator_py/nmea_msgs/msg/_gpzda_s.s: rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c.s
+.PHONY : rosidl_generator_py/nmea_msgs/msg/_gpzda_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_generator_py.dir/build.make CMakeFiles/nmea_msgs__rosidl_generator_py.dir/rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c.s
+.PHONY : rosidl_generator_py/nmea_msgs/msg/_gpzda_s.c.s
+
 rosidl_generator_py/nmea_msgs/msg/_sentence_s.o: rosidl_generator_py/nmea_msgs/msg/_sentence_s.c.o
 .PHONY : rosidl_generator_py/nmea_msgs/msg/_sentence_s.o
 
@@ -956,6 +1052,54 @@ rosidl_typesupport_c/nmea_msgs/msg/gprmc__type_support.s: rosidl_typesupport_c/n
 rosidl_typesupport_c/nmea_msgs/msg/gprmc__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nmea_msgs/msg/gprmc__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/nmea_msgs/msg/gprmc__type_support.cpp.s
+
+rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.o: rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.cpp.o
+
+rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.i: rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.cpp.i
+
+rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.s: rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.cpp.s
+
+rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.o: rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.cpp.o
+
+rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.i: rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.cpp.i
+
+rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.s: rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.cpp.s
 
 rosidl_typesupport_c/nmea_msgs/msg/sentence__type_support.o: rosidl_typesupport_c/nmea_msgs/msg/sentence__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/nmea_msgs/msg/sentence__type_support.o
@@ -1125,6 +1269,54 @@ rosidl_typesupport_cpp/nmea_msgs/msg/gprmc__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gprmc__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gprmc__type_support.cpp.s
 
+rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.o: rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.o
+
+rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.i: rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.i
+
+rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.s: rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.cpp.s
+
+rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.o: rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.o
+
+rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.i: rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.i
+
+rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.s: rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.cpp.s
+
 rosidl_typesupport_cpp/nmea_msgs/msg/sentence__type_support.o: rosidl_typesupport_cpp/nmea_msgs/msg/sentence__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/nmea_msgs/msg/sentence__type_support.o
 
@@ -1292,6 +1484,54 @@ rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gprmc__type_support_c.s: rosi
 rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gprmc__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gprmc__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gprmc__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.o: rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.i: rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.s: rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.o: rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.i: rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.s: rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/sentence__type_support_c.o: rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/sentence__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/sentence__type_support_c.o
@@ -1461,6 +1701,54 @@ rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gprmc__type_su
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gprmc__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gprmc__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.o: rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.i: rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.s: rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.o: rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.i: rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.s: rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/sentence__type_support.o: rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/sentence__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/sentence__type_support.o
 
@@ -1628,6 +1916,54 @@ rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gprmc__type_support.s: r
 rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gprmc__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gprmc__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gprmc__type_support.c.s
+
+rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.o: rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.c.o
+
+rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.i: rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.c.i
+
+rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.s: rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.c.s
+
+rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.o: rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.c.o
+
+rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.i: rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.c.i
+
+rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.s: rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.c.s
 
 rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/sentence__type_support.o: rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/sentence__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/sentence__type_support.o
@@ -1797,6 +2133,54 @@ rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gprmc__type_support.cp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gprmc__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gprmc__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.o: rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.i: rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.s: rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.o: rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.i: rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.s: rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/nmea_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/sentence__type_support.o: rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/sentence__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/sentence__type_support.o
 
@@ -1870,6 +2254,12 @@ help:
 	@echo "... rosidl_generator_c/nmea_msgs/msg/detail/gprmc__functions.o"
 	@echo "... rosidl_generator_c/nmea_msgs/msg/detail/gprmc__functions.i"
 	@echo "... rosidl_generator_c/nmea_msgs/msg/detail/gprmc__functions.s"
+	@echo "... rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.o"
+	@echo "... rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.i"
+	@echo "... rosidl_generator_c/nmea_msgs/msg/detail/gpvtg__functions.s"
+	@echo "... rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.o"
+	@echo "... rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.i"
+	@echo "... rosidl_generator_c/nmea_msgs/msg/detail/gpzda__functions.s"
 	@echo "... rosidl_generator_c/nmea_msgs/msg/detail/sentence__functions.o"
 	@echo "... rosidl_generator_c/nmea_msgs/msg/detail/sentence__functions.i"
 	@echo "... rosidl_generator_c/nmea_msgs/msg/detail/sentence__functions.s"
@@ -1900,6 +2290,12 @@ help:
 	@echo "... rosidl_generator_py/nmea_msgs/msg/_gprmc_s.o"
 	@echo "... rosidl_generator_py/nmea_msgs/msg/_gprmc_s.i"
 	@echo "... rosidl_generator_py/nmea_msgs/msg/_gprmc_s.s"
+	@echo "... rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.o"
+	@echo "... rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.i"
+	@echo "... rosidl_generator_py/nmea_msgs/msg/_gpvtg_s.s"
+	@echo "... rosidl_generator_py/nmea_msgs/msg/_gpzda_s.o"
+	@echo "... rosidl_generator_py/nmea_msgs/msg/_gpzda_s.i"
+	@echo "... rosidl_generator_py/nmea_msgs/msg/_gpzda_s.s"
 	@echo "... rosidl_generator_py/nmea_msgs/msg/_sentence_s.o"
 	@echo "... rosidl_generator_py/nmea_msgs/msg/_sentence_s.i"
 	@echo "... rosidl_generator_py/nmea_msgs/msg/_sentence_s.s"
@@ -1921,6 +2317,12 @@ help:
 	@echo "... rosidl_typesupport_c/nmea_msgs/msg/gprmc__type_support.o"
 	@echo "... rosidl_typesupport_c/nmea_msgs/msg/gprmc__type_support.i"
 	@echo "... rosidl_typesupport_c/nmea_msgs/msg/gprmc__type_support.s"
+	@echo "... rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.o"
+	@echo "... rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.i"
+	@echo "... rosidl_typesupport_c/nmea_msgs/msg/gpvtg__type_support.s"
+	@echo "... rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.o"
+	@echo "... rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.i"
+	@echo "... rosidl_typesupport_c/nmea_msgs/msg/gpzda__type_support.s"
 	@echo "... rosidl_typesupport_c/nmea_msgs/msg/sentence__type_support.o"
 	@echo "... rosidl_typesupport_c/nmea_msgs/msg/sentence__type_support.i"
 	@echo "... rosidl_typesupport_c/nmea_msgs/msg/sentence__type_support.s"
@@ -1942,6 +2344,12 @@ help:
 	@echo "... rosidl_typesupport_cpp/nmea_msgs/msg/gprmc__type_support.o"
 	@echo "... rosidl_typesupport_cpp/nmea_msgs/msg/gprmc__type_support.i"
 	@echo "... rosidl_typesupport_cpp/nmea_msgs/msg/gprmc__type_support.s"
+	@echo "... rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.o"
+	@echo "... rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.i"
+	@echo "... rosidl_typesupport_cpp/nmea_msgs/msg/gpvtg__type_support.s"
+	@echo "... rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.o"
+	@echo "... rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.i"
+	@echo "... rosidl_typesupport_cpp/nmea_msgs/msg/gpzda__type_support.s"
 	@echo "... rosidl_typesupport_cpp/nmea_msgs/msg/sentence__type_support.o"
 	@echo "... rosidl_typesupport_cpp/nmea_msgs/msg/sentence__type_support.i"
 	@echo "... rosidl_typesupport_cpp/nmea_msgs/msg/sentence__type_support.s"
@@ -1963,6 +2371,12 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gprmc__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gprmc__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gprmc__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpvtg__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/gpzda__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/sentence__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/sentence__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/nmea_msgs/msg/detail/sentence__type_support_c.s"
@@ -1984,6 +2398,12 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gprmc__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gprmc__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gprmc__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpvtg__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/gpzda__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/sentence__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/sentence__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/nmea_msgs/msg/detail/dds_fastrtps/sentence__type_support.s"
@@ -2005,6 +2425,12 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gprmc__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gprmc__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gprmc__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpvtg__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/gpzda__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/sentence__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/sentence__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/nmea_msgs/msg/detail/sentence__type_support.s"
@@ -2026,6 +2452,12 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gprmc__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gprmc__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gprmc__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpvtg__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/gpzda__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/sentence__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/sentence__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/nmea_msgs/msg/detail/sentence__type_support.s"

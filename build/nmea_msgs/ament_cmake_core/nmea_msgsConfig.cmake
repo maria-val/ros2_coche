@@ -16,7 +16,7 @@ set(_nmea_msgs_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT nmea_msgs_FIND_QUIETLY)
-  message(STATUS "Found nmea_msgs: 1.1.0 (${nmea_msgs_DIR})")
+  message(STATUS "Found nmea_msgs: 2.1.0 (${nmea_msgs_DIR})")
 endif()
 
 # warn when using a deprecated package

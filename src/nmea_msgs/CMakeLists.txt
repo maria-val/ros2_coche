@@ -1,30 +1,30 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.5)
+
 project(nmea_msgs)
 
-# Find packages
+# Default to C++14
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+
 find_package(ament_cmake REQUIRED)
-find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
 
-# Generate messages
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Gpgga.msg"
-  "msg/Gpgsa.msg"
-  "msg/Gpgsv.msg"
-  "msg/GpgsvSatellite.msg"
-  "msg/Gprmc.msg"
-  "msg/Gpgst.msg"
-  "msg/Sentence.msg"
-  DEPENDENCIES std_msgs
+   "msg/Sentence.msg"
+   "msg/Gpgga.msg"
+   "msg/Gpgsa.msg"
+   "msg/Gpgst.msg"
+   "msg/Gpgsv.msg"
+   "msg/GpgsvSatellite.msg"
+   "msg/Gprmc.msg"
+   "msg/Gpvtg.msg"
+   "msg/Gpzda.msg"
+   DEPENDENCIES std_msgs
 )
 
-# Install
-install(DIRECTORY "msg"
-  DESTINATION "share/${PROJECT_NAME}"
-)
 
-# Export dependencies
-ament_export_dependencies(std_msgs)
+ament_export_dependencies(rosidl_default_runtime)
 
-# Package information
 ament_package()

@@ -1,2 +1,0 @@
-Invoking command in '/home/maria/ros2_coche/build/nmea_msgs': /usr/bin/cmake /home/maria/ros2_coche/src/nmea_msgs-master -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/maria/ros2_coche/install/nmea_msgs
-Invoked command in '/home/maria/ros2_coche/build/nmea_msgs' returned '1': /usr/bin/cmake /home/maria/ros2_coche/src/nmea_msgs-master -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/maria/ros2_coche/install/nmea_msgs

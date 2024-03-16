@@ -1,1 +1,0 @@
-/home/maria/ros2_coche/build/nmea_msgs/rosidl_cmake/rosidl_cmake-extras.cmake

@@ -1,1 +1,0 @@
-/home/maria/ros2_coche/src/nmea_msgs/msg/GpgsvSatellite.msg

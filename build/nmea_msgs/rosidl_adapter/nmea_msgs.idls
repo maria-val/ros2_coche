@@ -1,9 +1,0 @@
-/home/maria/ros2_coche/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Sentence.idl
-/home/maria/ros2_coche/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Gpgga.idl
-/home/maria/ros2_coche/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Gpgsa.idl
-/home/maria/ros2_coche/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Gpgst.idl
-/home/maria/ros2_coche/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Gpgsv.idl
-/home/maria/ros2_coche/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/GpgsvSatellite.idl
-/home/maria/ros2_coche/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Gprmc.idl
-/home/maria/ros2_coche/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Gpvtg.idl
-/home/maria/ros2_coche/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Gpzda.idl

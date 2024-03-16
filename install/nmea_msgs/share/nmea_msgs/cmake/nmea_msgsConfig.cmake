@@ -1,1 +1,0 @@
-/home/maria/ros2_coche/build/nmea_msgs/ament_cmake_core/nmea_msgsConfig.cmake

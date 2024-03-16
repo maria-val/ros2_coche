@@ -1,4 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000350] (-) JobUnselected: {'identifier': 'c4_gps'}
-[0.000427] (-) JobUnselected: {'identifier': 'nmea_msgs'}
-[0.000461] (-) EventReactorShutdown: {}

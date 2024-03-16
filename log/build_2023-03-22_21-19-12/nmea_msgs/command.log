@@ -1,2 +1,0 @@
-Invoking command in '/home/maria/ros2_coche/build/nmea_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maria/ros2_coche/build/nmea_msgs -- -j12 -l12
-Invoked command in '/home/maria/ros2_coche/build/nmea_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maria/ros2_coche/build/nmea_msgs -- -j12 -l12

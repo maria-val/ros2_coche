@@ -1,2 +1,0 @@
-[0.035s] Invoking command in '/home/maria/ros2_coche/build/c4_gps': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maria/ros2_coche/build/c4_gps -- -j12 -l12
-[0.182s] [100%] Built target talker

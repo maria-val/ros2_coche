@@ -1,5 +1,6 @@
 #include <memory>
 #include <iostream>
+#include <string.h>
 #include <sys/socket.h>
 #include <unistd.h>
 #include <termios.h>
@@ -17,8 +18,7 @@
 class TrimbleGps : public rclcpp::Node   //heredo método y funciones de la clase rclcpp::Node
 {
   public:
-    TrimbleGps()
-        : Node("trimble_gps") //constructor que llama al constructor Node, es decir, el constructor crea un nodo en ROS2
+    TrimbleGps() : Node("trimble_gps") //constructor que llama al constructor Node, es decir, el constructor crea un nodo en ROS2
     {
       publisher_ = this->create_publisher<nmea_msgs::msg::Gpgga>("gga", 10);
 
@@ -26,14 +26,16 @@ class TrimbleGps : public rclcpp::Node   //heredo método y funciones de la clas
     }
 
   private:
-    void gpgga_data(){
+    void gpgga_data()
+    {
       int port = 5018;
       int sockFd;
       struct sockaddr_in serv_addr;
+      bool isGPSOpen = false;
 
       auto message = nmea_msgs::msg::Gpgga();
       char messagegps[MSG_SZ];
-      char message_struct[MSG_SZ];
+      char message_struct[MSG_SZ] = {0};
       int msgSize;
 
       char    c1,c2,c3,c4;
@@ -43,6 +45,7 @@ class TrimbleGps : public rclcpp::Node   //heredo método y funciones de la clas
       if ((sockFd = socket(AF_INET, SOCK_STREAM, 0)) < 0) //dir IPv4 y TCP
       {
         std::cout << " [OpenGPSDevice]: socket not create" << std::endl;
+        return;
       }
       else
       {
@@ -54,28 +57,31 @@ class TrimbleGps : public rclcpp::Node   //heredo método y funciones de la clas
         if (inet_pton(AF_INET, "192.168.254.12", &serv_addr.sin_addr) <= 0) //necesario convertir la direccion IP para almacenarla en serv_addr.sin_addr
         {
           std::cout << " [OpenGPSDevice]: inet_pton error occurred" << std::endl;
+          return;
         }
         else
         {
           if (connect(sockFd, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0)
           {
             std::cout << " [OpenGPSDevice]: Failed Connection" << std::endl;
+            return;
           }
           else
           {
             std::cout << " [OpenGPSDevice]: Connect " << std::endl;
+            isGPSOpen = true;
           }
         }
       }
 
-      while (1)
+      while (isGPSOpen)
       {
         if ((msgSize = read(sockFd, messagegps, sizeof(messagegps) - 1)) > 0)
         {
           messagegps[msgSize] = '\0';
-          if(messagegps != message_struct)
+          if(strcmp(messagegps, message_struct) != 0)
           {
-            printf("%s\n", messagegps);
+            std::cout << messagegps << std::endl;
             sscanf(messagegps, "$GPGGA,%lf,%lf,%c,%lf,%c,%d,%d,%lf,%lf,%c,%lf,%c,%lf,%d*%d", &d1,&d2,&c1,&d3,&c2,&i1,&i2,&d4,&d5,&c3,&d6,&c4,&d7,&i3,&i4);
             strcpy(message_struct, messagegps);
 
@@ -97,6 +103,12 @@ class TrimbleGps : public rclcpp::Node   //heredo método y funciones de la clas
 
             publisher_->publish(message);
           }
+        }
+        else
+        {
+          close(sockFd);
+          std::cout << " [OpenGPSDevice]: Socket error" << std::endl;
+          isGPSOpen = false;
         }
       }
     }

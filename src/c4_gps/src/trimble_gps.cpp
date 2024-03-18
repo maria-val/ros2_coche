@@ -22,27 +22,27 @@ class TrimbleGps : public rclcpp::Node   //heredo método y funciones de la clas
     {
       publisher_ = this->create_publisher<nmea_msgs::msg::Gpgga>("gga", 10);
 
-      gpgga_data();
+      getGpsData();
     }
 
   private:
-    void gpgga_data()
+    void getGpsData()
     {
       int port = 5018;
-      int sockFd;
+      int sock_fd;
       struct sockaddr_in serv_addr;
-      bool isGPSOpen = false;
+      bool is_gps_open = false;
 
       auto message = nmea_msgs::msg::Gpgga();
-      char messagegps[MSG_SZ];
+      char message_gps[MSG_SZ];
       char message_struct[MSG_SZ] = {0};
-      int msgSize;
+      int msg_size;
 
       char    c1,c2,c3,c4;
       int     i1,i2,i3,i4;
       double  d1,d2,d3,d4,d5,d6,d7;
 
-      if ((sockFd = socket(AF_INET, SOCK_STREAM, 0)) < 0) //dir IPv4 y TCP
+      if ((sock_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0) //dir IPv4 y TCP
       {
         std::cout << " [OpenGPSDevice]: socket not create" << std::endl;
         return;
@@ -61,7 +61,7 @@ class TrimbleGps : public rclcpp::Node   //heredo método y funciones de la clas
         }
         else
         {
-          if (connect(sockFd, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0)
+          if (connect(sock_fd, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0)
           {
             std::cout << " [OpenGPSDevice]: Failed Connection" << std::endl;
             return;
@@ -69,21 +69,21 @@ class TrimbleGps : public rclcpp::Node   //heredo método y funciones de la clas
           else
           {
             std::cout << " [OpenGPSDevice]: Connect " << std::endl;
-            isGPSOpen = true;
+            is_gps_open = true;
           }
         }
       }
 
-      while (isGPSOpen)
+      while (is_gps_open)
       {
-        if ((msgSize = read(sockFd, messagegps, sizeof(messagegps) - 1)) > 0)
+        if ((msg_size = read(sock_fd, message_gps, sizeof(message_gps) - 1)) > 0)
         {
-          messagegps[msgSize] = '\0';
-          if(strcmp(messagegps, message_struct) != 0)
+          message_gps[msg_size] = '\0';
+          if(strcmp(message_gps, message_struct) != 0)
           {
-            std::cout << messagegps << std::endl;
-            sscanf(messagegps, "$GPGGA,%lf,%lf,%c,%lf,%c,%d,%d,%lf,%lf,%c,%lf,%c,%lf,%d*%d", &d1,&d2,&c1,&d3,&c2,&i1,&i2,&d4,&d5,&c3,&d6,&c4,&d7,&i3,&i4);
-            strcpy(message_struct, messagegps);
+            std::cout << message_gps << std::endl;
+            sscanf(message_gps, "$GPGGA,%lf,%lf,%c,%lf,%c,%d,%d,%lf,%lf,%c,%lf,%c,%lf,%d*%d", &d1,&d2,&c1,&d3,&c2,&i1,&i2,&d4,&d5,&c3,&d6,&c4,&d7,&i3,&i4);
+            strcpy(message_struct, message_gps);
 
             //asignar cada valor que proporciona el GPS al mensaje NMEA correspondiente
             message.utc_seconds = d1;
@@ -106,9 +106,9 @@ class TrimbleGps : public rclcpp::Node   //heredo método y funciones de la clas
         }
         else
         {
-          close(sockFd);
+          close(sock_fd);
           std::cout << " [OpenGPSDevice]: Socket error" << std::endl;
-          isGPSOpen = false;
+          is_gps_open = false;
         }
       }
     }

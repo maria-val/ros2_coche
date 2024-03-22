@@ -7,9 +7,23 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(buscan_msgs REQUIRED)
+
+add_executable(buscan_pub src/buscan.cpp)
+ament_target_dependencies(buscan_pub rclcpp buscan_msgs)
+
+add_executable(can_parser src/can_parser.cpp)
+ament_target_dependencies(can_parser rclcpp buscan_msgs)
+
+target_link_libraries(buscan_pub canlib)
+
+include_directories(include)
+
+install(TARGETS
+  buscan_pub
+  can_parser
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

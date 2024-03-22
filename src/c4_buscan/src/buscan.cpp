@@ -1,3 +1,4 @@
+#include <memory>
 #include <canlib.h>
 #include "rclcpp/rclcpp.hpp"
 #include "buscan_msgs/msg/can_raw.hpp"
@@ -17,7 +18,7 @@ class BusCan : public rclcpp::Node
     public:
         BusCan() : Node("buscan")
         {
-            publisher_ = this->create_publisher<buscan_msgs::msg::can_raw>("buscan", 100);
+            publisher_ = this->create_publisher<buscan_msgs::msg::CanRaw>("buscan", 100);
 
             initBuscanAndReadData();
         }
@@ -25,7 +26,7 @@ class BusCan : public rclcpp::Node
     private:
         void initBuscanAndReadData()
         {
-            auto raw_message = buscan_msgs::msg::can_raw();
+            auto raw_message = buscan_msgs::msg::CanRaw();
             raw_can_data_t data;
             CanHandle h;
             bool init_buscan = false;
@@ -82,8 +83,8 @@ class BusCan : public rclcpp::Node
             canClose(h);
         }
 
-        rclcpp::Publisher<buscan_msgs::msg::can_raw>::SharedPtr publisher_;
-}
+        rclcpp::Publisher<buscan_msgs::msg::CanRaw>::SharedPtr publisher_;
+};
 
 int main(int argc, char *argv[])
 {

@@ -9,9 +9,13 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(nmea_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(gps_tools REQUIRED)
 
 add_executable(t_gps src/trimble_gps.cpp)
-ament_target_dependencies(t_gps rclcpp nmea_msgs)
+ament_target_dependencies(t_gps rclcpp nmea_msgs std_msgs sensor_msgs geometry_msgs gps_tools)
 
 install(TARGETS
   t_gps

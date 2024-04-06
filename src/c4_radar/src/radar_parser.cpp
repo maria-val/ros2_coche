@@ -1,4 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
+#include "c4_radar/radar_ars408.h"
 #include "radar_msgs/msg/radar_raw.hpp"
 
 class RadarParser : public rclcpp::Node
@@ -6,11 +7,19 @@ class RadarParser : public rclcpp::Node
   public:
     RadarParser() : Node("radar_parser")
     {
-      ars408_subscriber_ = this->create_subscription<radar_msgs::msg::RadarRaw>("radar_reader/ars408", 1000, std::bind(&RadarParser::parse_radar_msg, this, std::placeholders::_1));
-      srr208_subscriber_ = this->create_subscription<radar_msgs::msg::RadarRaw>("radar_reader/srr208", 1000, std::bind(&RadarParser::parse_radar_msg, this, std::placeholders::_1));
+      ars408_subscriber_ = this->create_subscription<radar_msgs::msg::RadarRaw>("radar_reader/ars408", 1000, std::bind(&RadarParser::parse_ars408_msg, this, std::placeholders::_1));
+      srr208_subscriber_ = this->create_subscription<radar_msgs::msg::RadarRaw>("radar_reader/srr208", 1000, std::bind(&RadarParser::parse_srr208_msg, this, std::placeholders::_1));
     }
   private:
-  void parse_radar_msg(const radar_msgs::msg::RadarRaw msgIn)
+  void parse_ars408_msg(const radar_msgs::msg::RadarRaw msgIn)
+  {
+    RCLCPP_INFO(this->get_logger(), "Parsing T60 message");
+    Radar_ARS408 radarARS(Radar_ARS408::ENABLE_60D);
+    radarARS.borrarEstructura();
+    radarARS.setRadarConfig(Radar_ARS408::ENABLE_60D);
+
+  }
+  void parse_srr208_msg(const radar_msgs::msg::RadarRaw msgIn)
   {
 
   }

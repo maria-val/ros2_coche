@@ -7,7 +7,7 @@ int16 received_num_of_objects1
 int16 received_num_of_objects2
 int16 received_num_of_objects3
 bool completed
-radar_msgs/ARS408Object objects
+radar_msgs/ARS408Object[100] objects
 bool nvm_read_status
 bool nvm_write_status
 bool voltage_error

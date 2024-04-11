@@ -1,16 +1,14 @@
 #include <stdio.h>      /* printf, NULL */
 #include <stdlib.h>     /* strtoul */
 
-#include "c4_radar/radar_ars408.h"
+#include "c4_radar/radar_ars408.hpp"
 
-Radar_ARS408::Radar_ARS408():
-m_radarConfig(ENABLE_60D)
+Radar_ARS408::Radar_ARS408()
 {
     m_radarConfig =ENABLE_60D;
 }
 
-Radar_ARS408::Radar_ARS408(enum eConfigARS408 configParam):
-m_radarConfig(configParam)
+Radar_ARS408::Radar_ARS408(enum eConfigARS408 configParam)
 {
     m_radarConfig = configParam;
 }
@@ -853,15 +851,15 @@ void Radar_ARS408::borrarEstructura()
     }
 }
 
-void Radar_ARS408::parse_radar_msg_408(const radar_msgs::msg::RadarRaw::ConstPtr& msgIn)
+void Radar_ARS408::parse_radar_msg_408(const radar_msgs::msg::RadarRaw msgIn)
 {
-    radar_msgs::msg::RadarMsg408 msg; 
+    auto msg = radar_msgs::msg::RadarMsg408(); 
     char aux[23];
 
-    memcpy(aux, (const char*) (&(msgIn->raw[0])), 22);
+    memcpy(aux, (const char*) (&(msgIn.raw[0])), 22);
     aux[23]='\0';
     
-    ROS_DEBUG("I heard: [%d:%d  %s]", msgIn->header.stamp.sec,msgIn->header.stamp.nsec,aux);
+    RCLCPP_DEBUG(rclcpp::get_logger("radar"), "I heard: [%d:%d  %s]", msgIn.header.stamp.sec,msgIn.header.stamp.nanosec,aux);
 
     read_Radar(aux, &m_dataRadar_ARS);
     
@@ -869,7 +867,7 @@ void Radar_ARS408::parse_radar_msg_408(const radar_msgs::msg::RadarRaw::ConstPtr
     {
         m_dataRadar_ARS.status.completed = false;
         //ROS_INFO(" COMPLETADO ");
-        msg.header.stamp = msgIn->header.stamp;
+        msg.header.stamp = msgIn.header.stamp;
         msg.num_of_objects = m_dataRadar_ARS.status.NumOfObjects;
         msg.meas_counter = m_dataRadar_ARS.status.MeasCounter;
         msg.interface_version      = m_dataRadar_ARS.status.InterfaceVersion;
@@ -881,95 +879,59 @@ void Radar_ARS408::parse_radar_msg_408(const radar_msgs::msg::RadarRaw::ConstPtr
         
         for (int i=0;i<m_dataRadar_ARS.status.NumOfObjects;i++)
         {
-            msg.objects[i].Obj_ID= m_dataRadar_ARS.objects[i].Obj_ID;
+            msg.objects[i].obj_id= m_dataRadar_ARS.objects[i].Obj_ID;
 
-            msg.objects[i].Obj_u = m_dataRadar_ARS.objects[i].Obj_u;
-            msg.objects[i].Obj_v = m_dataRadar_ARS.objects[i].Obj_v;
+            msg.objects[i].obj_u = m_dataRadar_ARS.objects[i].Obj_u;
+            msg.objects[i].obj_v = m_dataRadar_ARS.objects[i].Obj_v;
             
-            msg.objects[i].Obj_LongDispl= m_dataRadar_ARS.objects[i].Obj_LongDispl;
-            msg.objects[i].Obj_LatDispl= m_dataRadar_ARS.objects[i].Obj_LatDispl;            msg.objects[i].Obj_VrelLong= m_dataRadar_ARS.objects[i].Obj_VrelLong;
-            msg.objects[i].Obj_LongDispl_cam= m_dataRadar_ARS.objects[i].Obj_LongDispl_cam;            msg.objects[i].Obj_LatDispl_cam= m_dataRadar_ARS.objects[i].Obj_LatDispl_cam;
-            msg.objects[i].z_cam= m_dataRadar_ARS.objects[i].z_cam;            msg.objects[i].Obj_VrelLong_cam= m_dataRadar_ARS.objects[i].Obj_VrelLong_cam;
-            msg.objects[i].Object_DynProp= m_dataRadar_ARS.objects[i].Object_DynProp;
+            msg.objects[i].obj_long_displ= m_dataRadar_ARS.objects[i].Obj_LongDispl;
+            msg.objects[i].obj_lat_displ= m_dataRadar_ARS.objects[i].Obj_LatDispl;            
+            msg.objects[i].obj_vrel_long= m_dataRadar_ARS.objects[i].Obj_VrelLong;
+            msg.objects[i].obj_long_displ_cam= m_dataRadar_ARS.objects[i].Obj_LongDispl_cam;            
+            msg.objects[i].obj_lat_displ_cam= m_dataRadar_ARS.objects[i].Obj_LatDispl_cam;
+            msg.objects[i].z_cam= m_dataRadar_ARS.objects[i].z_cam;            
+            msg.objects[i].obj_vrel_long_cam= m_dataRadar_ARS.objects[i].Obj_VrelLong_cam;
+            msg.objects[i].object_dyn_prop= m_dataRadar_ARS.objects[i].Object_DynProp;
             
-            msg.objects[i].Obj_LatSpeed= m_dataRadar_ARS.objects[i].Obj_LatSpeed;
-            msg.objects[i].Obj_LatSpeed_cam= m_dataRadar_ARS.objects[i].Obj_LatSpeed_cam;
-            msg.objects[i].Obj_RCSValue= m_dataRadar_ARS.objects[i].Obj_RCSValue;
+            msg.objects[i].obj_lat_speed= m_dataRadar_ARS.objects[i].Obj_LatSpeed;
+            msg.objects[i].obj_lat_speed_cam= m_dataRadar_ARS.objects[i].Obj_LatSpeed_cam;
+            msg.objects[i].obj_rcs_value= m_dataRadar_ARS.objects[i].Obj_RCSValue;
 
-            msg.objects[i].Obj_DistLong_rms= m_dataRadar_ARS.objects[i].Obj_DistLong_rms;
-            msg.objects[i].Obj_VrelLong_rms= m_dataRadar_ARS.objects[i].Obj_VrelLong_rms;
-            msg.objects[i].Obj_DistLat_rms= m_dataRadar_ARS.objects[i].Obj_DistLat_rms;
-            msg.objects[i].Obj_VrelLat_rms= m_dataRadar_ARS.objects[i].Obj_VrelLat_rms;
-            msg.objects[i].Obj_ArelLat_rms= m_dataRadar_ARS.objects[i].Obj_ArelLat_rms;
-            msg.objects[i].Obj_ArelLong_rms= m_dataRadar_ARS.objects[i].Obj_ArelLong_rms;
-            msg.objects[i].Obj_Orientation_rms= m_dataRadar_ARS.objects[i].Obj_Orientation_rms;
-            msg.objects[i].Obj_MeasState= m_dataRadar_ARS.objects[i].Obj_MeasState;
-            msg.objects[i].Obj_ProbOfExist= m_dataRadar_ARS.objects[i].Obj_ProbOfExist;            
+            msg.objects[i].obj_dist_long_rms= m_dataRadar_ARS.objects[i].Obj_DistLong_rms;
+            msg.objects[i].obj_vrel_long_rms= m_dataRadar_ARS.objects[i].Obj_VrelLong_rms;
+            msg.objects[i].obj_dist_lat_rms= m_dataRadar_ARS.objects[i].Obj_DistLat_rms;
+            msg.objects[i].obj_vrel_lat_rms= m_dataRadar_ARS.objects[i].Obj_VrelLat_rms;
+            msg.objects[i].obj_arel_lat_rms= m_dataRadar_ARS.objects[i].Obj_ArelLat_rms;
+            msg.objects[i].obj_arel_long_rms= m_dataRadar_ARS.objects[i].Obj_ArelLong_rms;
+            msg.objects[i].obj_orientation_rms= m_dataRadar_ARS.objects[i].Obj_Orientation_rms;
+            msg.objects[i].obj_meas_state= m_dataRadar_ARS.objects[i].Obj_MeasState;
+            msg.objects[i].obj_prob_of_exist= m_dataRadar_ARS.objects[i].Obj_ProbOfExist;            
             
-            msg.objects[i].Obj_ArelLong= m_dataRadar_ARS.objects[i].Obj_ArelLong;
-            msg.objects[i].Obj_Class= m_dataRadar_ARS.objects[i].Obj_Class;
-            msg.objects[i].Obj_ArelLat= m_dataRadar_ARS.objects[i].Obj_ArelLat;
-            msg.objects[i].Obj_OrientationAngle= m_dataRadar_ARS.objects[i].Obj_OrientationAngle;
-            msg.objects[i].Obj_DistLong_rms= m_dataRadar_ARS.objects[i].Obj_DistLong_rms;
-            msg.objects[i].Obj_Length= m_dataRadar_ARS.objects[i].Obj_Length;
+            msg.objects[i].obj_arel_long= m_dataRadar_ARS.objects[i].Obj_ArelLong;
+            msg.objects[i].obj_class= m_dataRadar_ARS.objects[i].Obj_Class;
+            msg.objects[i].obj_arel_lat= m_dataRadar_ARS.objects[i].Obj_ArelLat;
+            msg.objects[i].obj_orientation_angle= m_dataRadar_ARS.objects[i].Obj_OrientationAngle;
+            msg.objects[i].obj_dist_long_rms= m_dataRadar_ARS.objects[i].Obj_DistLong_rms;
+            msg.objects[i].obj_length= m_dataRadar_ARS.objects[i].Obj_Length;
         }
 
-        msg.NVMReadStatus     = m_dataRadar_ARS.radarState.NVMReadStatus;
-        msg.NVMwriteStatus    = m_dataRadar_ARS.radarState.NVMwriteStatus;
-        msg.Voltage_Error     = m_dataRadar_ARS.radarState.Voltage_Error;
-        msg.Temporary_Error   = m_dataRadar_ARS.radarState.Temporary_Error;
-        msg.Temperature_Error = m_dataRadar_ARS.radarState.Temperature_Error;
-        msg.Interference      = m_dataRadar_ARS.radarState.Interference;
-        msg.Persistent_Error  = m_dataRadar_ARS.radarState.Persistent_Error;
-        msg.MaxDistanceCfg    = m_dataRadar_ARS.radarState.MaxDistanceCfg;
-        msg.SensorID          = m_dataRadar_ARS.radarState.SensorID;
-        msg.SortIndex         = m_dataRadar_ARS.radarState.SortIndex;
-        msg.RadarPowerCfg     = m_dataRadar_ARS.radarState.RadarPowerCfg;
-        msg.CtrlRelayCfg      = m_dataRadar_ARS.radarState.CtrlRelayCfg;
-        msg.OutputTypeCfg     = m_dataRadar_ARS.radarState.OutputTypeCfg;
-        msg.SendQualityCfg    = m_dataRadar_ARS.radarState.SendQualityCfg;
-        msg.SendExtInfoCfg    = m_dataRadar_ARS.radarState.SendExtInfoCfg;
-        msg.MotionRxState     = m_dataRadar_ARS.radarState.MotionRxState;
-        msg.RCS_Threshold     = m_dataRadar_ARS.radarState.RCS_Threshold;
-        m_radar_msg_pub.publish(msg);
+        msg.nvm_read_status     = m_dataRadar_ARS.radarState.NVMReadStatus;
+        msg.nvm_write_status    = m_dataRadar_ARS.radarState.NVMwriteStatus;
+        msg.voltage_error       = m_dataRadar_ARS.radarState.Voltage_Error;
+        msg.temporary_error     = m_dataRadar_ARS.radarState.Temporary_Error;
+        msg.temperature_error   = m_dataRadar_ARS.radarState.Temperature_Error;
+        msg.interference        = m_dataRadar_ARS.radarState.Interference;
+        msg.persistent_error    = m_dataRadar_ARS.radarState.Persistent_Error;
+        msg.max_distance_cfg    = m_dataRadar_ARS.radarState.MaxDistanceCfg;
+        msg.sensor_id           = m_dataRadar_ARS.radarState.SensorID;
+        msg.sort_index          = m_dataRadar_ARS.radarState.SortIndex;
+        msg.radar_power_cfg     = m_dataRadar_ARS.radarState.RadarPowerCfg;
+        msg.ctrl_relay_cfg      = m_dataRadar_ARS.radarState.CtrlRelayCfg;
+        msg.output_type_cfg     = m_dataRadar_ARS.radarState.OutputTypeCfg;
+        msg.send_quality_cfg    = m_dataRadar_ARS.radarState.SendQualityCfg;
+        msg.send_ext_info_cfg   = m_dataRadar_ARS.radarState.SendExtInfoCfg;
+        msg.motion_rx_state     = m_dataRadar_ARS.radarState.MotionRxState;
+        msg.rcs_threshold       = m_dataRadar_ARS.radarState.RCS_Threshold;
+        m_publisher->publish(msg);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
-#include "c4_radar/radar_ars408.h"
+#include "c4_radar/radar_ars408.hpp"
 #include "radar_msgs/msg/radar_raw.hpp"
 
 class RadarParser : public rclcpp::Node
@@ -17,6 +17,7 @@ class RadarParser : public rclcpp::Node
     Radar_ARS408 radarARS(Radar_ARS408::ENABLE_60D);
     radarARS.borrarEstructura();
     radarARS.setRadarConfig(Radar_ARS408::ENABLE_60D);
+    radarARS.parse_radar_msg_408(msgIn);
 
   }
   void parse_srr208_msg(const radar_msgs::msg::RadarRaw msgIn)

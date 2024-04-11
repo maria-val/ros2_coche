@@ -2,9 +2,10 @@
 #define RADAR_ASR408_H
 
 #include "c4_radar/UserDefinitions.h"
+#include "rclcpp/rclcpp.hpp"
 #include "radar_msgs/msg/radar_raw.hpp"
 //#include "radar/ARS408_object.h"
-//#include "radar/radar_msg_408.h"
+#include "radar_msgs/msg/radar_msg408.hpp"
 //#include <visualization_msgs/Marker.h>
 
 
@@ -28,12 +29,14 @@ class Radar_ARS408
     Radar_ARS408(enum eConfigARS408);
     
     Radar_ARS408_data_t m_dataRadar_ARS;
+    std::shared_ptr<rclcpp::Node> node = std::make_shared<rclcpp::Node>("radar_ars408_node");
+    std::shared_ptr<rclcpp::Publisher<radar_msgs::msg::RadarMsg408>> m_publisher = node->create_publisher<radar_msgs::msg::RadarMsg408>("/radar/objects/408",1000);
 
     int read_Radar(char* aux, Radar_ARS408_data_t* receivedData);
     void borrarEstructura();
     void borrarEstructura(Radar_ARS408_data_t* data);
     void setRadarConfig(eConfigARS408 config){m_radarConfig = config;};
-    void parse_radar_msg_408(const radar_msgs::msg::RadarRaw::SharedPtr msgIn);
+    void parse_radar_msg_408(const radar_msgs::msg::RadarRaw msgIn);
 
   private:
     eConfigARS408 m_radarConfig;

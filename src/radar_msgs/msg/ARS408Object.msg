@@ -11,7 +11,7 @@ float64 obj_vrel_long_cam
 int16 object_dyn_prop
 float64 obj_lat_speed
 float64 obj_lat_speed_cam
-float64 obj_rc_s_value
+float64 obj_rcs_value
 float64 obj_dist_long_rms
 float64 obj_vrel_long_rms
 float64 obj_dist_lat_rms

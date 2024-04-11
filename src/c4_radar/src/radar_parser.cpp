@@ -14,9 +14,13 @@ class RadarParser : public rclcpp::Node
   void parse_ars408_msg(const radar_msgs::msg::RadarRaw msgIn)
   {
     RCLCPP_INFO(this->get_logger(), "Parsing T60 message");
+
+    auto parsed_ars408_publisher_ = this->create_publisher<radar_msgs::msg::RadarMsg408>("radar_parser/ars408", 1000);
+    
     Radar_ARS408 radarARS(Radar_ARS408::ENABLE_60D);
     radarARS.borrarEstructura();
     radarARS.setRadarConfig(Radar_ARS408::ENABLE_60D);
+    radarARS.m_radar_msg_pub = parsed_ars408_publisher_;
     radarARS.parse_radar_msg_408(msgIn);
 
   }

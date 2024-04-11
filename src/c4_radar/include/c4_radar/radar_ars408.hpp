@@ -29,8 +29,8 @@ class Radar_ARS408
     Radar_ARS408(enum eConfigARS408);
     
     Radar_ARS408_data_t m_dataRadar_ARS;
-    std::shared_ptr<rclcpp::Node> node = std::make_shared<rclcpp::Node>("radar_ars408_node");
-    std::shared_ptr<rclcpp::Publisher<radar_msgs::msg::RadarMsg408>> m_publisher = node->create_publisher<radar_msgs::msg::RadarMsg408>("/radar/objects/408",1000);
+
+    std::shared_ptr<rclcpp::Publisher<radar_msgs::msg::RadarMsg408>> m_radar_msg_pub;
 
     int read_Radar(char* aux, Radar_ARS408_data_t* receivedData);
     void borrarEstructura();

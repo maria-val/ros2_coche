@@ -932,6 +932,6 @@ void Radar_ARS408::parse_radar_msg_408(const radar_msgs::msg::RadarRaw msgIn)
         msg.send_ext_info_cfg   = m_dataRadar_ARS.radarState.SendExtInfoCfg;
         msg.motion_rx_state     = m_dataRadar_ARS.radarState.MotionRxState;
         msg.rcs_threshold       = m_dataRadar_ARS.radarState.RCS_Threshold;
-        m_publisher->publish(msg);
+        m_radar_msg_pub->publish(msg);
     }
 }

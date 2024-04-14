@@ -1,0 +1,11 @@
+int16 track_id
+float64 track_long_displ
+int16 track_index
+float64 track_lat_displ
+float64 track_vrel_long
+int16 track_roll_count
+float64 track_vrel_lat
+float64 track_rcs_value
+float64 track_lifetime
+int16 track_index2
+int16 track_roll_count2

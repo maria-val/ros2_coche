@@ -14,6 +14,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 "msg/RadarRaw.msg"
 "msg/RadarMsg408.msg"
 "msg/ARS408Object.msg"
+"msg/RadarMsg208.msg"
+"msg/SRR208Object.msg"
 DEPENDENCIES std_msgs
 )
 

@@ -13,7 +13,7 @@ find_package(radar_msgs REQUIRED)
 add_executable(radar_reader src/radar_reader.cpp)
 ament_target_dependencies(radar_reader rclcpp radar_msgs)
 
-add_executable(radar_parser src/radar_parser.cpp src/radar_ars408.cpp)
+add_executable(radar_parser src/radar_parser.cpp src/radar_ars408.cpp src/radar_srr208.cpp)
 ament_target_dependencies(radar_parser rclcpp radar_msgs)
 
 include_directories(include)

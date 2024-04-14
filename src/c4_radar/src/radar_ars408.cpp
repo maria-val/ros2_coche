@@ -851,15 +851,15 @@ void Radar_ARS408::borrarEstructura()
     }
 }
 
-void Radar_ARS408::parse_radar_msg_408(const radar_msgs::msg::RadarRaw msgIn)
+void Radar_ARS408::parse_radar_msg_408(const radar_msgs::msg::RadarRaw::SharedPtr& msgIn)
 {
     auto msg = radar_msgs::msg::RadarMsg408(); 
     char aux[23];
 
-    memcpy(aux, (const char*) (&(msgIn.raw[0])), 22);
+    memcpy(aux, (const char*) (&(msgIn->raw[0])), 22);
     aux[23]='\0';
     
-    RCLCPP_DEBUG(rclcpp::get_logger("radar"), "I heard: [%d:%d  %s]", msgIn.header.stamp.sec,msgIn.header.stamp.nanosec,aux);
+    RCLCPP_DEBUG(rclcpp::get_logger("radar"), "I heard: [%d:%d  %s]", msgIn->header.stamp.sec,msgIn->header.stamp.nanosec,aux);
 
     read_Radar(aux, &m_dataRadar_ARS);
     
@@ -867,7 +867,7 @@ void Radar_ARS408::parse_radar_msg_408(const radar_msgs::msg::RadarRaw msgIn)
     {
         m_dataRadar_ARS.status.completed = false;
         //ROS_INFO(" COMPLETADO ");
-        msg.header.stamp = msgIn.header.stamp;
+        msg.header.stamp = msgIn->header.stamp;
         msg.num_of_objects = m_dataRadar_ARS.status.NumOfObjects;
         msg.meas_counter = m_dataRadar_ARS.status.MeasCounter;
         msg.interface_version      = m_dataRadar_ARS.status.InterfaceVersion;

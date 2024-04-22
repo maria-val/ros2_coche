@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(radar_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
 
 add_executable(radar_reader src/radar_reader.cpp)
 ament_target_dependencies(radar_reader rclcpp radar_msgs)
@@ -16,11 +17,15 @@ ament_target_dependencies(radar_reader rclcpp radar_msgs)
 add_executable(radar_parser src/radar_parser.cpp src/radar_ars408.cpp src/radar_srr208.cpp)
 ament_target_dependencies(radar_parser rclcpp radar_msgs)
 
+add_executable(radar_visualizer src/radar_visualization.cpp)
+ament_target_dependencies(radar_visualizer rclcpp radar_msgs visualization_msgs)
+
 include_directories(include)
 
 install(TARGETS
   radar_reader
   radar_parser
+  radar_visualizer
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

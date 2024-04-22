@@ -770,7 +770,7 @@ void Radar_ARS408::borrarEstructura(Radar_ARS408_data_t* data)
     //enum t_MeasState  {Deleted = 0, New = 1, Measured = 2, Predicted = 3, Deleted_for_merge = 4, New_from_merge = 5, MeasState_unknown = 6};
     //enum t_Class {point = 0, car = 1, truck = 2, pedestrian = 3, motorcycle = 4, bicycle = 5, wide = 6, reserved = 7, Class_unknown = 8};
 
-    for (int i = 0; i++; i<MAX_OBJECTS_408)
+    for (int i = 0; i<MAX_OBJECTS_408; i++)
     {
         data->objects[i].Obj_ID             = 0; // Object ID (since objects are tracked, the ID is kept throughout measurement cycles and does not have to be consecutive)
 
@@ -818,7 +818,7 @@ void Radar_ARS408::borrarEstructura()
     //enum t_MeasState  {Deleted = 0, New = 1, Measured = 2, Predicted = 3, Deleted_for_merge = 4, New_from_merge = 5, MeasState_unknown = 6};
     //enum t_Class {point = 0, car = 1, truck = 2, pedestrian = 3, motorcycle = 4, bicycle = 5, wide = 6, reserved = 7, Class_unknown = 8};
 
-    for (int i = 0; i++; i<MAX_OBJECTS_408)
+    for (int i = 0; i<MAX_OBJECTS_408; i++)
     {
         m_dataRadar_ARS.objects[i].Obj_ID             = 0; // Object ID (since objects are tracked, the ID is kept throughout measurement cycles and does not have to be consecutive)
 

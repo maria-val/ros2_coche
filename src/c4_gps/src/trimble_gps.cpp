@@ -2,6 +2,7 @@
 #include <string.h> //for memset
 #include <sys/socket.h> //for socket, connect
 #include <unistd.h> //for read
+#include <cstring> //for strlen
 #include <sstream>
 #include <arpa/inet.h> //for inet_pton
 #include <netinet/in.h> // for sockaddr_in struct, htons 
@@ -29,23 +30,21 @@ class TrimbleGps : public rclcpp::Node
   private:
     void getGpsData()
     {
-      int port = 5018;
-      int sock_fd;
+      int port = 5018, sock_fd;
       struct sockaddr_in serv_addr;
       bool is_gps_open = false;
+
+      char message_gps[MSG_SZ], checksum_str[3];
+      int msg_size, checksum = 0;
+      std::string token;
+      std::vector<std::string> tokens;
 
       auto nmea_message = nmea_msgs::msg::Gpgga();
       auto std_message = std_msgs::msg::String();
       auto sensor_message = sensor_msgs::msg::NavSatFix();
       auto geom_message = geometry_msgs::msg::Point();
 
-      char message_gps[MSG_SZ];
-      int msg_size;
-
-      std::string token;
-      std::vector<std::string> tokens;
-
-      int gps_qual, checksum, prev_checksum = -1;
+      int gps_qual;
       double lat, lon, alt, utm_n, utm_e;
       std::string utm_zone;
 
@@ -91,18 +90,30 @@ class TrimbleGps : public rclcpp::Node
           //getting all the parameters of the GGA string
           while(getline(ss, token, ','))
           {
-            tokens.push_back(token);
+            size_t pos = token.find('*');
+
+            if(pos == std::string::npos)
+              tokens.push_back(token);
+
+            else
+            {
+              std::string sub1 = token.substr(0, pos); 
+              std::string sub2 = token.substr(pos + 1); 
+          
+              tokens.push_back(sub1);
+              tokens.push_back(sub2);
+            }  
           }
 
-          if(tokens.size() >= 10)
+          if(tokens.size() == 16)
           {
-            checksum = stoi(tokens[15]);
+            //checking if the GGA string is complete by calculating the checksum
+            for(size_t i =1; i < strlen(message_gps) && message_gps[i] != '*'; i++)
+              checksum ^= message_gps[i];
 
-            //checking if the GGA string is different from the previous one
-            if(checksum != prev_checksum)
-            {
-              prev_checksum = checksum;
-              
+            sprintf(checksum_str, "%02X", checksum);
+            if(tokens[15] == checksum_str)
+            {              
               message_gps[msg_size] = '\0';
               RCLCPP_INFO(this->get_logger(), "%s", message_gps);
               //publishing the GGA string
@@ -188,11 +199,11 @@ class TrimbleGps : public rclcpp::Node
 
               gga_publisher_->publish(nmea_message);
             }
+            else
+              RCLCPP_ERROR(this->get_logger(), "Incorrect checksum");
           }
           else
-          {
-            RCLCPP_WARN(this->get_logger(), "GGA string does not contain enough fields to extract GPS values");
-          }
+            RCLCPP_ERROR(this->get_logger(), "GGA string does not contain enough fields to extract GPS values");
         }
         //if there is any failure reading the string, close socket
         else

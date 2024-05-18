@@ -9,7 +9,8 @@ class RadarVisualization : public rclcpp::Node
     RadarVisualization() : Node("radar_visualization")
     {
       parsed_ars408_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg408>("radar_parser/ars408", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_408, this, std::placeholders::_1));
-      parsed_srr208_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg208>("radar_parser/srr208", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_208, this, std::placeholders::_1));
+      parsed_t61_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg208>("radar_parser/t61", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_208, this, std::placeholders::_1));
+      parsed_t62_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg208>("radar_parser/t62", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_208, this, std::placeholders::_1));
       marker_publisher_ = this->create_publisher<visualization_msgs::msg::Marker>("radar_visualization",1000);
     }
   private:
@@ -116,7 +117,8 @@ class RadarVisualization : public rclcpp::Node
     }
 
     rclcpp::Subscription<radar_msgs::msg::RadarMsg408>::SharedPtr parsed_ars408_subscriber_;
-    rclcpp::Subscription<radar_msgs::msg::RadarMsg208>::SharedPtr parsed_srr208_subscriber_;
+    rclcpp::Subscription<radar_msgs::msg::RadarMsg208>::SharedPtr parsed_t61_subscriber_;
+    rclcpp::Subscription<radar_msgs::msg::RadarMsg208>::SharedPtr parsed_t62_subscriber_;
     rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_publisher_;
 };
 

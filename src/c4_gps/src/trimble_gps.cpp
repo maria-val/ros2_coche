@@ -34,10 +34,8 @@ class TrimbleGps : public rclcpp::Node
       struct sockaddr_in serv_addr;
       bool is_gps_open = false;
 
-      char message_gps[MSG_SZ], checksum_str[3];
-      int msg_size, checksum = 0;
-      std::string token;
-      std::vector<std::string> tokens;
+      char message_gps[MSG_SZ];
+      int msg_size;
 
       auto nmea_message = nmea_msgs::msg::Gpgga();
       auto std_message = std_msgs::msg::String();
@@ -85,6 +83,11 @@ class TrimbleGps : public rclcpp::Node
       {
         if ((msg_size = read(sock_fd, message_gps, sizeof(message_gps) - 1)) > 0)
         {
+          message_gps[msg_size] = '\0';
+          char checksum_str[3];
+          int checksum = 0;
+          std::string token;
+          std::vector<std::string> tokens;
           std::stringstream ss(message_gps);
 
           //getting all the parameters of the GGA string
@@ -110,11 +113,10 @@ class TrimbleGps : public rclcpp::Node
             //checking if the GGA string is complete by calculating the checksum
             for(size_t i =1; i < strlen(message_gps) && message_gps[i] != '*'; i++)
               checksum ^= message_gps[i];
-
             sprintf(checksum_str, "%02X", checksum);
-            if(tokens[15] == checksum_str)
+
+            if(atoi(tokens[15].c_str()) == atoi(checksum_str))
             {              
-              message_gps[msg_size] = '\0';
               RCLCPP_INFO(this->get_logger(), "%s", message_gps);
               //publishing the GGA string
               std_message.data = message_gps;
@@ -194,7 +196,8 @@ class TrimbleGps : public rclcpp::Node
               nmea_message.altitude_units = tokens[10];
               nmea_message.undulation = stod(tokens[11]);
               nmea_message.undulation_units = tokens[12];
-              nmea_message.diff_age = stod(tokens[13]);
+              if(!tokens[13].empty())
+                nmea_message.diff_age = stoi(tokens[13]);
               nmea_message.station_id = tokens[14];
 
               gga_publisher_->publish(nmea_message);

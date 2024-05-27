@@ -3,4 +3,4 @@ float64 speed
 float64 steer
 float64 brake
 float64 throttle
-float64 gear
+uint8 gear

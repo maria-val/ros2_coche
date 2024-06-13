@@ -8,11 +8,21 @@ class RadarVisualization : public rclcpp::Node
   public:
     RadarVisualization() : Node("radar_visualization")
     {
-      parsed_ars408_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg408>("radar_parser/ars408", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_408, this, std::placeholders::_1));
-      parsed_t61_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg208>("radar_parser/t61", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_208, this, std::placeholders::_1));
-      parsed_t62_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg208>("radar_parser/t62", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_208, this, std::placeholders::_1));
-      marker_publisher_ = this->create_publisher<visualization_msgs::msg::Marker>("radar_visualization",1000);
+      auto header = declare_parameter<std::string>("header", "t60");
+      auto publisher_topic_ = declare_parameter<std::string>("pub_topic", "radar_visualization/ars408");
+
+      marker_publisher_ = this->create_publisher<visualization_msgs::msg::Marker>(publisher_topic_, 1000);
+
+      if(strcmp(header.c_str(), "t60") == 0)
+        parsed_ars408_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg408>("radar_parser/ars408", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_408, this, std::placeholders::_1));
+      
+      else if(strcmp(header.c_str(), "t61") == 0)
+        parsed_t61_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg208>("radar_parser/t61", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_208, this, std::placeholders::_1));
+      
+      else if(strcmp(header.c_str(), "t62") == 0)
+        parsed_t62_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg208>("radar_parser/t62", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_208, this, std::placeholders::_1));
     }
+
   private:
     void draw_radar_parsed_msg_408(const radar_msgs::msg::RadarMsg408 &msgIn)
     {
@@ -110,7 +120,7 @@ class RadarVisualization : public rclcpp::Node
 
             marker.lifetime = rclcpp::Duration::from_seconds(0.2);
             
-            // Publish the marker        
+            // Publish the marker     
             marker_publisher_->publish(marker);
         }
       } 

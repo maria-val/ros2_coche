@@ -1,2 +1,2 @@
 std_msgs/Header header
-uint8[23] raw
+char[23] raw

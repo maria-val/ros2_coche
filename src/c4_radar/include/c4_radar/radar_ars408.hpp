@@ -36,7 +36,7 @@ class Radar_ARS408
     void borrarEstructura();
     void borrarEstructura(Radar_ARS408_data_t* data);
     void setRadarConfig(eConfigARS408 config){m_radarConfig = config;};
-    void parse_radar_msg_408(const radar_msgs::msg::RadarRaw::SharedPtr& msgIn);
+    void parse_radar_msg_408(const radar_msgs::msg::RadarRaw & msgIn);
 
   private:
     eConfigARS408 m_radarConfig;

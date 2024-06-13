@@ -7,45 +7,47 @@ class RadarParser : public rclcpp::Node
   public:
     RadarParser() : Node("radar_parser")
     {
-      ars408_subscriber_ = this->create_subscription<radar_msgs::msg::RadarRaw>("radar_reader/ars408", 1000, std::bind(&RadarParser::parse_ars408_msg, this, std::placeholders::_1));
-      srr208_t61_subscriber_ = this->create_subscription<radar_msgs::msg::RadarRaw>("radar_reader/t61", 1000, std::bind(&RadarParser::parse_t61_msg, this, std::placeholders::_1));
-      srr208_t62_subscriber_ = this->create_subscription<radar_msgs::msg::RadarRaw>("radar_reader/t62", 1000, std::bind(&RadarParser::parse_t62_msg, this, std::placeholders::_1));
-      parsed_ars408_publisher_ = this->create_publisher<radar_msgs::msg::RadarMsg408>("radar_parser/ars408", 1000);
-      parsed_t61_publisher_ = this->create_publisher<radar_msgs::msg::RadarMsg208>("radar_parser/t61", 1000);
-      parsed_t62_publisher_ = this->create_publisher<radar_msgs::msg::RadarMsg208>("radar_parser/t62", 1000);
-    }
-  private:
-    void parse_ars408_msg(const radar_msgs::msg::RadarRaw::SharedPtr msgIn)
-    {
-      RCLCPP_INFO(this->get_logger(), "Parsing T60 message");
+      auto header_ = declare_parameter<std::string>("header", "t60");
+      auto topic_publisher_ = declare_parameter<std::string>("topic_publisher", "radar_parser/ars408");
       
-      Radar_ARS408 radarARS(Radar_ARS408::ENABLE_60D);
-      radarARS.borrarEstructura();
-      radarARS.setRadarConfig(Radar_ARS408::ENABLE_60D);
-      radarARS.m_radar_msg_pub = parsed_ars408_publisher_;
-      radarARS.parse_radar_msg_408(msgIn);
+      if(strcmp(header_.c_str(), "t60") == 0)
+      {
+        parsed_ars408_publisher_  = this->create_publisher<radar_msgs::msg::RadarMsg408>(topic_publisher_.c_str(), 1000);
+        RCLCPP_INFO(this->get_logger(), "Parsing T60 message");
+
+        Radar_ARS408 radarARS(Radar_ARS408::ENABLE_60D);
+        radarARS.borrarEstructura();
+        radarARS.setRadarConfig(Radar_ARS408::ENABLE_60D);
+        radarARS.m_radar_msg_pub = parsed_ars408_publisher_;
+
+        ars408_subscriber_ = this->create_subscription<radar_msgs::msg::RadarRaw>("radar_reader/ars408", 1000, std::bind(&Radar_ARS408::parse_radar_msg_408, radarARS, std::placeholders::_1));
+
+      }
+      else if(strcmp(header_.c_str(), "t61") == 0)
+      {
+        parsed_t61_publisher_ = this->create_publisher<radar_msgs::msg::RadarMsg208>(topic_publisher_.c_str(), 1000);
+        RCLCPP_INFO(this->get_logger(), "Parsing T61 message");
+
+        Radar_SRR208 radarSRR;
+        radarSRR.borrarEstructura();
+        radarSRR.m_radar_SRR208_msg_pub = parsed_t61_publisher_;
+        
+        srr208_t61_subscriber_ = this->create_subscription<radar_msgs::msg::RadarRaw>("radar_reader/t61", 1000, std::bind(&Radar_SRR208::parse_radar_msg, radarSRR, std::placeholders::_1));
+      }
+      else if(strcmp(header_.c_str(), "t62") == 0)
+      {
+        parsed_t62_publisher_ = this->create_publisher<radar_msgs::msg::RadarMsg208>(topic_publisher_.c_str(), 1000);
+        RCLCPP_INFO(this->get_logger(), "Parsing T62 message");
+
+        Radar_SRR208 radarSRR;
+        radarSRR.borrarEstructura();
+        radarSRR.m_radar_SRR208_msg_pub = parsed_t62_publisher_;
+        
+        srr208_t62_subscriber_ = this->create_subscription<radar_msgs::msg::RadarRaw>("radar_reader/t62", 1000, std::bind(&Radar_SRR208::parse_radar_msg, radarSRR, std::placeholders::_1));
+      }
     }
 
-    void parse_t61_msg(const radar_msgs::msg::RadarRaw::SharedPtr msgIn)
-    {
-      RCLCPP_INFO(this->get_logger(), "Parsing T61 message");
-
-      Radar_SRR208 radarSRR;
-      radarSRR.borrarEstructura();
-      radarSRR.m_radar_SRR208_msg_pub = parsed_t61_publisher_;
-      radarSRR.parse_radar_msg(msgIn);
-    }
-
-    void parse_t62_msg(const radar_msgs::msg::RadarRaw::SharedPtr msgIn)
-    {
-      RCLCPP_INFO(this->get_logger(), "Parsing T62 message");
-
-      Radar_SRR208 radarSRR;
-      radarSRR.borrarEstructura();
-      radarSRR.m_radar_SRR208_msg_pub = parsed_t62_publisher_;
-      radarSRR.parse_radar_msg(msgIn);
-    }
-
+  private:
     rclcpp::Subscription<radar_msgs::msg::RadarRaw>::SharedPtr ars408_subscriber_;
     rclcpp::Subscription<radar_msgs::msg::RadarRaw>::SharedPtr srr208_t61_subscriber_;
     rclcpp::Subscription<radar_msgs::msg::RadarRaw>::SharedPtr srr208_t62_subscriber_;

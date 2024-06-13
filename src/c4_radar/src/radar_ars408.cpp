@@ -166,7 +166,7 @@ int Radar_ARS408::read_Radar(char aux[23], Radar_ARS408_data_t* receivedData)
                         && (receivedData->status.receivedNumOfObjects2 == receivedData->status.NumOfObjects) ) // Ya se han recibido todos los datos de este radar.
                 {
                     receivedData->status.completed = true;
-                    //   printf("1 BIEN: received objects: %d  \n", receivedData->status.NumOfObjects);
+                      //printf("1 BIEN: received objects: %d  \n", receivedData->status.NumOfObjects);
                 }
             }
 
@@ -190,7 +190,7 @@ int Radar_ARS408::read_Radar(char aux[23], Radar_ARS408_data_t* receivedData)
             receivedData->objects[receivedData->status.receivedNumOfObjects3].Obj_Length = Obj_Length;
             receivedData->objects[receivedData->status.receivedNumOfObjects3].Obj_Width = Obj_Width;
             (receivedData->status.receivedNumOfObjects3)++;
-            //printf("(0x60D) Objeto %d de %d, ID: %d, Width %lf \n", receivedData->status.receivedNumOfObjects3, receivedData->status.NumOfObjects, receivedData->objects[receivedData->status.receivedNumOfObjects3].Obj_ID, receivedData->objects[receivedData->status.receivedNumOfObjects3].Obj_Width);
+            printf("(0x60D) Objeto %d de %d, ID: %d, Width %lf \n", receivedData->status.receivedNumOfObjects3, receivedData->status.NumOfObjects, receivedData->objects[receivedData->status.receivedNumOfObjects3].Obj_ID, receivedData->objects[receivedData->status.receivedNumOfObjects3].Obj_Width);
         }
         if(m_radarConfig ==ENABLE_60D)
         {
@@ -199,7 +199,7 @@ int Radar_ARS408::read_Radar(char aux[23], Radar_ARS408_data_t* receivedData)
                    && (receivedData->status.receivedNumOfObjects3 == receivedData->status.NumOfObjects) ) // Ya se han recibido todos los datos de este radar.
             {
                 receivedData->status.completed = true;
-                //  printf("BIEN: received objects: %d  \n", receivedData->status.NumOfObjects);
+                 printf("BIEN: received objects: %d  \n", receivedData->status.NumOfObjects);
             }
         }else if(m_radarConfig ==ENABLE_60BD)
         {
@@ -238,7 +238,7 @@ void Radar_ARS408::read_Message_ID(/*in:*/ char* aux,
     fourByte[3] = aux[3];
     *msgID = strtoul(fourByte,NULL,16);
     *msgID &= 0x0FFF;
-
+    printf("msgID: %d\n", *msgID);
 }
 
 //Radar_State (0x201)
@@ -851,23 +851,23 @@ void Radar_ARS408::borrarEstructura()
     }
 }
 
-void Radar_ARS408::parse_radar_msg_408(const radar_msgs::msg::RadarRaw::SharedPtr& msgIn)
+void Radar_ARS408::parse_radar_msg_408(const radar_msgs::msg::RadarRaw & msgIn)
 {
     auto msg = radar_msgs::msg::RadarMsg408(); 
     char aux[23];
 
-    memcpy(aux, (const char*) (&(msgIn->raw[0])), 22);
+    memcpy(aux, (const char*) (&(msgIn.raw[0])), 22);
     aux[23]='\0';
     
-    RCLCPP_DEBUG(rclcpp::get_logger("radar"), "I heard: [%d:%d  %s]", msgIn->header.stamp.sec,msgIn->header.stamp.nanosec,aux);
+    RCLCPP_INFO(rclcpp::get_logger("radar_parser"), "I heard: [%d:%d  %s]", msgIn.header.stamp.sec, msgIn.header.stamp.nanosec,aux);
 
     read_Radar(aux, &m_dataRadar_ARS);
-    
+ 
     if(m_dataRadar_ARS.status.completed)
     {
         m_dataRadar_ARS.status.completed = false;
         //ROS_INFO(" COMPLETADO ");
-        msg.header.stamp = msgIn->header.stamp;
+        msg.header.stamp = msgIn.header.stamp;
         msg.num_of_objects = m_dataRadar_ARS.status.NumOfObjects;
         msg.meas_counter = m_dataRadar_ARS.status.MeasCounter;
         msg.interface_version      = m_dataRadar_ARS.status.InterfaceVersion;

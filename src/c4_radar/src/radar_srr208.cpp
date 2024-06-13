@@ -47,7 +47,7 @@ int Radar_SRR208::read_Radar(char* aux, Radar_SRR_data_t* receivedData)
         if (msgID == 1563) receivedData->status.RadarID = 1;
         else if (msgID == 1579) receivedData->status.RadarID = 2;
         
-	read_60B_CAN1_Track_Status_Message(aux, &(receivedData->status.NumOfTracks), &(receivedData->status.TrackSt_RollCount));
+	      read_60B_CAN1_Track_Status_Message(aux, &(receivedData->status.NumOfTracks), &(receivedData->status.TrackSt_RollCount));
         break;
 
     case SHORT_CAN1_Track_1_ID1: // 1564 (0x61C) CAN1_Track_1 (ID 1)
@@ -300,26 +300,22 @@ void Radar_SRR208::borrarEstructura()
     }
 }
 
-void Radar_SRR208::parse_radar_msg(const radar_msgs::msg::RadarRaw::SharedPtr& msgIn)
+void Radar_SRR208::parse_radar_msg(const radar_msgs::msg::RadarRaw & msgIn)
 {
-    //ros::NodeHandle n;
-    //ros::Publisher radar_msg_pub = n.advertise<radar::radar_msg>("/radar/msg", 1000);
     auto msg = radar_msgs::msg::RadarMsg208();
-
-//     ROS_INFO("I heard: [%d:%d  %s]", msgIn->header.stamp.sec, msgIn->header.stamp.nsec, &(msgIn->raw[0]) );
-
     char aux[23];
-    //strcpy (aux, &(msgIn->raw[0]));
-    strcpy( aux, (const char*) (&(msgIn->raw[0])) );
 
-    //ROS_INFO("I heard: [%s]", aux);
+    memcpy(aux, (const char*) (&(msgIn.raw[0])), 22);
+    aux[23]='\0';
+
+    RCLCPP_INFO(rclcpp::get_logger("radar_parser"),"I heard: [%d:%d  %s]", msgIn.header.stamp.sec, msgIn.header.stamp.nanosec, aux);
 
     read_Radar(aux, &m_dataRadar_SSR);
     if(m_dataRadar_SSR.status.completed)
     {
         m_dataRadar_SSR.status.completed = false;
-        RCLCPP_DEBUG(rclcpp::get_logger("radar"), " SRR COMPLETADO NumOfTracks = %d", m_dataRadar_SSR.status.NumOfTracks);
-        msg.header.stamp = msgIn->header.stamp;
+        RCLCPP_INFO(rclcpp::get_logger("radar"), " SRR COMPLETADO NumOfTracks = %d", m_dataRadar_SSR.status.NumOfTracks);
+        msg.header.stamp = msgIn.header.stamp;
 
         copyRadar_SRR208_data2msg(m_dataRadar_SSR, &msg);
         m_radar_SRR208_msg_pub->publish(msg);

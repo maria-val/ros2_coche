@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
+#include <iostream>
 #include "rclcpp/rclcpp.hpp"
 #include "radar_msgs/msg/radar_raw.hpp"
 
@@ -37,10 +38,11 @@ class RadarReader : public rclcpp::Node
 
       int count = 0;
       int bytes_read = 0;
+      //cambiar read_temp de array a char
       char read_temp[23];
-      char aux[10];
+      char aux[23];
       memset(read_temp,'\0',23);
-      memset(aux,'\0',10);
+      memset(aux,'\0',23);
       
       if((sock_radar = socket(AF_INET, SOCK_STREAM, 0)) < 0)
       {
@@ -48,7 +50,7 @@ class RadarReader : public rclcpp::Node
         return;
       }
       else
-      {        
+      {      
         memset(&serv_addr, '0', sizeof(serv_addr));
 
         serv_addr.sin_family = AF_INET;
@@ -73,60 +75,54 @@ class RadarReader : public rclcpp::Node
         }
       }
 
+      while(read_temp[0] != 't')
+        count = read(sock_radar, &read_temp ,1 );
+
+      if(read_temp[0] == 't')
+      {
+        aux[bytes_read] = read_temp[0]; 
+        bytes_read++;
+      }
+
       while(is_radar_open)
       {
-        if((count = read(sock_radar, &read_temp, sizeof(read_temp))) > 0)
+        if((count = read(sock_radar, &read_temp, 1) == 1))
         {
-          /*if(count < 6)
-          {
-            usleep(250000);
-            continue;
-          }*/
+          read_temp[23] = '\0';
           
           //ensure that the radar chain is passed completely
-          if(read_temp[0] != 't')
+          if(read_temp[0] == 't')
           {
-            if(aux[bytes_read] == 't')
-            {
-              bytes_read++;
-              aux[bytes_read] = read_temp[0];
-            }
-          }
-          else
-          {
-            if(aux[bytes_read] != 't')
-              aux[bytes_read] = read_temp[0];
-            else
-            {
-              memset(aux,'\0',10);
-              bytes_read = 0;
+            aux[bytes_read] = '\0';
+      
+              //RCLCPP_INFO(this->get_logger(), "%s", read_temp);
+              //printf("%s\n", aux );
+              memcpy(&(radar_raw_msg.raw[0]), aux, sizeof(aux));
 
-              RCLCPP_INFO(this->get_logger(), "%s", read_temp);
-
-              memcpy(&(radar_raw_msg.raw[0]), read_temp, sizeof(read_temp));
+              //RCLCPP_INFO(this->get_logger(), "%s\n", radar_raw_msg.raw);
+              /*for(int i=0; i < 23; i++)
+                std::cout << "Cadena:" << radar_raw_msg.raw[i] << std::endl;*/
               rclcpp::Clock time;
               radar_raw_msg.header.stamp = time.now();
 
               //choose the topic in which the message has to be published
-              if(strncmp(read_temp, "t60", 3) == 0)
+              if(strncmp(aux, "t60", 3) == 0)
                 ars408_publisher_->publish(radar_raw_msg);
       
-              else if(strncmp(read_temp, "t61", 3) == 0)
+              else if(strncmp(aux, "t61", 3) == 0)
                 srr208_t61_publisher_->publish(radar_raw_msg);
               
-              else if(strncmp(read_temp, "t62", 3) == 0)
+              else if(strncmp(aux, "t62", 3) == 0)
                 srr208_t62_publisher_->publish(radar_raw_msg);
             
               else
-                RCLCPP_INFO(this->get_logger(), "Message from another radar");
-                }
+                RCLCPP_INFO(this->get_logger(), "Message from another radar: %s", aux);
+
+               memset(aux,'\0',23);
+               bytes_read = 0;
           }
-        }
-        else
-        {
-          close(sock_radar);
-          RCLCPP_ERROR(this->get_logger(), "Socket error");
-          is_radar_open = false;
+          aux[bytes_read] = read_temp[0]; 
+          bytes_read++;
         }
       }
     }

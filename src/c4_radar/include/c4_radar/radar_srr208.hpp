@@ -32,7 +32,7 @@ public:
     int read_Radar(char* aux, Radar_SRR_data_t* receivedData);
     void borrarEstructura(Radar_SRR_data_t* data);
     void borrarEstructura();
-    void parse_radar_msg(const radar_msgs::msg::RadarRaw::SharedPtr& msgIn);
+    void parse_radar_msg(const radar_msgs::msg::RadarRaw & msgIn);
     void copyRadar_SRR208_data2msg(Radar_SRR_data_t data, radar_msgs::msg::RadarMsg208 *msg);
     
 

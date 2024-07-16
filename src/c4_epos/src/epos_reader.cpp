@@ -13,9 +13,9 @@ using namespace std::chrono_literals;
 class EposReader : public rclcpp::Node
 {
   public:
-    EposReader() : Node("epos_reader"), count_(0)
+    EposReader() : Node("epos_reader"), last_mode_msg_(0,0,RCL_ROS_TIME), last_buscan_msg_(0,0,RCL_ROS_TIME), last_throttle_msg_(0,0,RCL_ROS_TIME), last_brake_msg_(0,0,RCL_ROS_TIME), last_steer_msg_(0,0,RCL_ROS_TIME), count_(0)
     {
-      mode_subscription_ = this->create_subscription<epos_msgs::msg::ControlMode>("mode", 100, std::bind(&EposReader::ctrl_mode, this, std::placeholders::_1));
+      mode_subscription_ = this->create_subscription<epos_msgs::msg::ControlMode>("mode", 100, std::bind(&EposReader::set_control_mode, this, std::placeholders::_1));
       throttle_subscription_ = this->create_subscription<epos_msgs::msg::Throttle>("ctrl_mode/throttle", 100, std::bind(&EposReader::set_throttle, this, std::placeholders::_1));
       break_subscription_ = this->create_subscription<epos_msgs::msg::Brake>("ctrl_mode/brake", 100, std::bind(&EposReader::set_brake, this, std::placeholders::_1));
       steer_subscription_ = this->create_subscription<epos_msgs::msg::SteeringWheel>("ctrl_mode/steer", 100, std::bind(&EposReader::set_steering_wheel, this, std::placeholders::_1));
@@ -40,24 +40,19 @@ class EposReader : public rclcpp::Node
         EPOS_steering = new EPOS(1, true, eposvol_Kp, eposvol_Ki, eposvol_Kd, EPOS_initialization_mode);
 
       if(EPOS_brake->GetStatus() && EPOS_steering->GetStatus())
-      {
         std::cerr << "\033[1;32m" << "Inicializadas EPOS ---> OK \033[0m" << std::endl;
-      }
+      
       else
-      {
         std::cerr << "\033[1;31m" << "Fallo inicializando EPOS \033[0m" << std::endl;
-      }
 
       //Once initialized, we deactivate automation
-      EPOS_brake->SetDigitalOutput(false, 14);
-      EPOS_brake->SetDigitalOutput(false, 15);
+      longitudinal_control_deactivation();
+      lateral_control_deactivation();
 
       timer_ = this->create_wall_timer(1s, std::bind(&EposReader::timer_callback, this));
-
-      buscan_control_ = this->create_wall_timer(5s, std::bind(&EposReader::buscan_control_callback, this));
-      steer_control_ = this->create_wall_timer(500ms, std::bind(&EposReader::steer_control_callback, this));
-      throttle_control_ = this->create_wall_timer(500ms, std::bind(&EposReader::throttle_control_callback, this));
-      brake_control_ = this->create_wall_timer(500ms, std::bind(&EposReader::brake_control_callback, this));
+      general_control_ = this->create_wall_timer(500ms, std::bind(&EposReader::general_control_callback, this));
+      buscan_control_ = this->create_wall_timer(500ms, std::bind(&EposReader::buscan_control_callback, this));
+      
     }
 
   private:
@@ -66,20 +61,206 @@ class EposReader : public rclcpp::Node
       epos_msgs::msg::Throttle msg_throttle;
       epos_msgs::msg::Brake msg_brake;
 
+      rclcpp::Clock time;
+
       unsigned short value;
       EPOS_brake->GetAnalogInput(&value,1);
       msg_throttle.throttle = value;
-      //RCLCPP_INFO(this->get_logger(), " ACelerador %d", value);
+
+      msg_throttle.header.stamp = time.now();
+      throttle_publisher_->publish(msg_throttle); //no lee el pedal
 
       msg_brake.brake = EPOS_brake->GetPos();
-      //RCLCPP_INFO(this->get_logger(), "Freno %f", msg_brake.brake);
 
-      rclcpp::Clock time;
-      msg_throttle.header.stamp = time.now();
-      throttle_publisher_->publish(msg_throttle);
-      
       msg_brake.header.stamp = time.now();
       brake_publisher_->publish(msg_brake);
+    }
+
+    void general_control_callback()
+    {
+      rclcpp::Clock::SharedPtr my_clock = this->get_clock();
+      rclcpp::Time init_time = my_clock->now();
+
+      mode_control();
+
+      throttle_control();
+
+      brake_control();
+
+      steer_control();
+
+      rclcpp::Time end_time = my_clock->now();
+      rclcpp::Duration total_time = end_time - init_time;
+      std::cout << "Tiempo total: " << total_time.seconds()<< std::endl;
+    }
+
+    void mode_control()
+    {
+      if(signal_error)
+        set_mode_ = 4;
+
+      if(set_mode_ != last_mode_)
+      {
+        if(set_mode_ == 1) //longitudinal and lateral controller
+        {
+          longitudinal_control_activation();
+          lateral_control_activation();
+        }
+        else if(set_mode_ == 2) //longitudinal controller
+        {
+          longitudinal_control_activation();
+          lateral_control_deactivation();
+        }
+        else if(set_mode_ == 3) //lateral controller
+        {
+          lateral_control_activation();
+          longitudinal_control_deactivation();
+
+        }
+        else if(set_mode_ == 4) //manual
+        {
+          longitudinal_control_deactivation();
+          lateral_control_deactivation();
+        }
+        else
+        {
+          longitudinal_control_deactivation();
+          lateral_control_deactivation();
+          RCLCPP_ERROR(this->get_logger(), "Error: modo desconocido");
+        }
+
+        last_mode_ = set_mode_;
+      }
+
+      std::cout << "Modo " << set_mode_ << std::endl;
+
+      rclcpp::Clock::SharedPtr my_clock = this->get_clock();
+      rclcpp::Time current_time = my_clock->now();
+      rclcpp::Duration time_bt_mode_msgs = current_time - last_mode_msg_;
+
+      if(time_bt_mode_msgs > rclcpp::Duration(2s))
+      {
+        RCLCPP_INFO(this->get_logger(), "Sin señal del modo: modo automático desactivado");
+        longitudinal_control_deactivation();
+        lateral_control_deactivation();
+        signal_error = true;
+      }
+    }
+
+    void throttle_control()
+    {
+      if(set_mode_ == 1 || set_mode_ == 2)
+      {
+        /*if(gear_position < 3)
+        {
+          RCLCPP_INFO(this->get_logger(), "La marcha actual impide acelerar");
+          return;
+        }*/
+
+        std::cout << "Acelerador " << set_throttle_pos << std::endl;
+        double target_throttle = set_throttle_pos/100;
+
+        signed long brake_position = EPOS_brake->GetPos();
+        std::cout << "Posicion freno " << brake_position << std::endl;
+
+        brake_position += 5000;
+        if(brake_position < 0)
+        {
+          RCLCPP_INFO(this->get_logger(), "Freno activado, no acelerar");
+          target_throttle = 0.0;
+        }
+
+        //if(last_throttle_pos == set_throttle_pos)
+          //return;
+
+        if (target_throttle < 0.0 )
+          target_throttle = 0.0;
+        else if (target_throttle > 1.0)
+          target_throttle = 1.0;
+
+        unsigned int throttle_tension = 150 + 1500.0 * target_throttle;
+        EPOS_brake->SetAnalogOutput(throttle_tension);
+      }
+
+      rclcpp::Clock::SharedPtr my_clock = this->get_clock();
+      rclcpp::Time current_time = my_clock->now();
+      rclcpp::Duration time_bt_throttle_msgs = current_time - last_throttle_msg_;
+    
+      if(time_bt_throttle_msgs > rclcpp::Duration(2s))
+      {
+        RCLCPP_INFO(this->get_logger(), "Sin señal del acelerador: modo automático desactivado");
+        longitudinal_control_deactivation();
+        lateral_control_deactivation();
+        signal_error = true;
+      }
+    }
+
+    void brake_control()
+    {
+      if(set_mode_ == 1 || set_mode_ == 2)
+      {
+        //if(last_brake_pos == set_brake_pos)
+          //return;
+
+        std::cout << "Freno " << set_brake_pos << std::endl;
+
+        double target_brake = set_brake_pos/100;
+
+        if (target_brake < 0.0 )
+          target_brake = 0.0;
+        else if (target_brake > 1.0)
+          target_brake = 1.0;
+          
+        int brake_tension = -5000 - 42000 * target_brake;
+      
+        EPOS_brake->MoveAbsolute(brake_tension);
+      }
+
+      rclcpp::Clock::SharedPtr my_clock = this->get_clock();
+      rclcpp::Time current_time = my_clock->now();
+      rclcpp::Duration time_bt_brake_msgs = current_time - last_brake_msg_;
+
+      if(time_bt_brake_msgs > rclcpp::Duration(2s))
+      {
+        RCLCPP_INFO(this->get_logger(), "Sin señal del freno: modo automático desactivado");
+        longitudinal_control_deactivation();
+        lateral_control_deactivation();
+        signal_error = true;
+      }
+    }
+
+    void steer_control()
+    {
+      if(set_mode_ == 1 || set_mode_ == 3)
+      {
+        std::cout << "Volante " << set_steering_wheel_pos << std::endl;
+        std::cout << "Posicion actual: " << steering_position << std::endl;
+
+        double targetPositionSteering = round(set_steering_wheel_pos * 10);
+        targetPositionSteering /= 10;
+
+        double correction = targetPositionSteering - steering_position;
+
+        if(fabs(correction) >= 0.1)
+        {
+            int total_count = correction * 900;
+            //RCLCPP_INFO(this->get_logger(), "Total steps per steering degree: %d", total_count);
+            EPOS_steering->MoveRelative(total_count);
+            last_steering_wheel_pos = set_steering_wheel_pos;
+        }
+      }
+
+      rclcpp::Clock::SharedPtr my_clock = this->get_clock();
+      rclcpp::Time current_time = my_clock->now();
+      rclcpp::Duration time_bt_steer_msgs = current_time - last_steer_msg_;
+
+      if(time_bt_steer_msgs > rclcpp::Duration(2s))
+      {
+        RCLCPP_INFO(this->get_logger(), "Sin señal del volante: desactivado modo automático");
+        longitudinal_control_deactivation();
+        lateral_control_deactivation();
+        signal_error = true;
+      }
     }
 
     void buscan_control_callback()
@@ -90,139 +271,23 @@ class EposReader : public rclcpp::Node
 
       if(time_bt_buscan_msgs > rclcpp::Duration(2s))
       {
-        RCLCPP_INFO(this->get_logger(), "Sin señal del buscan: desactivado modo automático");
-        EPOS_brake->SetDigitalOutput(false, 14);
-        EPOS_brake->SetDigitalOutput(false, 15);
-      }
-    }
-
-    void throttle_control_callback()
-    {
-      /*if(gear_position < 3)
-      {
-        RCLCPP_INFO(this->get_logger(), "La marcha actual impide acelerar");
-        return;
-      }*/
-
-      signed long brake_position = EPOS_brake->GetPos();
-      std::cout << "Posicion freno " << brake_position << std::endl;
-      /*if(brake_position < 0.0)
-      {
-        RCLCPP_INFO(this->get_logger(), "Freno activado, no acelerar");
-        target_throttle = 0.0;
-      }*/
-
-      /*if(last_throttle_pos == set_throttle_pos)
-        return;*/
-
-      double target_throttle = set_throttle_pos/100;
-
-      if (target_throttle < 0.0 )
-        target_throttle = 0.0;
-      else if (target_throttle > 1.0)
-        target_throttle = 1.0;
-
-      unsigned int throttle_tension = 150 + 1500.0 * target_throttle;
-      EPOS_brake->SetAnalogOutput(throttle_tension);
-    }
-
-    void brake_control_callback()
-    {
-      if(!long_contr_act)
-      {
-        RCLCPP_INFO(this->get_logger(), "Modo automático no activado");
-        return;
-      }
-
-      /*if(last_brake_pos == set_brake_pos)
-        return;*/
-
-      std::cout << "Freno " << set_brake_pos << std::endl;
-
-      /*double target_brake = set_brake_pos/100;
-
-      if (target_brake < 0.0 )
-        target_brake = 0.0;
-      else if (target_brake > 1.0)
-        target_brake = 1.0;
-        
-      int brake_tension = -10000 + 40000 * target_brake;*/
-    
-      EPOS_brake->MoveAbsolute(set_brake_pos);
-    }
-
-    void steer_control_callback()
-    {
-      /*if(last_steering_wheel_pos == set_steering_wheel_pos)
-        return;*/
-
-      std::cout << "Volante " << set_steering_wheel_pos << std::endl;
-      std::cout << "Posicion actual: " << steering_position << std::endl;
-
-      double targetPositionSteering = round(set_steering_wheel_pos * 10);
-      targetPositionSteering /= 10;
-
-      double correction = targetPositionSteering - steering_position;
-
-      if(fabs(correction) >= 0.1)
-      {
-          int total_count = correction * 900;
-          RCLCPP_INFO(this->get_logger(), "Total steps per steering degree: %d", total_count);
-          EPOS_steering->MoveRelative(total_count);
-          last_steering_wheel_pos = set_steering_wheel_pos;
-      }
-
-      /*rclcpp::Clock::SharedPtr my_clock = this->get_clock();
-      rclcpp::Time current_time = my_clock->now();
-      rclcpp::Duration time_bt_steer_msgs = current_time - last_steer_msg_;
-
-      if(time_bt_steer_msgs > rclcpp::Duration(2s))
-      {
-        RCLCPP_INFO(this->get_logger(), "Sin señal del volante: desactivado modo automático");
-        EPOS_brake->SetDigitalOutput(false, 14);
-        EPOS_brake->SetDigitalOutput(false, 15);
-      }*/
-    }
-
-    void ctrl_mode(const epos_msgs::msg::ControlMode msg)
-    {
-      if(msg.mode == 1) 
-      {
-        //longitudinal and lateral controller
-        longitudinal_control_activation();
-        lateral_control_activation();
-      }
-      else if(msg.mode == 2) 
-      {
-        //longitudinal controller
-        longitudinal_control_activation();
-        EPOS_brake->SetDigitalOutput(false, 15);
-      }
-      else if(msg.mode == 3) 
-      {
-        //lateral controller
-        lateral_control_activation();
+        RCLCPP_INFO(this->get_logger(), "Sin señal del buscan: modo automático desactivado");
         longitudinal_control_deactivation();
+        lateral_control_deactivation();
+        signal_error = true;
+      }
+    }
 
-      }
-      else if(msg.mode == 4)
-      {
-        //manual
-        longitudinal_control_deactivation();
-        EPOS_brake->SetDigitalOutput(false, 15);
-      }
-      else
-      {
-        EPOS_brake->SetDigitalOutput(false, 14);
-        EPOS_brake->SetDigitalOutput(false, 15);
-        RCLCPP_ERROR(this->get_logger(), "Error: modo desconocido");
-      }
+    void set_control_mode(const epos_msgs::msg::ControlMode msg)
+    {
+      set_mode_ = msg.mode;
+      last_mode_msg_ = msg.header.stamp;
     }
 
     void set_throttle(const epos_msgs::msg::Throttle msg)
     {
       set_throttle_pos = msg.throttle;
-      last_brake_msg_ = msg.header.stamp;
+      last_throttle_msg_ = msg.header.stamp;
     }
 
     void set_brake(const epos_msgs::msg::Brake msg)
@@ -248,31 +313,38 @@ class EposReader : public rclcpp::Node
     void longitudinal_control_activation()
     {
       EPOS_brake->SetAnalogOutput(150);
-      EPOS_brake->MoveAbsolute(-20000);
+      EPOS_brake->MoveAbsolute(0);
       EPOS_brake->SetDigitalOutput(true, 14);
-      long_contr_act = true;
     }
+
     void lateral_control_activation()
     {
       EPOS_brake->SetDigitalOutput(true, 15);
     }
+    
     void longitudinal_control_deactivation()
     {
       EPOS_brake->SetAnalogOutput(150);
-      EPOS_brake->MoveAbsolute(-20000);
+      EPOS_brake->MoveAbsolute(0);
       EPOS_brake->SetDigitalOutput(false, 14);
-      long_contr_act = false;
+    }
+
+    void lateral_control_deactivation()
+    {
+      EPOS_brake->SetDigitalOutput(false, 15);
     }
     
     EPOS* EPOS_brake;
     EPOS* EPOS_steering;
 
+    int set_mode_ = 0;
     float set_steering_wheel_pos = 0.0;
     float set_throttle_pos = 0.0;
     float set_brake_pos = 0.0;
 
-    bool long_contr_act = false;
+    bool signal_error = false;
 
+    int last_mode_ = 0;
     float last_steering_wheel_pos = 0.0;
     float last_throttle_pos = 0.0;
     float last_brake_pos = 0.0;
@@ -281,12 +353,15 @@ class EposReader : public rclcpp::Node
     float brake_position = 0.0;
     int gear_position = 0;
 
+    rclcpp::Time last_mode_msg_;
     rclcpp::Time last_throttle_msg_;
     rclcpp::Time last_brake_msg_;
     rclcpp::Time last_steer_msg_;
     rclcpp::Time last_buscan_msg_;
 
     rclcpp::TimerBase::SharedPtr timer_;
+    rclcpp::TimerBase::SharedPtr general_control_;
+    rclcpp::TimerBase::SharedPtr mode_control_;
     rclcpp::TimerBase::SharedPtr buscan_control_;
     rclcpp::TimerBase::SharedPtr steer_control_;
     rclcpp::TimerBase::SharedPtr throttle_control_;

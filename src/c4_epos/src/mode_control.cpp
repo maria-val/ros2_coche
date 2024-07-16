@@ -59,23 +59,25 @@ class ModeControl : public rclcpp::Node
         epos_msgs::msg::ControlMode mode_msg;
         mode_msg.mode = last_mode_;
         mode_msg.header.stamp = time.now();
-        mode_publisher_->publish(mode_msg);
+        //if(publish_th == true)
+          mode_publisher_->publish(mode_msg);
 
         epos_msgs::msg::Throttle throttle_msg;
         throttle_msg.throttle = last_throttle_;
         throttle_msg.header.stamp = time.now();
         //if(publish_th == true)
-        pos_throttle_publisher_->publish(throttle_msg);
+          pos_throttle_publisher_->publish(throttle_msg);
 
         epos_msgs::msg::Brake brake_msg;
         brake_msg.brake = last_brake_;
         brake_msg.header.stamp = time.now();
-        pos_brake_publisher_->publish(brake_msg);
+        //if(publish_th == true)
+          pos_brake_publisher_->publish(brake_msg);
 
         epos_msgs::msg::SteeringWheel steering_wheel_msg;
         steering_wheel_msg.steer = last_steer_;
         steering_wheel_msg.header.stamp = time.now();
-        if(publish_th == true)
+        //if(publish_th == true)
           pos_steering_wheel_publisher_->publish(steering_wheel_msg);
       }
 

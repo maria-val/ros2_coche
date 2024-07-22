@@ -853,7 +853,7 @@ void Radar_ARS408::borrarEstructura()
 
 void Radar_ARS408::parse_radar_msg_408(const radar_msgs::msg::RadarRaw & msgIn)
 {
-    auto msg = radar_msgs::msg::RadarMsg408(); 
+    radar_msgs::msg::RadarMsg408 msg; 
     char aux[23];
 
     memcpy(aux, (const char*) (&(msgIn.raw[0])), 22);

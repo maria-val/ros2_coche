@@ -17,11 +17,10 @@ class CanParser : public rclcpp::Node
   private:
     void parse_can_msg(const buscan_msgs::msg::CanRaw msgIn)
     {
-      /*RCLCPP_INFO(this->get_logger(), "I heard:\nid: %ld\ntime: %ld\nraw:\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n", 
-        msgIn.id, msgIn.time, msgIn.raw[0], msgIn.raw[1], msgIn.raw[2], msgIn.raw[3], msgIn.raw[4], msgIn.raw[5], msgIn.raw[6], msgIn.raw[7]);*/
+      buscan_msgs::msg::CanMsg msgOut;
+      RCLCPP_INFO(this->get_logger(), "Mensaje recibido");
 
       BUSCAN_crude_data_t crude_buscan_data;
-      auto msgOut = buscan_msgs::msg::CanMsg();
 
       parse_buscan_id(&crude_buscan_data, msgIn.id, msgIn.time, &(msgIn.raw[0]));
 
@@ -34,6 +33,8 @@ class CanParser : public rclcpp::Node
         msgOut.gear = crude_buscan_data.data_t15.marchas;
         msgOut.header = msgIn.header;
 
+        rclcpp::Clock time;
+        msgOut.header.stamp = time.now();
         publisher_->publish(msgOut);
       }
     }

@@ -37,10 +37,10 @@ class TrimbleGps : public rclcpp::Node
       char message_gps[MSG_SZ];
       int msg_size;
 
-      auto nmea_message = nmea_msgs::msg::Gpgga();
-      auto std_message = std_msgs::msg::String();
-      auto sensor_message = sensor_msgs::msg::NavSatFix();
-      auto geom_message = geometry_msgs::msg::Point();
+      nmea_msgs::msg::Gpgga nmea_message;
+      std_msgs::msg::String std_message;
+      sensor_msgs::msg::NavSatFix sensor_message;
+      geometry_msgs::msg::Point geom_message;
 
       int gps_qual;
       double lat, lon, alt, utm_n, utm_e;

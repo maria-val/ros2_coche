@@ -28,7 +28,7 @@ class RadarVisualization : public rclcpp::Node
     {
       if(msgIn.num_of_objects > 0)
       {
-        auto marker = visualization_msgs::msg::Marker();
+        visualization_msgs::msg::Marker marker;
         // Set our initial shape type to be a cube
         uint32_t shape = visualization_msgs::msg::Marker::CYLINDER;
         // Set the frame ID and timestamp.  See the TF tutorials for information on these.
@@ -79,7 +79,7 @@ class RadarVisualization : public rclcpp::Node
     {
       if (msgIn.num_of_tracks > 0)
       {
-        auto marker = visualization_msgs::msg::Marker();
+        visualization_msgs::msg::Marker marker;
         // Set our initial shape type to be a cube
         uint32_t shape = visualization_msgs::msg::Marker::CYLINDER;
         // Set the frame ID and timestamp.  See the TF tutorials for information on these.

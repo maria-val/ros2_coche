@@ -24,7 +24,7 @@ class RadarReader : public rclcpp::Node
   private:
     void getRadarData()
     {
-      auto radar_raw_msg = radar_msgs::msg::RadarRaw();
+      radar_msgs::msg::RadarRaw radar_raw_msg;
 
       auto ip = declare_parameter<std::string>("ip", "192.168.254.254");
       char ip_array[20];

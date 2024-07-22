@@ -26,7 +26,7 @@ class BusCan : public rclcpp::Node
   private:
     void initBuscanAndReadData()
     {
-      auto raw_message = buscan_msgs::msg::CanRaw();
+      buscan_msgs::msg::CanRaw raw_message;
       raw_can_data_t data;
       CanHandle h;
       bool init_buscan = false;

@@ -8,13 +8,13 @@ class RadarVisualization : public rclcpp::Node
   public:
     RadarVisualization() : Node("radar_visualization")
     {
-      auto header = declare_parameter<std::string>("header", "t60");
-      auto publisher_topic_ = declare_parameter<std::string>("pub_topic", "radar_visualization/ars408");
+      std::string header = declare_parameter<std::string>("header", "t60");
+      publisher_topic_ = declare_parameter<std::string>("pub_topic", "radar_visualization/t60");
 
       marker_publisher_ = this->create_publisher<visualization_msgs::msg::Marker>(publisher_topic_, 1000);
 
       if(strcmp(header.c_str(), "t60") == 0)
-        parsed_ars408_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg408>("radar_parser/ars408", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_408, this, std::placeholders::_1));
+        parsed_t60_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg408>("radar_parser/t60", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_408, this, std::placeholders::_1));
       
       else if(strcmp(header.c_str(), "t61") == 0)
         parsed_t61_subscriber_ =  this->create_subscription<radar_msgs::msg::RadarMsg208>("radar_parser/t61", 1000, std::bind(&RadarVisualization::draw_radar_parsed_msg_208, this, std::placeholders::_1));
@@ -112,12 +112,23 @@ class RadarVisualization : public rclcpp::Node
             marker.scale.y = 1.0;
             marker.scale.z = 1.0;
 
-            // Set the color -- be sure to set alpha to something non-zero!
-            marker.color.r = 1.0f;
-            marker.color.g = 0.0f;
-            marker.color.b = 0.0f;
-            marker.color.a = 1.0;
-
+            if(publisher_topic_ == "radar_visualization/t61")
+            {
+              // Set the color -- be sure to set alpha to something non-zero!
+              marker.color.r = 1.0f;
+              marker.color.g = 0.0f;
+              marker.color.b = 0.0f;
+              marker.color.a = 1.0;
+            }
+            else if (publisher_topic_ == "radar_visualization/t62")
+            {
+              // Set the color -- be sure to set alpha to something non-zero!
+              marker.color.r = 0.0f;
+              marker.color.g = 0.0f;
+              marker.color.b = 1.0f;
+              marker.color.a = 1.0;
+            }
+          
             marker.lifetime = rclcpp::Duration::from_seconds(0.2);
             
             // Publish the marker     
@@ -125,8 +136,9 @@ class RadarVisualization : public rclcpp::Node
         }
       } 
     }
+    std::string publisher_topic_;
 
-    rclcpp::Subscription<radar_msgs::msg::RadarMsg408>::SharedPtr parsed_ars408_subscriber_;
+    rclcpp::Subscription<radar_msgs::msg::RadarMsg408>::SharedPtr parsed_t60_subscriber_;
     rclcpp::Subscription<radar_msgs::msg::RadarMsg208>::SharedPtr parsed_t61_subscriber_;
     rclcpp::Subscription<radar_msgs::msg::RadarMsg208>::SharedPtr parsed_t62_subscriber_;
     rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_publisher_;

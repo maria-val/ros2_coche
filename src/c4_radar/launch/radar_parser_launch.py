@@ -11,7 +11,7 @@ def generate_launch_description():
             emulate_tty=True,
             parameters=[
               {"header": "t60"},
-              {"topic_publisher": "radar_parser/ars408"}
+              {"topic_publisher": "radar_parser/t60"}
             ]),
         Node(
             package="c4_radar",

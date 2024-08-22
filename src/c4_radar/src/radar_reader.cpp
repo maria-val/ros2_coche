@@ -14,7 +14,7 @@ class RadarReader : public rclcpp::Node
   public:
     RadarReader() : Node("radar_reader")
     {
-      ars408_publisher_ = this->create_publisher<radar_msgs::msg::RadarRaw>("radar_reader/ars408", 1000);
+      ars408_t60_publisher_ = this->create_publisher<radar_msgs::msg::RadarRaw>("radar_reader/ars408", 1000);
       srr208_t61_publisher_ = this->create_publisher<radar_msgs::msg::RadarRaw>("radar_reader/t61", 1000);
       srr208_t62_publisher_ = this->create_publisher<radar_msgs::msg::RadarRaw>("radar_reader/t62", 1000);
       
@@ -107,7 +107,7 @@ class RadarReader : public rclcpp::Node
 
               //choose the topic in which the message has to be published
               if(strncmp(aux, "t60", 3) == 0)
-                ars408_publisher_->publish(radar_raw_msg);
+                ars408_t60_publisher_->publish(radar_raw_msg);
       
               else if(strncmp(aux, "t61", 3) == 0)
                 srr208_t61_publisher_->publish(radar_raw_msg);
@@ -126,7 +126,7 @@ class RadarReader : public rclcpp::Node
         }
       }
     }
-    rclcpp::Publisher<radar_msgs::msg::RadarRaw>::SharedPtr ars408_publisher_;
+    rclcpp::Publisher<radar_msgs::msg::RadarRaw>::SharedPtr ars408_t60_publisher_;
     rclcpp::Publisher<radar_msgs::msg::RadarRaw>::SharedPtr srr208_t61_publisher_;
     rclcpp::Publisher<radar_msgs::msg::RadarRaw>::SharedPtr srr208_t62_publisher_;
 };
